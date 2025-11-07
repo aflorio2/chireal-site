@@ -1,5 +1,6 @@
 require 'liquid'
-require 'html-proofer'
+# Disabled html-proofer due to Ruby 3.3 compatibility issues with posix-spawn
+# require 'html-proofer'
 
 module Jekyll
   module MiscFilters
@@ -86,32 +87,33 @@ module Jekyll
     end
   end
 
+  # Disabled html-proofer module due to Ruby 3.3 compatibility issues
   # based on https://github.com/episource/jekyll-html-proofer
-  module HtmlProofer
-    priority = Jekyll::Hooks::PRIORITY_MAP[:high] + 1000
+  # module HtmlProofer
+  #   priority = Jekyll::Hooks::PRIORITY_MAP[:high] + 1000
 
-    Jekyll::Hooks.register(:site, :post_write, priority: priority) do |site|
-      if not site.config["proofer"] == false
-        options = {
-          allow_missing_href: true,
-          enforce_https: false,
-          ignore_files: [/.*testbed.html/],
-          ignore_urls: [
-            /fonts\.gstatic\.com/,
-            /localhost:/,
-            /0\.0\.0\.0:/,
-          ],
-        }
+  #   Jekyll::Hooks.register(:site, :post_write, priority: priority) do |site|
+  #     if not site.config["proofer"] == false
+  #       options = {
+  #         allow_missing_href: true,
+  #         enforce_https: false,
+  #         ignore_files: [/.*testbed.html/],
+  #         ignore_urls: [
+  #           /fonts\.gstatic\.com/,
+  #           /localhost:/,
+  #           /0\.0\.0\.0:/,
+  #         ],
+  #       }
 
-        begin
-          HTMLProofer.check_directory(site.dest, options).run
-        rescue Exception => error
-          STDERR.puts error
-          # raise error
-        end
-      end
-    end
-  end
+  #       begin
+  #         HTMLProofer.check_directory(site.dest, options).run
+  #       rescue Exception => error
+  #         STDERR.puts error
+  #         # raise error
+  #       end
+  #     end
+  #   end
+  # end
 end
 
 Liquid::Template.register_filter(Jekyll::MiscFilters)
