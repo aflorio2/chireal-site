@@ -6,6 +6,10 @@ header: images/background.jpg
 footer: images/background.jpg
 proofer: false
 
+# GitLab Pages configuration
+baseurl: "/QCReaTE-website"
+url: "https://gitlab.ub.uni-bielefeld.de/qcreate"
+
 # site social media and other links
 links:
   email: contact@your-lab.com
@@ -49,7 +53,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
-  - jekyll-last-modified-at
 
 # code block syntax highlighting
 highlighter: rouge
@@ -71,3 +74,11 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .gitlab-ci.yml
