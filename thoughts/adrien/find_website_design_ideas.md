@@ -1,0 +1,1 @@
+I want to create a new website for my theoretical physics group. I want it to be modern and and nice, yet easy to maintain and modify. I would like to see some nice examples and discuss possible implementations. I would like to host this site as a gitlab page.
