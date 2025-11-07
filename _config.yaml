@@ -7,8 +7,8 @@ footer: images/background.jpg
 proofer: false
 
 # GitLab Pages configuration
-baseurl: "/QCReaTE-website"
-url: "https://gitlab.ub.uni-bielefeld.de/qcreate"
+baseurl: ""
+url: "https://qcreate-website-fa4cbb.pages.ub.uni-bielefeld.de"
 
 # site social media and other links
 links:
