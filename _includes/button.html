@@ -2,10 +2,16 @@
 {% assign button = button | hash_default: site.data.types[include.type] %}
 
 {% if button.link or button.icon or button.text %}
+  {% assign processed_link = button.link | replace: "$VALUE", include.link %}
+  {% if processed_link contains "http://" or processed_link contains "https://" or processed_link contains "mailto:" or processed_link contains "tel:" %}
+    {% assign final_link = processed_link %}
+  {% else %}
+    {% assign final_link = processed_link | relative_url %}
+  {% endif %}
   <div class="button-wrapper">
     <a
       class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      href="{{ final_link }}"
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip | xml_escape }}"
       {% endif %}
@@ -14,6 +20,10 @@
         data-flip
       {% endif %}
       aria-label="{{ button.tooltip | default: button.icon | default: "button" | regex_strip }}"
+      {% if processed_link contains "http://" or processed_link contains "https://" or processed_link contains "mailto:" %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
     >
       {% include icon.html icon=button.icon %}
       {% if button.text and button.text != "" %}
