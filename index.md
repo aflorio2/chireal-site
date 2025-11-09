@@ -1,7 +1,7 @@
 ---
 ---
 
-# Welcome to QIReal
+# Welcome to QuIReal
 
 ## Quantum Information and Real-time evolution in field theories
 

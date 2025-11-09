@@ -5,9 +5,9 @@ nav:
   tooltip: About our research group
 ---
 
-# {% include icon.html icon="fa-solid fa-info-circle" %}About QIReal
+# {% include icon.html icon="fa-solid fa-info-circle" %}About QuIReal
 
-QIReal (Quantum Information and Real-time evolution in field theories) is a theoretical physics research group specializing in the out-of-equilibrium dynamics of quantum and classical fields.
+QuIReal (Quantum Information and Real-time evolution in field theories) is a theoretical physics research group specializing in the out-of-equilibrium dynamics of quantum and classical fields.
 
 {% include section.html %}
 

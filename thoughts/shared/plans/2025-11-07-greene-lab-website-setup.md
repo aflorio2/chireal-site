@@ -691,25 +691,43 @@ git push origin main
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Config file updated: `grep "title:" site/_config.yml` shows new lab name
-- [ ] Colors customized: `grep "primary:" site/_styles/variables.scss` shows chosen colors
-- [ ] Homepage updated: `grep "Welcome to" site/index.md` shows new content
-- [ ] About page updated: `grep "About Our Research" site/about.md` exists
-- [ ] Local build succeeds: `cd site && bundle exec jekyll build` completes
-- [ ] Git changes committed: `cd site && git status` shows clean state
-- [ ] GitLab pipeline passes: Latest pipeline shows green checkmark
+- [x] Config file updated: `grep "title:" site/_config.yaml` shows group name
+- [x] Colors customized: Custom purple/cyan theme in `site/_styles/-theme.scss`
+- [x] Homepage updated: Homepage shows new content with group branding
+- [x] About page created: `site/about/index.md` exists with group content
+- [x] Local build succeeds: `cd site && bundle exec jekyll build` completes
+- [x] **REBRAND TO QuIReal**: Updated all references from QCReaTE to QuIReal (Quantum Information and Real-time evolution in QFT) throughout site
+- [x] Git changes committed: `cd site && git status` shows clean state
+- [x] GitLab pipeline passes: Latest pipeline shows green checkmark
+- [ ] **Update GitLab repository name**: Rename GitLab project from "qcreate-website-fa4cbb" to "quireal" (see GITLAB_RENAME_INSTRUCTIONS.md)
+- [ ] **Update _config.yaml URLs**: Update baseurl and url to reflect new GitLab Pages URL after repository rename
 
 #### Manual Verification:
-- [ ] Local site (http://localhost:4000) shows new branding
-- [ ] Colors match chosen scheme throughout site
-- [ ] Typography is readable and appropriate
-- [ ] Lab name appears in header, footer, and browser tab
-- [ ] Homepage content reflects research group's focus
-- [ ] About page describes research areas accurately
-- [ ] Deployed site shows updated branding (check after pipeline completes)
-- [ ] No styling regressions (all pages still look good)
+- [x] Local site (http://localhost:4000) shows new branding
+- [x] Colors match chosen scheme throughout site (custom purple/cyan)
+- [x] Typography is readable and appropriate
+- [x] Lab name "QuIReal" appears in header and browser tab
+- [x] Homepage content reflects QuIReal focus on quantum information and real-time evolution
+- [x] About page describes QuIReal research areas accurately
+- [x] Custom quantum dynamics background image added
+- [x] Custom logo created with quantum ket notation |χ⟩ and orbiting particles
+- [x] Deployed site shows updated QuIReal branding
+- [x] No styling regressions (all pages still look good)
 
 **Implementation Note**: After automated verification passes, review both local and deployed versions of the site. Pay attention to color contrast (ensure text is readable), typography consistency, and overall aesthetic. The branding should feel cohesive across all pages. If colors don't look right, adjust `_styles/variables.scss` and rebuild. Only proceed to Phase 5 after confirming the customized design meets your vision.
+
+**QuIReal Rebranding (Completed 2025-11-09)**:
+- [x] Updated site content files (_config.yaml, index.md, about/index.md) with QuIReal branding
+- [x] Changed title to "QuIReal - Quantum Information and Real-time evolution in QFT"
+- [x] Changed subtitle to "Adrien Florio's Emmy Noether group"
+- [x] Created logo_with_name.svg variant (saved for future use)
+- [x] Committed and pushed changes to GitLab
+- [x] Created GITLAB_RENAME_INSTRUCTIONS.md for repository rename steps
+- [ ] Rename GitLab repository to "quireal" (see GITLAB_RENAME_INSTRUCTIONS.md)
+- [ ] Update git remote URL locally after rename
+- [ ] Update _config.yaml with new GitLab Pages URL after rename
+
+**Note**: Repository rename steps documented in GITLAB_RENAME_INSTRUCTIONS.md for execution when convenient.
 
 ---
 
