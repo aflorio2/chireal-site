@@ -1,9 +1,9 @@
 # site properties and page defaults
-title: Lab Website Template
-subtitle: by the Greene Lab
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-header: images/background.jpg
-footer: images/background.jpg
+title: QIReal - Quantum Information and Real-time evolution in QFT
+subtitle: Adrien Florio's Emmy Noether group
+description: Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.
+header: images/quantum-background.jpg
+footer: images/quantum-background.jpg
 proofer: false
 
 # GitLab Pages configuration
@@ -12,12 +12,10 @@ url: "https://qcreate-website-fa4cbb.pages.ub.uni-bielefeld.de"
 
 # site social media and other links
 links:
-  email: contact@your-lab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: your-lab
-  twitter: YourLabHandle
-  youtube: YourLabChannel
+  email: aflorio@physik.uni-bielefeld.de
+  orcid: 0000-0002-7276-4515
+  google-scholar: AvWN0nIAAAAJ
+  inspirehep: https://inspirehep.net/authors/1844184
 
 ### jekyll settings
 

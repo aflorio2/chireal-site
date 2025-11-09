@@ -1,10 +1,28 @@
 ---
 ---
 
-// colors
+// COLOR SCHEME OPTIONS - Uncomment one to activate
+// Currently active: Dark Red & Gold
+
+/* OPTION 1: Dark Red & Gold (Currently Active)
+[data-dark="false"] { --primary: #8B0000; --secondary: #DAA520; }
+[data-dark="true"] { --primary: #C41E3A; --secondary: #DAA520; }
+*/
+
+/* OPTION 2: Navy Blue (Academic)
+[data-dark="false"] { --primary: #003366; --secondary: #0066CC; }
+[data-dark="true"] { --primary: #0066CC; --secondary: #003366; }
+*/
+
+/* OPTION 3: Physics Purple
+[data-dark="false"] { --primary: #5B2C6F; --secondary: #00CED1; }
+[data-dark="true"] { --primary: #7B4C8F; --secondary: #00CED1; }
+*/
+
+// colors - Custom QCReaTE theme (inspired by quantum dynamics background)
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
+  --primary: #8B4789;
+  --secondary: #4A9BA8;
   --text: #000000;
   --background: #ffffff;
   --background-alt: #fafafa;
@@ -12,10 +30,11 @@
   --gray: #808080;
   --dark-gray: #404040;
   --overlay: #00000020;
+  --accent: #FF8C42;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
+  --primary: #9B3D98;
+  --secondary: #5AAFBB;
   --text: #ffffff;
   --background: #181818;
   --background-alt: #1c1c1c;
@@ -23,6 +42,7 @@
   --gray: #808080;
   --dark-gray: #b0b0b0;
   --overlay: #ffffff10;
+  --accent: #FF8C42;
 }
 
 :root {

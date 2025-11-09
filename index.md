@@ -1,21 +1,24 @@
 ---
 ---
 
-# Lab Website Template
+# Welcome to QIReal
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
+## Quantum Information and Real-time evolution in field theories
+
+We are a theoretical physics research group specializing in the out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.
+
+Our research focuses on:
+- Out-of-equilibrium dynamics of quantum fields
+- Quantum information aspects of field theory
+- Real-time simulations of quantum and classical fields
+- Quantum field theory methods and applications
 
 {%
   include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
+  link="research"
+  text="Learn More About Our Research"
+  icon="fa-solid fa-arrow-right"
+  flip=true
 %}
 
 {% include section.html %}
@@ -24,7 +27,7 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We develop and apply advanced quantum field theory methods to study systems far from equilibrium, exploring the frontiers of quantum dynamics and real-time evolution.
 
 {%
   include button.html
@@ -47,7 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+From quantum information theory to lattice field simulations, our projects span fundamental theory and numerical methods for real-time quantum dynamics.
 
 {%
   include button.html
@@ -72,7 +75,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Meet the researchers driving our explorations in quantum and classical field dynamics.
 
 {%
   include button.html
