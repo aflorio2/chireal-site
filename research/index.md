@@ -21,7 +21,7 @@ Our research is at the intersection of quantum information theory and quantum fi
 
 {% include citation.html lookup="Higher-form symmetry and chiral transport in real-time Abelian lattice gauge" style="rich" %}
 
-{% include citation.html lookup="osmoLattice: A modern code for lattice simulations" style="rich" %}
+{% include citation.html lookup="A modern code for lattice simulations of scalar and gauge field dynamics in an expanding universe" style="rich" %}
 
 {% include section.html %}
 
