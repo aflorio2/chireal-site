@@ -17,18 +17,66 @@
   padding: 5px 10px;
   border-radius: 999px;
   background: var(--secondary);
-  color: var(--text);
+  color: white;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition),
+    transform var(--transition);
+  font-weight: 500;
 }
 
 .tag:hover {
-  background: var(--light-gray);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .tag[data-active] {
-  background: var(--light-gray);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+// Color-coded tags by physics topic
+a.tag[href*="theory-hep"] {
+  background: #6366f1; // Indigo - Theoretical HEP
+}
+
+a.tag[href*="theory-nucl"] {
+  background: #8b5cf6; // Purple - Nuclear Theory
+}
+
+a.tag[href*="phenomenology-hep"] {
+  background: #f59e0b; // Amber - Phenomenology
+}
+
+a.tag[href*="experiment-hep"] {
+  background: #ef4444; // Red - Experimental HEP
+}
+
+a.tag[href*="experiment-nucl"] {
+  background: #dc2626; // Dark red - Nuclear Experiment
+}
+
+a.tag[href*="lattice"] {
+  background: #10b981; // Emerald - Lattice methods
+}
+
+a.tag[href*="quantum-physics"] {
+  background: #06b6d4; // Cyan - Quantum Physics
+}
+
+a.tag[href*="condensed-matter"] {
+  background: #ec4899; // Pink - Condensed Matter
+}
+
+a.tag[href*="gravitation-and-cosmology"] {
+  background: #1e40af; // Dark blue - Gravitation/Cosmology
+}
+
+a.tag[href*="astrophysics"] {
+  background: #1e3a8a; // Navy - Astrophysics
+}
+
+a.tag[href*="general-physics"] {
+  background: #6b7280; // Gray - General Physics
 }
