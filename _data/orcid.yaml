@@ -1,1 +1,6 @@
-- orcid: 0000-0002-4655-3773
+# ORCID identifiers
+# Add your ORCID here to automatically fetch publications from your ORCID profile
+# Example format:
+# - orcid: 0000-0000-0000-0000
+
+[]

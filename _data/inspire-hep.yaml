@@ -1,0 +1,11 @@
+# INSPIRE-HEP author identifiers
+# Each entry should have a "bai" field with the author's INSPIRE BAI
+# Format: FirstInitial.LastName.Number (e.g., E.Witten.1)
+
+# Basic configuration (metadata enrichment enabled by default)
+- bai: Adrien.Florio.1
+  # enable_metadata: true  # Optional: adds arXiv buttons, document types, INSPIRE category tags
+
+# Example with metadata disabled:
+# - bai: Adrien.Florio.1
+#   enable_metadata: false
