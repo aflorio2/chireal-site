@@ -163,6 +163,17 @@ for index, source in enumerate(sources):
     # preserve fields from input source, overriding existing fields
     citation.update(source)
 
+    # run image-fetcher on merged citation to add image field if possible
+    # (needs to run after citation.update so it has access to Manubot's link field)
+    try:
+        image_fetcher = import_module("plugins.image-fetcher")
+        processed = image_fetcher.main(citation)
+        if processed and len(processed) > 0:
+            citation = processed[0]
+    except Exception as e:
+        log(f"Image fetcher error: {e}", indent=2, level="WARNING")
+        warnings.append(f"Image fetcher failed for citation {get_safe(citation, 'id', '')}: {e}")
+
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
