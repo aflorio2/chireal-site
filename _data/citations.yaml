@@ -13,6 +13,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2511.01966
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/3076646
   type: article
   tags:
   - Theory-HEP
@@ -21,9 +24,9 @@
   - Theory-Nucl
   - Quantum Physics
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
-  image: images/publications/2511.01966.png
+  plugin: sources.py
+  file: sources.yaml
+  image: images/publications_highlights/asymmetry.png
 - id: arxiv:2510.03083
   title: 'To break, or not to break: Symmetries in adaptive quantum simulations, a
     case study on the Schwinger model'
@@ -42,6 +45,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2510.03083
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/3062810
   type: article
   tags:
   - Quantum Physics
@@ -67,6 +73,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2506.14983
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2936538
   type: article
   tags:
   - Phenomenology-HEP
@@ -74,9 +83,9 @@
   - Theory-Nucl
   - Quantum Physics
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
-  image: images/journals/PRD.jpg
+  plugin: sources.py
+  file: sources.yaml
+  image: images/publications_highlights/thermalization_quantum_entanglement.png
 - id: arxiv:2504.03514
   title: Quenching through the QCD chiral phase transition
   authors:
@@ -92,6 +101,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2504.03514
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2907946
   type: article
   tags:
   - Lattice
@@ -116,6 +128,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2504.03516
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2907952
   type: article
   tags:
   - Phenomenology-HEP
@@ -148,6 +163,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2408.12641
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2821177
   type: article
   tags:
   - Quantum Physics
@@ -175,6 +193,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2404.00087
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2772912
   type: article
   tags:
   - Phenomenology-HEP
@@ -209,6 +230,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2312.15056
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2740592
   type: article
   tags:
   - Astrophysics
@@ -231,6 +255,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2312.05298
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2734669
   type: article
   tags:
   - Theory-HEP
@@ -239,9 +266,9 @@
   - Phenomenology-HEP
   - Quantum Physics
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
-  image: images/journals/PRD.jpg
+  plugin: sources.py
+  file: sources.yaml
+  image: images/publications_highlights/negativitynew3.png
 - id: doi:10.1103/PhysRevD.110.045013
   title: "Mass gaps of a \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:msub><mml:mi mathvariant=\"double-struck\">Z</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:math>\n\
@@ -260,6 +287,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2310.18312
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2714812
   type: article
   tags:
   - Theory-HEP
@@ -286,15 +316,18 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2309.14438
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2703014
   type: article
   tags:
   - Theory-HEP
   - Lattice
   - Phenomenology-HEP
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
-  image: images/journals/logo_scipost_RGB_HTML_groot.png
+  plugin: sources.py
+  file: sources.yaml
+  image: images/publications_highlights/higher_forms.png
 - id: doi:10.1103/PhysRevD.109.054037
   title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>4</mml:mn><mml:mo\
@@ -311,6 +344,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2306.06887
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2668018
   type: article
   tags:
   - Lattice
@@ -338,6 +374,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2301.11991
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2627805
   type: article
   tags:
   - Phenomenology-HEP
@@ -362,6 +401,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2211.13347
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2593294
   type: article
   tags:
   - Phenomenology-HEP
@@ -386,6 +428,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2204.10827
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2071187
   type: article
   tags:
   - Phenomenology-HEP
@@ -410,6 +455,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2203.13286
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2058484
   type: article
   tags:
   - Phenomenology-HEP
@@ -433,6 +481,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2202.05805
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2031374
   type: article
   tags:
   - Astrophysics
@@ -456,6 +507,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2112.08388
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1991985
   type: article
   tags:
   - Astrophysics
@@ -481,6 +535,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2111.03640
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1961451
   type: article
   tags:
   - Lattice
@@ -503,6 +560,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2106.00838
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1866727
   type: article
   tags:
   - Theory-HEP
@@ -532,6 +592,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2103.15242
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1854168
   type: article
   tags:
   - Lattice
@@ -560,6 +623,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2102.01031
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1844216
   type: article
   tags:
   - Astrophysics
@@ -571,9 +637,9 @@
   - Lattice
   - Phenomenology-HEP
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
-  image: images/publications/2102.01031.png
+  plugin: sources.py
+  file: sources.yaml
+  image: images/publications_highlights/CL_Icon.png
 - id: doi:10.1088/1475-7516/2021/04/035
   title: 'The art of simulating the early universe.
 
@@ -590,6 +656,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/2006.15122
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1803326
   type: article
   tags:
   - Astrophysics
@@ -613,12 +682,16 @@
   publisher: Lausanne, EPFL
   date: '2020-01-01'
   link: https://doi.org/g99wb7
+  buttons:
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1829114
   type: thesis
   tags:
   - Theory-HEP
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: https://infoscience.epfl.ch/bitstreams/ba65466f-2aeb-415d-86ef-285f53482e9b/download
 - id: doi:10.1103/PhysRevD.101.013007
   title: "Schwinger pair production from Pad\xE9-Borel reconstruction"
@@ -631,6 +704,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/1911.03489
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1764112
   type: article
   tags:
   - Theory-HEP
@@ -652,6 +728,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/1904.11892
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1731545
   type: article
   tags:
   - Theory-HEP
@@ -677,6 +756,9 @@
   - type: preprint
     text: arXiv
     link: https://arxiv.org/abs/1903.02894
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1724053
   type: article
   tags:
   - Lattice

@@ -7,4 +7,22 @@
 #     - tag1
 #     - tag2
 
-[]
+# PhD Thesis - manual image URL since EPFL no longer provides OpenGraph tags
+- id: doi:10.5075/epfl-thesis-8139
+  image: https://infoscience.epfl.ch/bitstreams/ba65466f-2aeb-415d-86ef-285f53482e9b/download
+
+# Featured publications with custom highlight images
+- id: arxiv:2511.01966
+  image: images/publications_highlights/asymmetry.png
+
+- id: doi:10.1103/sgrx-jpp9
+  image: images/publications_highlights/thermalization_quantum_entanglement.png
+
+- id: doi:10.1103/PhysRevD.109.L071501
+  image: images/publications_highlights/negativitynew3.png
+
+- id: doi:10.21468/SciPostPhys.17.3.085
+  image: images/publications_highlights/higher_forms.png
+
+- id: doi:10.1016/j.cpc.2022.108586
+  image: images/publications_highlights/CL_Icon.png
