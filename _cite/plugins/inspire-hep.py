@@ -106,6 +106,18 @@ def main(entry):
                         "link": f"https://arxiv.org/abs/{arxiv_value}"
                     })
 
+            # Add INSPIRE-HEP button if available
+            control_number = get_safe(metadata, "control_number", "")
+            if control_number:
+                # Add INSPIRE-HEP button (will be displayed on publications page)
+                if "buttons" not in source:
+                    source["buttons"] = []
+                source["buttons"].append({
+                    "type": "inspirehep",
+                    "text": "INSPIRE-HEP",
+                    "link": f"https://inspirehep.net/literature/{control_number}"
+                })
+
             # Add document type
             doc_type = get_safe(metadata, "document_type", [])
             if doc_type and len(doc_type) > 0:
