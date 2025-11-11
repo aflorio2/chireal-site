@@ -1034,13 +1034,13 @@ git push origin main
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Team photos added: `ls site/images/team/*.jpg | wc -l` shows correct count
-- [ ] Team YAML updated: `grep "name:" site/_data/members.yaml | wc -l` shows all members
+- [x] Team photos added: `ls site/images/team/*.jpg | wc -l` shows correct count (3 members)
+- [x] Team YAML updated: `grep "name:" site/_data/members.yaml | wc -l` shows all members (3 members)
 - [ ] Citations YAML has DOIs: `grep "doi:" site/_data/citations.yaml | wc -l` ≥ 3
 - [ ] Manubot processed: `test -f site/_data/citations-output.yaml` exists
 - [ ] Projects YAML updated: `grep "title:" site/_data/projects.yaml | wc -l` ≥ 2
 - [ ] Blog post created: `ls site/_posts/*.md | wc -l` ≥ 1
-- [ ] Local build succeeds: `cd site && bundle exec jekyll build` completes
+- [x] Local build succeeds: `cd site && bundle exec jekyll build` completes
 - [ ] Git changes committed: `cd site && git log -1 --oneline` shows content commit
 - [ ] GitLab pipeline passes: Latest pipeline shows green checkmark
 
