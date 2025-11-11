@@ -7,29 +7,23 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The QuIReal group is an Emmy Noether research group at Bielefeld University
+dedicated to exploring quantum information and real-time evolution in quantum
+field theory. We combine analytical methods with numerical simulations to
+tackle fundamental questions at the intersection of quantum mechanics and
+high-energy physics.
 
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
 {% include list.html data="members" component="portrait" filter="role != 'pi'" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
 {% include section.html %}
 
-{% capture content %}
+## Join Our Team
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+We are always interested in motivated researchers who want to explore quantum
+field theory and quantum information. If you're interested in joining our group
+as a postdoc, PhD student, or visiting researcher, please contact us via email.
 
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+{% include button.html text="Contact Us" link="contact" icon="fa-solid fa-envelope" %}
