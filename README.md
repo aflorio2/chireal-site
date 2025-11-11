@@ -15,7 +15,7 @@ Spend less time worrying about managing a website and citations, and more time r
 ## Key Features
 
 - 🤖 Based on Git, GitHub, and Jekyll.
-- 📜 Automatically generated citations from simple identifiers (DOI, PubMed, ORCID, and many more) using Manubot. E.g. `doi:1234/5678` -> `title`, `authors`, `publisher`, `date`, etc.
+- 📜 Automatically generated citations from simple identifiers (DOI, PubMed, ORCID, INSPIRE-HEP, and many more) using Manubot. E.g. `doi:1234/5678` -> `title`, `authors`, `publisher`, `date`, etc.
 - 🧱 A comprehensive and flexible suite of pre-made components (building blocks) for structuring and styling your website:
   - Formatted tables, code blocks, figures, and other basic elements.
   - Citations with thumbnails and other rich details.
@@ -30,3 +30,21 @@ Spend less time worrying about managing a website and citations, and more time r
 - ... and much more!
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/greenelab/lab-website-template)
+
+## Custom Additions
+
+### INSPIRE-HEP Citation Plugin
+
+This site includes a custom citation plugin for automatic integration with [INSPIRE-HEP](https://inspirehep.net/), the primary literature database for high-energy physics.
+
+**Features:**
+- 🔬 Automatically fetches publications by author BAI (INSPIRE identifier)
+- 📄 Extracts DOIs and arXiv IDs for Manubot citation
+- 🏷️ Adds physics category tags (Theory-HEP, Lattice, Phenomenology-HEP, etc.)
+- 📎 Automatic arXiv buttons for preprint versions
+- 🔍 Filters out conference papers and large collaborations
+- 💾 7-day caching for optimal performance
+
+**Configuration:** Edit `_data/inspire-hep.yaml` with your INSPIRE BAI
+
+**Documentation:** See `_cite/plugins/inspire-hep.md` for full details
