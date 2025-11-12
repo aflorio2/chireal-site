@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# {% include icon.html icon="fa-solid fa-atom" %}Research
 
 Our research is at the intersection of quantum information theory and quantum field theory, with a particular focus on real-time evolution and non-equilibrium dynamics. We combine analytical methods with lattice field theory simulations, tensor network and quantum computing approaches. Our work spans quantum information and gauge theories, out-of-equilibrium dynamics and thermalization, quantum computing applications to lattice field theory, early universe cosmology, and critical dynamics near the QCD chiral phase transition.
 

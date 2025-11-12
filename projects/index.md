@@ -5,7 +5,7 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
 
 Our group develops computational tools, educational programs, and collaborative
 research initiatives to advance quantum information theory and real-time quantum
