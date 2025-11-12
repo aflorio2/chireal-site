@@ -1,47 +1,63 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+# ALPS - Advanced Lectures in Physics in Switzerland
+- title: Advanced Lectures in Physics in Switzerland (ALPS)
+  subtitle: SwissMAP-funded PhD summer school series
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/projects/alps-summer-school.jpg
+  link: https://indico.global/event/9618/
+  description: >
+    A junior school in theoretical physics held annually in the Swiss Alps,
+    designed to foster collaboration among young researchers through lectures
+    bridging different areas of modern theoretical physics. The series focuses
+    on quantum information theory, quantum computing, entanglement in QFT, and
+    holography. Fully funded by SwissMAP with accommodation and meals covered.
   tags:
-    - resource
+    - education
+    - collaboration
 
-- title: Cool Package
-  subtitle: a subtitle
+# CosmoLattice Software
+- title: CosmoLattice
+  subtitle: Lattice simulations of field dynamics in expanding universe
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
-
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/projects/cosmolattice-simulation.jpg
+  link: https://cosmolattice.net
+  description: >
+    Modern software package for lattice simulations of field dynamics in an
+    expanding universe. Supports interacting scalar field theories, Abelian U(1)
+    and non-Abelian SU(2) gauge theories in flat or FLRW backgrounds. Features
+    gravitational wave computation modules and customizable field description
+    language. Actively developed and freely available for research use.
+  repo: cosmolattice/CosmoLattice
   tags:
     - software
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+# Emmy Noether Grant
+- title: Emmy Noether Research Group
+  subtitle: "From classical to quantum simulations of chiral anomaly dynamics"
+  group: featured
+  image: images/projects/emmy-noether-grant.jpg
+  link: https://gepris.dfg.de/gepris/projekt/545261797?language=en
+  description: >
+    DFG-funded junior research group (Project #545261797) investigating anomalous
+    transport effects on topology-changing processes in the Standard Model.
+    Combines classical numerical simulations with quantum computing techniques to
+    study real-time field-theoretic dynamics in 1D and 2D systems. Aims to achieve
+    quantum advantage in simulating early universe evolution and quark-gluon plasma.
   tags:
-    - software
+    - research-program
+
+# CRC-TR 211 Project A02
+- title: "CRC-TR 211: Strong-Interaction Matter"
+  subtitle: "Project A02 [To be filled in]"
+  group: featured
+  image: images/projects/crc-tr211-collaboration.jpg
+  link: https://crc-tr211.org/
+  description: >
+    Collaborative Research Centre (TransRegio) examining strong-interaction matter
+    under extreme conditions from a theoretical perspective. Partners: Bielefeld,
+    Darmstadt, and Frankfurt universities. Combines complex numerical simulations
+    on supercomputers (lattice QCD) with analytical methods to study matter at
+    temperatures and densities present in the early Universe and heavy-ion collisions.
+    [Project A02 specific details to be added by PI]
+  tags:
+    - research-program
+    - collaboration

@@ -7,10 +7,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our group develops computational tools, educational programs, and collaborative
+research initiatives to advance quantum information theory and real-time quantum
+field evolution. All projects support open science and reproducible research in
+theoretical physics and quantum computing.
 
-{% include tags.html tags="publication, resource, website" %}
+{% include tags.html tags="software, education, research-program, collaboration" %}
 
 {% include search-info.html %}
 
