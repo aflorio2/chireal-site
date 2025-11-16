@@ -1,18 +1,16 @@
-# ALPS - Advanced Lectures in Physics in Switzerland
-- title: Advanced Lectures in Physics in Switzerland (ALPS)
-  subtitle: SwissMAP-funded PhD summer school series
+# Emmy Noether Grant
+- title: Emmy Noether Research Group
+  subtitle: "From classical to quantum simulations of chiral anomaly dynamics"
   group: featured
-  image: images/projects/alps-summer-school.jpg
-  link: https://indico.global/event/9618/
+  image: images/projects/emmy-noether-grant.png
+  link: https://gepris.dfg.de/gepris/projekt/545261797?language=en
   description: >
-    A junior school in theoretical physics held annually in the Swiss Alps,
-    designed to foster collaboration among young researchers through lectures
-    bridging different areas of modern theoretical physics. The series focuses
-    on quantum information theory, quantum computing, entanglement in QFT, and
-    holography. Fully funded by SwissMAP with accommodation and meals covered.
+    DFG-funded junior research group investigating anomalous
+    transport effects on topology-changing processes in the Standard Model.
+    Combines classical statistical methods to the study of the real-time quantum
+    dynamics of low-dimensional systems.
   tags:
-    - education
-    - collaboration
+    - research-program
 
 # CosmoLattice Software
 - title: CosmoLattice
@@ -23,41 +21,43 @@
   description: >
     Modern software package for lattice simulations of field dynamics in an
     expanding universe. Supports interacting scalar field theories, Abelian U(1)
-    and non-Abelian SU(2) gauge theories in flat or FLRW backgrounds. Features
-    gravitational wave computation modules and customizable field description
-    language. Actively developed and freely available for research use.
+    and non-Abelian SU(2) gauge theories in an expanding universe, including
+    gravitational waves production. De facto community standard, actively
+    developed and [open source](https://github.com/cosmolattice/cosmolattice).
   repo: cosmolattice/CosmoLattice
   tags:
     - software
 
-# Emmy Noether Grant
-- title: Emmy Noether Research Group
-  subtitle: "From classical to quantum simulations of chiral anomaly dynamics"
-  group: featured
-  image: images/projects/emmy-noether-grant.png
-  link: https://gepris.dfg.de/gepris/projekt/545261797?language=en
-  description: >
-    DFG-funded junior research group (Project #545261797) investigating anomalous
-    transport effects on topology-changing processes in the Standard Model.
-    Combines classical numerical simulations with quantum computing techniques to
-    study real-time field-theoretic dynamics in 1D and 2D systems. Aims to achieve
-    quantum advantage in simulating early universe evolution and quark-gluon plasma.
-  tags:
-    - research-program
-
 # CRC-TR 211 Project A02
 - title: "CRC-TR 211: Strong-Interaction Matter"
-  subtitle: "Project A02 [To be filled in]"
+  subtitle: "Project A02: Lattice QCD at non-vanishing density"
   group: featured
   image: images/projects/crc-tr211-collaboration.png
   link: https://crc-tr211.org/
   description: >
-    Collaborative Research Centre (TransRegio) examining strong-interaction matter
-    under extreme conditions from a theoretical perspective. Partners: Bielefeld,
-    Darmstadt, and Frankfurt universities. Combines complex numerical simulations
-    on supercomputers (lattice QCD) with analytical methods to study matter at
-    temperatures and densities present in the early Universe and heavy-ion collisions.
-    [Project A02 specific details to be added by PI]
+    Collaborative Research Centre (partners: Bielefeld, Darmstadt, Gießen and
+    Frankfurt universities) studying strong-interaction matter under extreme
+    conditions. Project A02 explores the QCD phase diagram using quantum
+    information measures, quantum computations and effective field theories.
   tags:
     - research-program
+    - collaboration
+
+# ALPS - Advanced Lectures in Physics in Switzerland
+- title: Advanced Lectures in Physics in Switzerland (ALPS)
+  subtitle: PhD summer school by juniors for juniors
+  group: featured
+  image: images/projects/alps-summer-school.jpg
+  link: https://indico.global/event/9618/
+  description: >
+    A junior school in theoretical physics held annually in the Swiss Alps,
+    designed to foster collaboration among young researchers through lectures
+    given by rising stars in different areas of modern theoretical physics.
+    Topics include quantum information theory, quantum computing, entanglement
+    in QFT, and holography. The next edition will take place on
+    [17-22 May 2026](https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf).
+    Links to previous editions: [ALPS I](https://indico.global/event/9618/),
+    [ALPS II](https://indico.global/event/9641/).
+  tags:
+    - education
     - collaboration

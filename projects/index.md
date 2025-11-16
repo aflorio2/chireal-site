@@ -7,10 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
 
-Our group develops computational tools, educational programs, and collaborative
-research initiatives to advance quantum information theory and real-time quantum
-field evolution. All projects support open science and reproducible research in
-theoretical physics and quantum computing.
+Our research group contributes to multiple long-term projects spanning
+research and education. Featured below are project highlights with links
+to external resources and collaborations.
 
 {% include tags.html tags="software, education, research-program, collaboration" %}
 
@@ -18,12 +17,6 @@ theoretical physics and quantum computing.
 
 {% include section.html %}
 
-## Featured
-
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+<div class="grid" style="--repeat: 2;">
+{% include list.html component="card" data="projects" %}
+</div>

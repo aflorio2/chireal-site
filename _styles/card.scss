@@ -2,11 +2,11 @@
 ---
 
 .card {
-  display: inline-flex;
+  display: flex;
   justify-content: stretch;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
-  width: 350px;
+  width: 450px;
   max-width: calc(100% - 20px - 20px);
   margin: 20px;
   background: var(--background);
@@ -16,25 +16,35 @@
   vertical-align: top;
 }
 
+/* When cards are in a grid, make them equal height and remove fixed width */
+.grid .card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
 .card[data-style="small"] {
   width: 250px;
 }
 
 .card-image img {
   aspect-ratio: 3 / 2;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
+  background: var(--background);
   // box-shadow: var(--shadow);
 }
 
 .card-text {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   max-width: 100%;
   padding: 20px;
+  flex-grow: 1;
 }
 
 .card-text > * {
