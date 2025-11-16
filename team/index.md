@@ -28,7 +28,7 @@ applying with us to some external funding opportunities such as
 [DFG Walter Benjamin Programme](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin),
 [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship),
 or [Marie Skłodowska-Curie Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships),
-do not hesitate to reach out.
+do not hesitate to reach out. [DAAD](https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/) also offers many opportunities to fund month-long visits.
 
 {%
   include button.html
