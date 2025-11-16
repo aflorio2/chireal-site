@@ -1,0 +1,32 @@
+{% comment %}
+  Rotating news announcements component
+
+  Displays news items from _data/news.yaml in a rotating animation.
+  Shows one item at a time, cycling through them automatically.
+  Respects user's prefers-reduced-motion setting.
+
+  Parameters:
+    limit (optional): Maximum number of news items to display (default: 3)
+{% endcomment %}
+
+{% assign news_limit = include.limit | default: 3 %}
+{% assign news_items = site.data.news | slice: 0, news_limit %}
+
+{% if news_items.size > 0 %}
+<div class="rotating-news-container">
+  <div class="rotating-news">
+    <span class="rotating-news-label">Latest News:</span>
+    <span class="rotating-news-items">
+      {% for item in news_items %}
+        <span class="rotating-news-item">
+          {% if item.link %}
+            <a href="{{ item.link }}">{{ item.text }}</a>
+          {% else %}
+            {{ item.text }}
+          {% endif %}
+        </span>
+      {% endfor %}
+    </span>
+  </div>
+</div>
+{% endif %}
