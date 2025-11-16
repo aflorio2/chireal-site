@@ -30,25 +30,9 @@ applying with us to some external funding opportunities such as
 or [Marie Skłodowska-Curie Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships),
 do not hesitate to reach out.
 
-For inquiries about research collaboration, joining the group, funding applications,
-or general questions, please contact:
-
 {%
   include button.html
   type="email"
   text="aflorio@physik.uni-bielefeld.de"
   link="aflorio@physik.uni-bielefeld.de"
-%}
-
-**Address:**
-Bielefeld University
-Faculty of Physics
-Universitätsstraße 25
-33615 Bielefeld, Germany
-
-{%
-  include button.html
-  type="address"
-  tooltip="Bielefeld University on Google Maps"
-  link="https://www.google.com/maps/place/Bielefeld+University"
 %}
