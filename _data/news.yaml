@@ -1,3 +1,72 @@
+# ============================================================================
+# Homepage News Carousel - News Items
+# ============================================================================
+#
+# This file controls the news announcements that appear in the rotating
+# carousel on the homepage. The carousel auto-rotates every 5 seconds.
+# You can add as many news items as you like - the carousel will display them all.
+#
+# ----------------------------------------------------------------------------
+# HOW TO ADD A NEW NEWS ITEM
+# ----------------------------------------------------------------------------
+#
+# 1. Add the new item at the TOP of the list (above older items)
+# 2. Use this format:
+#
+#    - date: YYYY-MM-DD
+#      text: "Your announcement text here"
+#      link: "https://example.com" or "pagename#anchor"
+#
+# 3. Important formatting rules:
+#    - Indent with 2 spaces (not tabs)
+#    - Put text in quotes "like this"
+#    - Keep text under 100 characters for readability
+#    - Date format must be YYYY-MM-DD (e.g., 2025-11-15)
+#
+# 4. Link options:
+#    - External link: "https://example.com"
+#    - Internal page: "research" or "team"
+#    - Page with anchor: "research#publication-id"
+#    - No link: omit the "link:" line entirely
+#
+# 5. After adding, save the file and rebuild:
+#    bundle exec jekyll build
+#
+# ----------------------------------------------------------------------------
+# HOW TO REMOVE OLD NEWS ITEMS
+# ----------------------------------------------------------------------------
+#
+# 1. Delete the entire item block (all 3 lines: date, text, link)
+# 2. Recommended: Keep 3-5 items for optimal carousel experience
+#    (The carousel works with any number of items)
+# 3. Remove items older than 6 months on the first of each month
+# 4. Save and rebuild: bundle exec jekyll build
+#
+# ----------------------------------------------------------------------------
+# EXAMPLE - Adding a new announcement
+# ----------------------------------------------------------------------------
+#
+# To add a new grant announcement, add this at the TOP:
+#
+# - date: 2025-12-01
+#   text: "New ERC Starting Grant awarded for quantum thermalization research"
+#   link: "https://erc.europa.eu/projects/example"
+#
+# Then optionally delete the oldest item if you want to keep the list short.
+#
+# ----------------------------------------------------------------------------
+# ACCESSIBILITY GUIDELINES
+# ----------------------------------------------------------------------------
+#
+# - Keep text concise (under 100 characters recommended)
+# - Write clear, descriptive link text (avoid "click here")
+# - External links will open in new window automatically
+# - Screen readers will announce: "News item X of 3: [your text]"
+#
+# ============================================================================
+# CURRENT NEWS ITEMS (newest first)
+# ============================================================================
+
 - date: 2025-11-15
   text: "Emmy Noether Grant awarded for investigating anomalous transport on topology-changing processes"
   link: "https://gepris.dfg.de/gepris/projekt/545261797"

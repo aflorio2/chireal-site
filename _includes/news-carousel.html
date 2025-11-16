@@ -1,0 +1,45 @@
+{% comment %}
+  News carousel component
+
+  Displays news items from _data/news.yaml in a horizontal swipe carousel
+  with manual navigation controls (arrows and dots).
+
+  Parameters:
+    limit (optional): Maximum number of news items to display (default: 3)
+    style (optional): Style variant (default: none)
+{% endcomment %}
+
+{% assign news_limit = include.limit | default: 3 %}
+{% assign news_items = site.data.news | slice: 0, news_limit %}
+
+{% if news_items.size > 0 %}
+<div class="news-carousel-wrapper">
+  <h3 class="news-carousel-title">Latest News</h3>
+
+  <div class="swiper news-carousel">
+    <!-- Swiper wrapper -->
+    <div class="swiper-wrapper">
+      {% for item in news_items %}
+        <div class="swiper-slide news-carousel-slide">
+          <div class="news-carousel-content">
+            {% if item.link %}
+              <a href="{{ item.link | relative_url }}" class="news-carousel-link">
+                {{ item.text }}
+              </a>
+            {% else %}
+              <span class="news-carousel-text">{{ item.text }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev news-carousel-prev" aria-label="Previous news item"></div>
+    <div class="swiper-button-next news-carousel-next" aria-label="Next news item"></div>
+
+    <!-- Pagination dots -->
+    <div class="swiper-pagination news-carousel-pagination"></div>
+  </div>
+</div>
+{% endif %}

@@ -80,3 +80,4 @@ exclude:
   - .jekyll-cache/
   - gemfiles/
   - .gitlab-ci.yml
+  - thoughts
