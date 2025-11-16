@@ -20,18 +20,32 @@ high-energy physics.
 
 {% include section.html %}
 
-## Join Our Team
+## {% include icon.html icon="fa-solid fa-user-plus" %}Join Our Team
 
 We are always interested in motivated researchers who want to explore quantum
 field theory and quantum information. If you're interested in joining our group
 as a postdoc, PhD student, or visiting researcher, please get in touch!
 
+### Funding Opportunities
+
+We actively support group members and prospective researchers in applying for
+external funding. If you're interested in joining the group through competitive
+fellowships, we can provide guidance and support for applications to programs
+such as:
+
+- [DFG Walter Benjamin Programme](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin) - for postdoctoral researchers
+- [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship) - for experienced researchers and postdocs
+- [Marie Skłodowska-Curie Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships) - for postdoctoral researchers
+
+If you have ideas for collaborative research and would like to discuss potential
+funding opportunities, don't hesitate to reach out.
+
 {% include section.html %}
 
 ## {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-For inquiries about research collaboration, joining the group, or general questions,
-please contact:
+For inquiries about research collaboration, joining the group, funding applications,
+or general questions, please contact:
 
 {%
   include button.html
