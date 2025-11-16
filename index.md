@@ -1,10 +1,7 @@
 ---
 ---
 
-# Welcome to QuIReal
-
-## Quantum Information and Real-time evolution in field theories
-
+{% capture col1 %}
 We are a theoretical physics research group specializing in the out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.
 
 Our research focuses on:
@@ -20,6 +17,17 @@ Our research focuses on:
   icon="fa-solid fa-arrow-right"
   flip=true
 %}
+{% endcapture %}
+
+{% capture col2 %}
+{%
+  include figure.html
+  image="images/photo.jpg"
+  width="100%"
+%}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 %}
 
 {% include section.html %}
 
