@@ -30,10 +30,6 @@ applying with us to some external funding opportunities such as
 or [Marie Skłodowska-Curie Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships),
 do not hesitate to reach out.
 
-{% include section.html %}
-
-## {% include icon.html icon="fa-regular fa-envelope" %}Contact
-
 For inquiries about research collaboration, joining the group, funding applications,
 or general questions, please contact:
 
