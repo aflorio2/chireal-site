@@ -33,6 +33,6 @@ do not hesitate to reach out.
 {%
   include button.html
   type="email"
-  text="aflorio@physik.uni-bielefeld.de"
-  link="aflorio@physik.uni-bielefeld.de"
+  text="adrien.florio@uni-bielefeld.de"
+  link="adrien.florio@uni-bielefeld.de"
 %}
