@@ -26,8 +26,6 @@ We are always interested in motivated researchers who want to explore quantum
 field theory and quantum information. If you're interested in joining our group
 as a postdoc, PhD student, or visiting researcher, please get in touch!
 
-### Funding Opportunities
-
 We actively support group members and prospective researchers in applying for
 external funding. If you're interested in joining the group through competitive
 fellowships, we can provide guidance and support for applications to programs
