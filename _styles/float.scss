@@ -5,7 +5,8 @@ $wrap: 600px;
 
 .float {
   margin-bottom: 20px;
-  max-width: 50%;
+  max-width: 250px;
+  width: 250px;
 }
 
 .float > * {
@@ -28,11 +29,23 @@ $wrap: 600px;
   margin: 0;
 }
 
+// Filler to extend float height to prevent content wrapping
+.float-filler {
+  height: 200vh; // Very tall to extend to bottom of page
+  width: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media (max-width: $wrap) {
   .float {
     float: unset !important;
     clear: both !important;
     margin: auto !important;
     max-width: unset;
+  }
+
+  .float-filler {
+    display: none; // Hide on mobile when float is disabled
   }
 }

@@ -1,0 +1,151 @@
+---
+---
+
+// Simple CV styling - inspired by aleksas.eu/cv/
+// Two-column layout: dates on left, content on right
+
+// Spacer to clear floats
+.cv-spacer {
+  clear: both;
+  height: 20px;
+}
+
+// CV Entry Container - two-column grid
+.cv-entry {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: left;
+}
+
+// Date (year range, left column)
+.cv-date {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.7;
+  text-align: right;
+  grid-column: 1;
+}
+
+// Position/Degree Title
+.cv-title {
+  display: block;
+  font-weight: var(--bold);
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.1;
+  text-align: left;
+  grid-column: 2;
+}
+
+// Institution/Company
+.cv-institution {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.1;
+  text-align: left;
+  grid-column: 2;
+}
+
+// Details list
+.cv-details {
+  margin: 2px 0 0 20px;
+  padding: 0;
+  list-style-type: disc;
+  text-align: left;
+  grid-column: 2;
+}
+
+.cv-details li {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+// Paragraph content (for awards, etc.)
+.cv-entry p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  grid-column: 2;
+}
+
+// Award/Highlight Entry (uses same grid as cv-entry)
+.cv-award {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.cv-award .cv-title {
+  font-weight: var(--bold);
+  margin-bottom: 0px;
+  grid-column: 2;
+}
+
+.cv-award .cv-date {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.7;
+  text-align: right;
+  grid-column: 1;
+}
+
+.cv-award p {
+  margin: 0px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: left;
+  grid-column: 2;
+}
+
+// Simple list for talks/service
+.cv-list {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.cv-list li {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.cv-list .cv-date {
+  display: inline;
+  margin-right: 10px;
+}
+
+// Responsive adjustments
+@media (max-width: 600px) {
+  .cv-entry,
+  .cv-award {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+
+  .cv-date,
+  .cv-title,
+  .cv-institution,
+  .cv-details,
+  .cv-entry p,
+  .cv-award .cv-date,
+  .cv-award .cv-title,
+  .cv-award p {
+    grid-column: 1;
+  }
+}
