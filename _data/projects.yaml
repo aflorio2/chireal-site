@@ -18,7 +18,7 @@
 - title: CosmoLattice
   subtitle: Lattice simulations of field dynamics in expanding universe
   group: featured
-  image: images/projects/cosmolattice-simulation.jpg
+  image: images/projects/cosmolattice-simulation.png
   link: https://cosmolattice.net
   description: >
     Modern software package for lattice simulations of field dynamics in an
@@ -34,7 +34,7 @@
 - title: Emmy Noether Research Group
   subtitle: "From classical to quantum simulations of chiral anomaly dynamics"
   group: featured
-  image: images/projects/emmy-noether-grant.jpg
+  image: images/projects/emmy-noether-grant.png
   link: https://gepris.dfg.de/gepris/projekt/545261797?language=en
   description: >
     DFG-funded junior research group (Project #545261797) investigating anomalous
@@ -49,7 +49,7 @@
 - title: "CRC-TR 211: Strong-Interaction Matter"
   subtitle: "Project A02 [To be filled in]"
   group: featured
-  image: images/projects/crc-tr211-collaboration.jpg
+  image: images/projects/crc-tr211-collaboration.png
   link: https://crc-tr211.org/
   description: >
     Collaborative Research Centre (TransRegio) examining strong-interaction matter

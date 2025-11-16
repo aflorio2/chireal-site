@@ -24,6 +24,31 @@ high-energy physics.
 
 We are always interested in motivated researchers who want to explore quantum
 field theory and quantum information. If you're interested in joining our group
-as a postdoc, PhD student, or visiting researcher, please contact us via email.
+as a postdoc, PhD student, or visiting researcher, please get in touch!
 
-{% include button.html text="Contact Us" link="contact" icon="fa-solid fa-envelope" %}
+{% include section.html %}
+
+## {% include icon.html icon="fa-regular fa-envelope" %}Contact
+
+For inquiries about research collaboration, joining the group, or general questions,
+please contact:
+
+{%
+  include button.html
+  type="email"
+  text="aflorio@physik.uni-bielefeld.de"
+  link="aflorio@physik.uni-bielefeld.de"
+%}
+
+**Address:**
+Bielefeld University
+Faculty of Physics
+Universitätsstraße 25
+33615 Bielefeld, Germany
+
+{%
+  include button.html
+  type="address"
+  tooltip="Bielefeld University on Google Maps"
+  link="https://www.google.com/maps/place/Bielefeld+University"
+%}
