@@ -14,15 +14,34 @@
 # Featured publications with custom highlight images
 - id: arxiv:2511.01966
   image: images/publications_highlights/asymmetry.png
+  description: >
+    We consider the entanglement asymmetry as a symmetry probe in gauge theories.
+    We compute it analytically in the massless Schwinger model and show it to be
+    parametrically more sensitive to symmetry breaking/restoration than the
+    corresponding local order parameter for the chiral symmetry.
 
 - id: doi:10.1103/sgrx-jpp9
   image: images/publications_highlights/thermalization_quantum_entanglement.png
+  description: >
+    This work demonstrates how quantum entanglement drives thermalization in
+    jet-like excitations within the massive Schwinger model. Using tensor
+    network simulations of real-time evolution, we show that entanglement
+    generation provides a microscopic mechanism for thermalization in this strongly
+    interacting gauge theory.
 
 - id: doi:10.1103/PhysRevD.109.L071501
   image: images/publications_highlights/negativitynew3.png
+  description: >
+    We establish that the two-fermion negativity, a particular measure of
+    multipartite entanglement, detects confinement in the massive Schwinger model.
+    This reinforces the intuition that quantum correlations are sensitive to the
+    confinement/deconfinement transition.
 
 - id: doi:10.21468/SciPostPhys.17.3.085
   image: images/publications_highlights/higher_forms.png
-
-- id: doi:10.1016/j.cpc.2022.108586
-  image: images/publications_highlights/CL_Icon.png
+  description: >
+    Higher-form symmetries can be used to constrain the long-range dynamics of
+    interacting systems. Magneto-hydrodynamics can be derived from the conservation
+    of magnetic lines and chiral transport emerges from the presence of a non-invertible
+    symmetry. We demonstrate the practicality of these ideas in classical-statistical
+    simulations, where we compute the predicted transports from first principles.

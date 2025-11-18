@@ -13,15 +13,13 @@ Our research is at the intersection of quantum information theory and quantum fi
 
 ## Highlighted Publications
 
-{% include citation.html lookup="Thermalization from quantum entanglement" style="rich" %}
+{% include citation.html lookup="Thermalization from quantum entanglement" style="rich" highlighted=true %}
 
-{% include citation.html lookup="Entanglement asymmetry in gauge theories" style="rich" %}
+{% include citation.html lookup="Entanglement asymmetry in gauge theories" style="rich" highlighted=true %}
 
-{% include citation.html lookup="Two-fermion negativity and confinement in the Schwinger model" style="rich" %}
+{% include citation.html lookup="Two-fermion negativity and confinement in the Schwinger model" style="rich" highlighted=true %}
 
-{% include citation.html lookup="Higher-form symmetry and chiral transport in real-time Abelian lattice gauge" style="rich" %}
-
-{% include citation.html lookup="A modern code for lattice simulations of scalar and gauge field dynamics in an expanding universe" style="rich" %}
+{% include citation.html lookup="Higher-form symmetry and chiral transport in real-time Abelian lattice gauge" style="rich" highlighted=true %}
 
 {% include section.html %}
 

@@ -11,25 +11,143 @@
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
-      <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
+      {% comment %}
+        IMAGE DISPLAY LOGIC
+        ===================
+
+        Context-aware image display for publications:
+
+        HIGHLIGHTED PUBLICATIONS (highlighted=true):
+          - Always use citation.image (custom highlight image from sources.yaml)
+          - Example: images/publications_highlights/asymmetry.png
+
+        NORMAL PUBLICATIONS (highlighted=false or not set):
+          1. If citation.image does NOT contain "publications_highlights":
+             → Use citation.image as-is (already correctly assigned by citation generator)
+             → This handles most publications automatically
+
+          2. If citation.image DOES contain "publications_highlights":
+             → This is a featured publication in the "All Publications" section
+             → Need to determine the appropriate "normal" image to show
+
+             a) If citation.id starts with "arxiv:":
+                → Direct arXiv preprint
+                → Use auto-fetched image: images/publications/{arxiv_id}.png
+
+             b) If citation has arXiv preprint button (published paper):
+                → Use journal logo based on publisher mapping (see below)
+
+             c) Otherwise:
+                → Fall back to citation.image
+
+        JOURNAL LOGO MAPPING
+        ====================
+
+        When a featured publication is published (has DOI), map publisher name to journal logo.
+
+        To add a new journal:
+        1. Add journal logo image to site/images/journals/
+           - Recommended formats: PNG, JPG, JPEG
+           - Use descriptive filename (e.g., NaturePhysics.png, JHEP.png)
+
+        2. Find the exact publisher name:
+           - Check _data/citations.yaml for an existing publication in that journal
+           - Look for the "publisher:" field (e.g., "publisher: Physical Review D")
+           - The publisher name must match EXACTLY (case-sensitive)
+
+        3. Add a new elsif block in the publisher mapping below:
+           {% elsif citation.publisher == "Exact Publisher Name" %}
+             {% assign display_image = "images/journals/YourJournalLogo.png" %}
+
+        Current mappings:
+        - "Physical Review D" → images/journals/PRD.jpg
+        - "Physical Review Letters" → images/journals/PRL.jpg
+        - "Physical Review Applied" → images/journals/PRApplied.jpg
+        - "SciPost Physics" → images/journals/logo_scipost_RGB_HTML_groot.png
+        - "Journal of Cosmology and Astroparticle Physics" → images/journals/JCAP.jpeg
+        - "Reports on Progress in Physics" → images/journals/ReptProgPhys.jpg
+        - "Computer Physics Communications" → images/journals/comp_phys_comm.jpg
+
+        EXAMPLE: Adding Nature Physics support
+        ---------------------------------------
+        1. Add site/images/journals/NaturePhysics.png
+        2. Check a Nature Physics citation: "publisher: Nature Physics"
+        3. Add to mapping:
+           {% elsif citation.publisher == "Nature Physics" %}
+             {% assign display_image = "images/journals/NaturePhysics.png" %}
+      {% endcomment %}
+
+      {% assign display_image = nil %}
+
+      {% if include.highlighted %}
+        {% comment %} Highlighted context: use custom image {% endcomment %}
+        {% assign display_image = citation.image %}
+      {% else %}
+        {% comment %} Normal context: determine appropriate image based on publication type {% endcomment %}
+        {% if citation.image contains "publications_highlights" %}
+          {% comment %} This is a featured publication - determine the normal image to show {% endcomment %}
+          {% assign arxiv_link = nil %}
+          {% for button in citation.buttons %}
+            {% if button.type == "preprint" and button.link contains "arxiv.org" %}
+              {% assign arxiv_link = button.link %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
+          {% if citation.id contains "arxiv:" %}
+            {% comment %} Direct arXiv preprint - use auto-fetched image {% endcomment %}
+            {% assign arxiv_id = citation.id | remove: "arxiv:" %}
+            {% assign auto_image = "images/publications/" | append: arxiv_id | append: ".png" %}
+            {% assign display_image = auto_image %}
+          {% elsif arxiv_link %}
+            {% comment %} Published paper with arXiv preprint - use journal logo {% endcomment %}
+            {% if citation.publisher == "Physical Review D" %}
+              {% assign display_image = "images/journals/PRD.jpg" %}
+            {% elsif citation.publisher == "Physical Review Letters" %}
+              {% assign display_image = "images/journals/PRL.jpg" %}
+            {% elsif citation.publisher == "Physical Review Applied" %}
+              {% assign display_image = "images/journals/PRApplied.jpg" %}
+            {% elsif citation.publisher == "SciPost Physics" %}
+              {% assign display_image = "images/journals/logo_scipost_RGB_HTML_groot.png" %}
+            {% elsif citation.publisher == "Journal of Cosmology and Astroparticle Physics" %}
+              {% assign display_image = "images/journals/JCAP.jpeg" %}
+            {% elsif citation.publisher == "Reports on Progress in Physics" %}
+              {% assign display_image = "images/journals/ReptProgPhys.jpg" %}
+            {% elsif citation.publisher == "Computer Physics Communications" %}
+              {% assign display_image = "images/journals/comp_phys_comm.jpg" %}
+            {% else %}
+              {% assign display_image = citation.image %}
+            {% endif %}
+          {% else %}
+            {% assign display_image = citation.image %}
+          {% endif %}
+        {% else %}
+          {% comment %} Not a featured publication - use existing citation.image {% endcomment %}
+          {% assign display_image = citation.image %}
         {% endif %}
-        class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
-      >
-        <img
-          src="{{ citation.image | relative_url | uri_escape }}"
-          alt="{{ citation.title | default: "citation image" | regex_strip }}"
-          loading="lazy"
-          {% include fallback.html %}
+      {% endif %}
+
+      {% if display_image %}
+        <a
+          {% if citation.link %}
+            href="{{ citation.link | relative_url | uri_escape }}"
+          {% endif %}
+          class="citation-image"
+          aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
         >
-      </a>
+          <img
+            src="{{ display_image | relative_url | uri_escape }}"
+            alt="{{ citation.title | default: "citation image" | regex_strip }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        </a>
+      {% endif %}
     {% endif %}
 
     <div class="citation-text">
       {% assign type = site.data.types[citation.type] %}
-      {% include icon.html icon=type.icon %}
+      {% comment %}{% include icon.html icon=type.icon %}{% endcomment %}
 
       <a
         {% if citation.link %}
@@ -74,7 +192,7 @@
       </div>
 
       {% if include.style == "rich" %}
-        {% if citation.description %}
+        {% if include.highlighted and citation.description %}
           <div class="citation-description">
             {{
               citation.description

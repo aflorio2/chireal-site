@@ -27,6 +27,12 @@
   plugin: sources.py
   file: sources.yaml
   image: images/publications_highlights/asymmetry.png
+  description: 'We consider the entanglement asymmetry as a symmetry probe in gauge
+    theories. We compute it analytically in the massless Schwinger model and show
+    it to be parametrically more sensitive to symmetry breaking/restoration than the
+    corresponding local order parameter for the chiral symmetry.
+
+    '
 - id: arxiv:2510.03083
   title: 'To break, or not to break: Symmetries in adaptive quantum simulations, a
     case study on the Schwinger model'
@@ -86,6 +92,13 @@
   plugin: sources.py
   file: sources.yaml
   image: images/publications_highlights/thermalization_quantum_entanglement.png
+  description: 'This work demonstrates how quantum entanglement drives thermalization
+    in jet-like excitations within the massive Schwinger model. Using tensor network
+    simulations of real-time evolution, we show that entanglement generation provides
+    a microscopic mechanism for thermalization in this strongly interacting gauge
+    theory.
+
+    '
 - id: arxiv:2504.03514
   title: Quenching through the QCD chiral phase transition
   authors:
@@ -269,6 +282,12 @@
   plugin: sources.py
   file: sources.yaml
   image: images/publications_highlights/negativitynew3.png
+  description: 'We establish that the two-fermion negativity, a particular measure
+    of multipartite entanglement, detects confinement in the massive Schwinger model.
+    This reinforces the intuition that quantum correlations are sensitive to the confinement/deconfinement
+    transition.
+
+    '
 - id: doi:10.1103/PhysRevD.110.045013
   title: "Mass gaps of a \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:msub><mml:mi mathvariant=\"double-struck\">Z</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:math>\n\
@@ -328,6 +347,13 @@
   plugin: sources.py
   file: sources.yaml
   image: images/publications_highlights/higher_forms.png
+  description: 'Higher-form symmetries can be used to constrain the long-range dynamics
+    of interacting systems. Magneto-hydrodynamics can be derived from the conservation
+    of magnetic lines and chiral transport emerges from the presence of a non-invertible
+    symmetry. We demonstrate the practicality of these ideas in classical-statistical
+    simulations, where we compute the predicted transports from first principles.
+
+    '
 - id: doi:10.1103/PhysRevD.109.054037
   title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>4</mml:mn><mml:mo\
@@ -637,9 +663,9 @@
   - Lattice
   - Phenomenology-HEP
   bai: Adrien.Florio.1
-  plugin: sources.py
-  file: sources.yaml
-  image: images/publications_highlights/CL_Icon.png
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/2102.01031.png
 - id: doi:10.1088/1475-7516/2021/04/035
   title: 'The art of simulating the early universe.
 
