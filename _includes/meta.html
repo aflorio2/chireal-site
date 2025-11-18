@@ -13,7 +13,9 @@
 {% if title and title != "" %}
   {% assign fulltitle = fulltitle | push: title %}
 {% endif %}
-{% if site.title and site.title != "" %}
+{% if site.short_title and site.short_title != "" %}
+  {% assign fulltitle = fulltitle | push: site.short_title %}
+{% elsif site.title and site.title != "" %}
   {% assign fulltitle = fulltitle | push: site.title %}
 {% endif %}
 {% assign fulltitle = fulltitle | join: " | " %}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- White background -->
+  <rect width="200" height="200" fill="white"/>
+
+  <!-- Quantum ket notation |χ⟩ in black -->
+  <g fill="black" font-family="'Computer Modern', 'Latin Modern Math', 'STIX Two Math', Georgia, serif" font-size="90" font-weight="normal">
+    <!-- Left bracket | -->
+    <text x="50" y="125" text-anchor="middle">|</text>
+
+    <!-- Chi symbol χ -->
+    <text x="100" y="130" text-anchor="middle" font-style="italic">χ</text>
+
+    <!-- Right angle bracket ⟩ -->
+    <text x="150" y="125" text-anchor="middle">⟩</text>
+  </g>
+</svg>

@@ -1,9 +1,12 @@
 # site properties and page defaults
-title: QuIReal - Quantum Information and Real-time evolution in QFT
+title: '$\small\left|\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT'
+short_title: 'Quantum Info and Real-time Evolution'  # Short title for browser tabs
 subtitle: Adrien Florio's Emmy Noether group
 description: Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.
 header: images/quantum-background.jpg
+header-dark: true
 footer: images/quantum-background.jpg
+footer-dark: true
 proofer: false
 
 # GitLab Pages configuration

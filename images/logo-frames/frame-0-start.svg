@@ -1,64 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -35 100 70">
-  <style>
-    .particle-1 {
-      animation: straight-line 4s linear infinite;
-      transform-origin: center;
-    }
-    .particle-2 {
-      animation: orbit-2 5s linear infinite;
-      transform-origin: center;
-    }
-    .particle-3 {
-      animation: orbit-3 4.5s linear infinite;
-      transform-origin: center;
-    }
-
-    @keyframes orbit-1 {
-      0% {
-        transform: rotate(0deg) translateX(32px) rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg) translateX(32px) rotate(-360deg);
-      }
-    }
-      @keyframes straight-line {
-    0% {
-      transform: translate(-200px, -60px);
-    }
-    100% {
-      transform: translate(60px, 60px);
-    }
-  }
-
-    @keyframes orbit-2 {
-      0% {
-        transform: rotate(120deg) translateX(28px) rotate(-120deg);
-      }
-      100% {
-        transform: rotate(480deg) translateX(28px) rotate(-480deg);
-      }
-    }
-
-    @keyframes orbit-3 {
-      0% {
-        transform: rotate(240deg) translateX(28px) rotate(-240deg);
-      }
-      100% {
-        transform: rotate(600deg) translateX(28px) rotate(-600deg);
-      }
-    }
-  </style>
-
   <!-- Bra-ket notation | ⟩ -->
   <g fill="#935099" opacity="0.9">
-    <!-- Left bar | -->
     <rect x="-12" y="-12" width="3.5" height="24" rx="1"/>
-
-    <!-- Right angle bracket ⟩ -->
     <path d="M 10,-10.25 L 16,0 L 10,10.25" stroke="#935099" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Central chi symbol (LaTeX Computer Modern) -->
+  <!-- Central chi symbol -->
   <defs>
     <path id='chi-path' d='M5.808219-4.014944C5.917808-4.124533 5.917808-4.144458 5.917808-4.174346C5.917808-4.234122 5.877958-4.293898 5.798257-4.293898C5.738481-4.293898 5.69863-4.244085 5.638854-4.174346L3.35741-1.633873C2.958904-2.899128 2.879203-3.148194 2.650062-3.676214C2.540473-3.905355 2.321295-4.403487 1.444583-4.403487C.86675-4.403487 .607721-3.88543 .607721-3.745953C.607721-3.73599 .607721-3.646326 .727273-3.646326C.816936-3.646326 .836862-3.706102 .856787-3.755915C1.006227-4.144458 1.325031-4.184309 1.384807-4.184309C1.683686-4.184309 1.982565-3.427148 2.15193-2.988792C2.470735-2.201743 2.789539-1.046077 2.789539-1.016189C2.789539-1.006227 2.789539-.986301 2.709838-.9066L.418431 1.653798C.308842 1.763387 .308842 1.783313 .308842 1.8132C.308842 1.872976 .368618 1.932752 .428394 1.932752C.498132 1.932752 .547945 1.863014 .587796 1.823163L2.86924-.737235C3.188045 .298879 3.307597 .687422 3.5467 1.24533C3.676214 1.544209 3.895392 2.042341 4.782067 2.042341C5.3599 2.042341 5.628892 1.524284 5.628892 1.39477C5.628892 1.344956 5.608966 1.285181 5.50934 1.285181S5.399751 1.325031 5.369863 1.424658C5.280199 1.663761 5.031133 1.823163 4.841843 1.823163C4.333748 1.823163 3.656289-.587796 3.437111-1.354919L5.808219-4.014944Z'/>
   </defs>
@@ -66,8 +13,8 @@
     <use href='#chi-path' fill="#D158C0" stroke="#D158C0" stroke-width="0.5"/>
   </g>
 
-  <!-- Orbiting particles -->
-  <circle class="particle-1" cx="0" cy="-35" r="3.5" fill="#00CED1" opacity="0.9"/>
-  <circle class="particle-2" cx="0" cy="-35" r="3.5" fill="#FF8C42" opacity="0.9"/>
-  <circle class="particle-3" cx="-30" cy="0" r="3" fill="#DC143C" opacity="0.8"/>
+  <!-- Particles at 0% (Animation start) -->
+  <circle cx="0" cy="-35" r="3.5" fill="#00CED1" opacity="0.9" transform="translate(-200, -60)"/>
+  <circle cx="0" cy="-35" r="3.5" fill="#FF8C42" opacity="0.9" transform="rotate(120) translate(28, 0) rotate(-120)"/>
+  <circle cx="-30" cy="0" r="3" fill="#DC143C" opacity="0.8" transform="rotate(240) translate(28, 0) rotate(-240)"/>
 </svg>
