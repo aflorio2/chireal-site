@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-The QuIReal group is an Emmy Noether research group at Bielefeld University
+The $\left\lvert\chi\right\rangle$real group is an Emmy Noether research group at Bielefeld University
 dedicated to exploring quantum information and real-time evolution in quantum
 field theory. We combine analytical methods with numerical simulations to
 tackle fundamental questions at the intersection of quantum mechanics and

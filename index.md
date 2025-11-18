@@ -2,13 +2,13 @@
 ---
 
 {% capture col1 %}
-We are a theoretical physics research group specializing in the out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.
+Welcome! We are a theoretical physics research group exploring the dynamics of quantum fields beyond equilibrium. Our work bridges quantum field theory, quantum information, and computational physics to understand how complex quantum systems evolve and behave in real time.
 
-Our research focuses on:
-- Out-of-equilibrium dynamics of quantum fields
-- Quantum information aspects of field theory
-- Real-time simulations of quantum and classical fields
-- Quantum field theory methods and applications
+Our research spans:
+- Non-equilibrium phase transitions and critical phenomena
+- Entanglement dynamics and quantum information measures in field theory
+- Novel numerical methods for real-time quantum and classical field simulations
+- Applications to early universe cosmology and high-energy physics
 
 {%
   include button.html

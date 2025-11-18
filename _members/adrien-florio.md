@@ -1,7 +1,7 @@
 ---
 name: Adrien Florio
 image: images/team/adrien-florio.jpg
-role: pi
+role: principal-investigator
 affiliation: Bielefeld University
 aliases:
   - A. Florio
@@ -15,7 +15,7 @@ links:
   google-scholar: AvWN0nIAAAAJ
 ---
 
-Adrien Florio is the Principal Investigator of the QuIReal (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
+Adrien Florio is the Principal Investigator of the $\left\lvert\chi\right\rangle$real (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
 
 ## Education
 
