@@ -5,6 +5,12 @@
   display: contents;
 }
 
+// Non-clickable portraits (div instead of a)
+div.portrait {
+  cursor: default;
+  pointer-events: none;
+}
+
 .portrait {
   position: relative;
   display: inline-flex;
@@ -58,7 +64,18 @@
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   object-fit: cover;
+  object-position: center center;
   box-shadow: var(--shadow);
+}
+
+// Specific positioning for Vasundhara's image
+.portrait-image[src*="vasundhara-krishnan"] {
+  object-position: center 30%;
+}
+
+// Specific positioning for Florian's image
+.portrait-image[src*="florian-wehmhoener"] {
+  object-position: 25% 20%;
 }
 
 .portrait[data-style="tiny"] .portrait-image {
