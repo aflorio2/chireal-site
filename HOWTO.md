@@ -114,7 +114,7 @@ If port 4000 is already in use, you can specify a different port:
 ## GitHub Repository and Deployment
 
 - **Repository**: https://github.com/aflorio2/chireal-site
-- **GitHub Pages URL**: https://aflorio2.github.io/chireal-site/
+- **Live Site**: https://aflorio.science
 
 ### Deployment Process
 

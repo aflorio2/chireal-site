@@ -9,9 +9,9 @@ footer: images/quantum-background.jpg
 footer-dark: true
 proofer: false
 
-# GitHub Pages configuration
-baseurl: "/chireal-site"
-url: "https://aflorio2.github.io"
+# GitHub Pages configuration (custom domain)
+baseurl: ""
+url: "https://aflorio.science"
 
 # site social media and other links
 links:
