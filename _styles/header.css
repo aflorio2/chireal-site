@@ -40,4 +40,8 @@ header[data-big] .title { font-size: var(--xxl); }
 
 header[data-big] .subtitle { font-size: var(--large); }
 
+@media (max-width: 600px) { header[data-big] { padding: 25px 15px; gap: 10px; } header[data-big] .logo { height: 60px; } header[data-big] .title { font-size: var(--large); } header[data-big] .subtitle { font-size: 1rem; } }
+
+@media (max-width: 600px) { header:not([data-big]) { padding: 10px 15px; gap: 10px; } header:not([data-big]) .logo { height: 50px; } }
+
 /*# sourceMappingURL=header.css.map */

@@ -46,7 +46,7 @@
 
 .news-carousel-pagination :global(.swiper-pagination-bullet):focus { outline: 2px solid var(--primary); outline-offset: 2px; }
 
-@media (max-width: 600px) { .news-carousel-wrapper { margin: 30px 0; padding: 15px 5px; } .news-carousel-title { font-size: 1rem; margin-bottom: 15px; } .news-carousel { padding: 0 40px; } .news-carousel-slide { min-height: 80px; padding: 15px 5px; } .news-carousel-content { font-size: 1rem; padding: 0 15px; } .news-carousel-prev, .news-carousel-next { width: 25px; height: 25px; margin-top: -12.5px; } .news-carousel-prev::after, .news-carousel-next::after { font-size: 14px; } }
+@media (max-width: 600px) { .news-carousel-wrapper { margin: 30px 0; padding: 15px 5px; } .news-carousel-title { font-size: 1rem; margin-bottom: 15px; } .news-carousel { padding: 0 50px; } .news-carousel-slide { min-height: 80px; padding: 15px 0; } .news-carousel-content { font-size: 1rem; padding: 0 30px; } .news-carousel-prev, .news-carousel-next { width: 25px; height: 25px; margin-top: -12.5px; } .news-carousel-prev::after, .news-carousel-next::after { font-size: 14px; } }
 
 @media (prefers-reduced-motion: reduce) { .news-carousel-link, .news-carousel-prev, .news-carousel-next, .news-carousel-pagination :global(.swiper-pagination-bullet) { transition: none; } }
 
