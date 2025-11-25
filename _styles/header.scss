@@ -63,9 +63,9 @@ header a {
   font-size: var(--large);
 }
 
-// Hide title on mobile, show only subtitle
+// Hide title on mobile for inner pages only (not homepage)
 @media (max-width: 600px) {
-  .title {
+  header:not([data-big]) .title {
     display: none !important;
   }
 }
