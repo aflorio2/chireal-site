@@ -52,6 +52,28 @@ cd /Users/aflorio/Documents/GroupWebsite/site
 
 This reads DOIs from `_data/citations.yaml` and generates `_data/citations-output.yaml` with full metadata.
 
+## Adding News to the Homepage Banner
+
+The homepage displays a rotating news carousel with the latest announcements. To add a new news item:
+
+1. Edit `_data/news.yaml`
+2. Add a new entry **at the top** of the file (newest first):
+
+```yaml
+- date: 2025-11-25
+  text: "Your announcement text here"
+  link: "https://example.com"
+```
+
+**Fields:**
+- `date` - Publication date in YYYY-MM-DD format
+- `text` - The announcement text (keep under 100 characters for best display)
+- `link` - Optional URL; external links automatically open in a new tab
+
+The homepage (`index.md`) displays the 3 most recent items. After editing, rebuild the site to see changes.
+
+**Maintenance tip:** Periodically remove news items older than 6 months to keep the carousel relevant.
+
 ## Template Modifications
 
 **Note**: We removed the `jekyll-last-modified-at` plugin from the original Greene Lab template due to Ruby 3.3 compatibility issues. This plugin is non-essential (it auto-generates last-modified dates from git history).

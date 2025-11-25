@@ -67,14 +67,19 @@
 # CURRENT NEWS ITEMS (newest first)
 # ============================================================================
 
-- date: 2025-11-15
-  text: "\"Supercooled Goldstones at the QCD chiral phase transition\" accepted in PRL"
-  link: "https://arxiv.org/abs/2504.03516"
+- date: 2025-11-01
+  text: "🎉 CRC-TR 211 renewed! Adrien as one of the new Project Leaders"
+  link: "https://aktuell.uni-bielefeld.de/2025/11/21/extreme-matter-research-secures-renewal/?lang=en" 
+
+- date: 2025-11-01
+  text: "Upcoming talk: KHuK 2025 meeting"
+  link: "https://indico.gsi.de/event/18729/timetable/#20251212"
 
 - date: 2025-11-10
   text: "New preprint: Entanglement asymmetry in gauge theories"
   link: "https://arxiv.org/abs/2511.01966"
 
-- date: 2025-11-01
-  text: "Upcoming talk: KHuK 2025 meeting"
-  link: "https://indico.gsi.de/event/18729/timetable/#20251212"
+- date: 2025-11-15
+  text: "\"Supercooled Goldstones at the QCD chiral phase transition\" accepted in PRL"
+  link: "https://arxiv.org/abs/2504.03516"
+
