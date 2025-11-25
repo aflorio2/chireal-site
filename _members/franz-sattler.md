@@ -14,25 +14,28 @@ links:
   github: satfra
 ---
 
-Franz Sattler is a postdoctoral researcher in the $\left\lvert\chi\right\rangle$real (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
 
 ## Research Interests
 
-Franz's research focuses on non-perturbative aspects of Quantum Chromodynamics (QCD) using the functional renormalization group (fRG). His work centers on understanding the QCD phase diagram at high densities, which is crucial for upcoming collider experiments such as CBM at FAIR, HADES at GSI, and J-PARC-HI in Japan. He has developed and maintains DiFfRG, a general-purpose C++/Mathematica/Python framework for functional renormalization group calculations that is used in the fQCD collaboration between Heidelberg, Darmstadt, Gießen, Beijing, and Dalian.
+Franz Sattler is a postdoctoral researcher in the $\left\lvert\chi\right\rangle$real (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
 
 His research interests include:
+
+<!-->
+Franz's research on the phase diagram of Quantum Chromodynamics (QCD)utilizes the functional renormalization group (fRG) to explore the high-density regime, which is crucial for upcoming collider experiments such as CBM at FAIR, HADES at GSI, and J-PARC-HI in Japan.
+He has developed and maintains DiFfRG, a general-purpose C++/Mathematica/Python framework for functional renormalization group calculations that is used in the fQCD collaboration between Heidelberg, Darmstadt, Gießen, Beijing, and Dalian.
+</!-->
+
 - Real-time lattice simulations for early-universe cosmology & ultracold atoms 
 - QCD phase diagram and critical endpoint at high densities
-- Diquark and baryon physics using functional methods
 - Color superconductivity and neutron star physics
-- Development of numerical methods for non-perturbative QCD
-- Machine learning applications in theoretical physics, particularly diffusion models and stochastic quantization
+- Systematics of functional Renormalization Group approaches in QFT
 
 ## Education
 
 <div class="cv-entry">
 <span class="cv-date">2021-2025</span>
-<strong class="cv-title">Dr. rer. nat. in Theoretical Physics</strong>
+<strong class="cv-title">Dr. rer. nat. in Physics</strong>
 <span class="cv-institution">Universität Heidelberg, Germany • Supervisor: Prof. Jan Martin Pawlowski</span>
 <p>Thesis: "The Phase Diagram of QCD at high densities"</p>
 </div>
@@ -51,14 +54,22 @@ His research interests include:
 <p>Thesis: "Topological scaling at non-thermal fixed points in relativistic O(N) theories"</p>
 </div>
 
-## Research Experience
+## Teaching & Professional Experience
 
+<div class="cv-entry">
+<span class="cv-date">2025</span>
+<strong class="cv-title">CosmoLattice School (<a href="https://indico.ific.uv.es/event/8110/" target="_blank">2023</a>)</strong>
+<span class="cv-institution">Lecturer on lattice field theory simulations</span>
+</div>
+
+<!-->
 <div class="cv-entry">
 <span class="cv-date">2025-now</span>
 <strong class="cv-title">Postdoc</strong>
 <span class="cv-institution">Bielefeld University, Germany • with Adrien Florio</span>
 <p>Quantum Information & Real-time evolution of QFTs</p>
 </div>
+</!-->
 
 <div class="cv-entry">
 <span class="cv-date">2024</span>
@@ -104,6 +115,6 @@ His research interests include:
 
 <div class="cv-entry">
 <span class="cv-date">2024</span>
-<strong class="cv-title"><a href="https://arxiv.org/abs/2412.13043" target="_blank">TensorBases</a></strong>
+<strong class="cv-title"><a href="https://arxiv.org/abs/2503.05580" target="_blank">TensorBases</a></strong>
 <p>Lead developer of TensorBases, a Matehematica package for the derivation, transformation of tensorial interaction bases in general QFTs, together with automatic definitions of projection operators and vertices.</p>
 </div>
