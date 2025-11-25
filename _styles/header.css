@@ -12,7 +12,7 @@ header a { color: var(--text); text-decoration: none; }
 
 .title { font-size: var(--large); }
 
-@media (max-width: 600px) { .title { display: none !important; } }
+@media (max-width: 600px) { header:not([data-big]) .title { display: none !important; } }
 
 .subtitle { opacity: 0.65; font-weight: var(--thin); }
 
