@@ -208,17 +208,17 @@ $mobile-breakpoint: 600px;
   }
 
   .news-carousel {
-    padding: 0 35px; // Slightly less space for arrows on mobile
+    padding: 0 40px; // Space for arrows on mobile
   }
 
   .news-carousel-slide {
     min-height: 80px;
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 
   .news-carousel-content {
     font-size: 1rem; // Readable on mobile
-    padding: 0 10px;
+    padding: 0 15px; // Extra padding to avoid overlapping arrows
   }
 
   // Smaller arrows on mobile

@@ -24,6 +24,24 @@ body[data-page="index"] {
       padding: 0.5em 1em;
       font-size: 0.9em;
     }
+
+    // Mobile: single column with image first
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr !important;
+
+      // Reorder: image (col2) first, then text (col1)
+      > div:first-child {
+        order: 2;
+      }
+      > div:last-child {
+        order: 1;
+      }
+
+      // Reset figure scale on mobile
+      figure {
+        transform: none;
+      }
+    }
   }
 
   // Reduce section spacing between hero and news

@@ -2,7 +2,7 @@
 ---
 
 $two: 750px;
-$one: 500px;
+$one: 600px;
 
 .grid {
   display: grid;
@@ -31,6 +31,8 @@ $one: 500px;
 @media (max-width: $one) {
   .grid {
     --repeat: 1;
+    // Force single column on mobile, overriding inline styles
+    grid-template-columns: 1fr !important;
   }
 }
 
