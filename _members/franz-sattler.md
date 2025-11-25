@@ -61,15 +61,6 @@ Franz's broader research interests include:
 <span class="cv-institution">Lecturer on lattice field theory simulations</span>
 </div>
 
-<!-->
-<div class="cv-entry">
-<span class="cv-date">2025-now</span>
-<strong class="cv-title">Postdoc</strong>
-<span class="cv-institution">Bielefeld University, Germany • with Adrien Florio</span>
-<p>Quantum Information & Real-time evolution of QFTs</p>
-</div>
-</!-->
-
 <div class="cv-entry">
 <span class="cv-date">2024</span>
 <strong class="cv-title">Research Stay</strong>
