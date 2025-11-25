@@ -1,6 +1,6 @@
 # How to Run the Website Locally
 
-This document explains how to run the QCReaTE group website locally for development and testing.
+This document explains how to run the chireal group website locally for development and testing.
 
 ## Prerequisites
 
@@ -111,29 +111,17 @@ If port 4000 is already in use, you can specify a different port:
 | Process citations | `/Users/aflorio/Library/Python/3.9/bin/manubot process --content-directory=.` |
 | Update gems | `/opt/homebrew/opt/ruby@3.3/bin/bundle install` |
 
-## GitLab Repository and Deployment
+## GitHub Repository and Deployment
 
-- **Repository**: https://gitlab.ub.uni-bielefeld.de/qcreate/QCReaTE-website
-- **GitLab Pages URL**: https://qcreate-website-fa4cbb.pages.ub.uni-bielefeld.de/
-
-### Making GitLab Pages Public or Private
-
-Even though the GitLab repository is in a private group (QCReaTE), you can control whether the GitLab Pages website is publicly accessible:
-
-1. Go to your GitLab project: https://gitlab.ub.uni-bielefeld.de/qcreate/QCReaTE-website
-2. Navigate to **Settings** → **Pages**
-3. Look for the **Pages access control** section
-4. Toggle to make Pages either:
-   - **Public** - Anyone can view the website (repository remains private)
-   - **Private** - Only project members can view the website (requires GitLab login)
-
-**Note**: This allows you to keep the repository private (code, git history) while making the website publicly accessible, or vice versa.
+- **Repository**: https://github.com/aflorio2/chireal-site
+- **GitHub Pages URL**: https://aflorio2.github.io/chireal-site/
 
 ### Deployment Process
 
-Every push to the `main` branch automatically triggers GitLab CI/CD, which:
-1. Builds the Jekyll site using Ruby 3.3
-2. Generates static HTML/CSS/JS files
-3. Deploys to GitLab Pages
+Every push to the `main` branch automatically triggers GitHub Actions, which:
+1. Sets up Ruby 3.3 and Python 3.11
+2. Processes citations using the Python cite script
+3. Builds the Jekyll site
+4. Deploys to GitHub Pages
 
-You can monitor deployments at: https://gitlab.ub.uni-bielefeld.de/qcreate/QCReaTE-website/-/pipelines
+You can monitor deployments at: https://github.com/aflorio2/chireal-site/actions

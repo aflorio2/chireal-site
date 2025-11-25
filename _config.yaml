@@ -9,9 +9,9 @@ footer: images/quantum-background.jpg
 footer-dark: true
 proofer: false
 
-# GitLab Pages configuration
-baseurl: ""
-url: "https://qcreate-website-fa4cbb.pages.ub.uni-bielefeld.de"
+# GitHub Pages configuration
+baseurl: "/chireal-site"
+url: "https://aflorio2.github.io"
 
 # site social media and other links
 links:
@@ -96,5 +96,4 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
-  - .gitlab-ci.yml
   - thoughts
