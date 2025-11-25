@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--
+  put your analytics (e.g. Google Analytics) tracking code here
+-->
+
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Quantum Info and Real-time Evolution</title>
+
+<link rel="icon" href="/chireal-site/images/icon.png">
+
+<meta name="title" content="">
+<meta name="description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+
+<meta property="og:title" content="">
+<meta property="og:site_title" content="$\small\left|\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT">
+<meta property="og:description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+<meta property="og:url" content="https://aflorio2.github.io/chireal-site">
+<meta property="og:image" content="/chireal-site/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="">
+<meta property="twitter:description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+<meta property="twitter:url" content="https://aflorio2.github.io/chireal-site">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="/chireal-site/images/share.jpg">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "",
+    "description": "Adrien Florio&apos;s Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.",
+    "headline": "",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "/chireal-site/images/icon.png" }
+    },
+    "url": "https://aflorio2.github.io/chireal-site"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://aflorio2.github.io/chireal-site/feed.xml">
+
+  <!-- Google Fonts -->
+<!-- automatically get url from fonts used in theme file -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+
+<link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet">
+</noscript>
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/chireal-site/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/cv.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/details.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/member.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/news-carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/chireal-site/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- Swiper.js for news carousel -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/chireal-site/_scripts/anchors.js"></script>
+
+  <script src="/chireal-site/_scripts/dark-mode.js"></script>
+
+  <script src="/chireal-site/_scripts/fetch-tags.js"></script>
+
+  <script src="/chireal-site/_scripts/header-height.js"></script>
+
+  <script src="/chireal-site/_scripts/news-carousel.js"></script>
+
+  <script src="/chireal-site/_scripts/search.js"></script>
+
+  <script src="/chireal-site/_scripts/site-search.js"></script>
+
+  <script src="/chireal-site/_scripts/table-wrap.js"></script>
+
+  <script src="/chireal-site/_scripts/tooltip.js"></script>
+
+
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body data-page="index">
+    
+
+
+
+
+
+
+
+<header class="background" style="--image: url('/chireal-site/images/quantum-background.jpg')" data-dark="true" data-big>
+  <a href="/chireal-site/" class="home">
+    
+      <span class="logo">
+        
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-50 -35 100 70">
+  <style>
+    .particle-1 {
+      animation: straight-line 4s linear infinite;
+      transform-origin: center;
+    }
+    .particle-2 {
+      animation: orbit-2 5s linear infinite;
+      transform-origin: center;
+    }
+    .particle-3 {
+      animation: orbit-3 4.5s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes orbit-1 {
+      0% {
+        transform: rotate(0deg) translateX(32px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(32px) rotate(-360deg);
+      }
+    }
+      @keyframes straight-line {
+    0% {
+      transform: translate(-200px, -60px);
+    }
+    100% {
+      transform: translate(60px, 60px);
+    }
+  }
+
+    @keyframes orbit-2 {
+      0% {
+        transform: rotate(120deg) translateX(28px) rotate(-120deg);
+      }
+      100% {
+        transform: rotate(480deg) translateX(28px) rotate(-480deg);
+      }
+    }
+
+    @keyframes orbit-3 {
+      0% {
+        transform: rotate(240deg) translateX(28px) rotate(-240deg);
+      }
+      100% {
+        transform: rotate(600deg) translateX(28px) rotate(-600deg);
+      }
+    }
+  </style>
+
+  <!-- Bra-ket notation | ⟩ -->
+  <g fill="#935099" opacity="0.9">
+    <!-- Left bar | -->
+    <rect x="-12" y="-12" width="3.5" height="24" rx="1"></rect>
+
+    <!-- Right angle bracket ⟩ -->
+    <path d="M 10,-10.25 L 16,0 L 10,10.25" stroke="#935099" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+
+  <!-- Central chi symbol (LaTeX Computer Modern) -->
+  <defs>
+    <path id="chi-path" d="M5.808219-4.014944C5.917808-4.124533 5.917808-4.144458 5.917808-4.174346C5.917808-4.234122 5.877958-4.293898 5.798257-4.293898C5.738481-4.293898 5.69863-4.244085 5.638854-4.174346L3.35741-1.633873C2.958904-2.899128 2.879203-3.148194 2.650062-3.676214C2.540473-3.905355 2.321295-4.403487 1.444583-4.403487C.86675-4.403487 .607721-3.88543 .607721-3.745953C.607721-3.73599 .607721-3.646326 .727273-3.646326C.816936-3.646326 .836862-3.706102 .856787-3.755915C1.006227-4.144458 1.325031-4.184309 1.384807-4.184309C1.683686-4.184309 1.982565-3.427148 2.15193-2.988792C2.470735-2.201743 2.789539-1.046077 2.789539-1.016189C2.789539-1.006227 2.789539-.986301 2.709838-.9066L.418431 1.653798C.308842 1.763387 .308842 1.783313 .308842 1.8132C.308842 1.872976 .368618 1.932752 .428394 1.932752C.498132 1.932752 .547945 1.863014 .587796 1.823163L2.86924-.737235C3.188045 .298879 3.307597 .687422 3.5467 1.24533C3.676214 1.544209 3.895392 2.042341 4.782067 2.042341C5.3599 2.042341 5.628892 1.524284 5.628892 1.39477C5.628892 1.344956 5.608966 1.285181 5.50934 1.285181S5.399751 1.325031 5.369863 1.424658C5.280199 1.663761 5.031133 1.823163 4.841843 1.823163C4.333748 1.823163 3.656289-.587796 3.437111-1.354919L5.808219-4.014944Z"></path>
+  </defs>
+  <g transform="translate(1, 1) scale(2.2) translate(-3.1, 1.1)">
+    <use href="#chi-path" fill="#D158C0" stroke="#D158C0" stroke-width="0.5"></use>
+  </g>
+
+  <!-- Orbiting particles -->
+  <circle class="particle-1" cx="0" cy="-35" r="3.5" fill="#00CED1" opacity="0.9"></circle>
+  <circle class="particle-2" cx="0" cy="-35" r="3.5" fill="#FF8C42" opacity="0.9"></circle>
+  <circle class="particle-3" cx="-30" cy="0" r="3" fill="#DC143C" opacity="0.8"></circle>
+</svg>
+
+        
+      </span>
+    
+    
+      <span class="title-text" data-tooltip="Home">
+        
+          <span class="title">$\small\left|\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT</span>
+        
+        
+          <span class="subtitle">Adrien Florio's Emmy Noether group</span>
+        
+      </span>
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/chireal-site/research/" data-tooltip="Published works">
+          Research
+        </a>
+      
+    
+      
+        <a href="/chireal-site/projects/" data-tooltip="Software, datasets, and more">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/chireal-site/team/" data-tooltip="About our team">
+          Team
+        </a>
+      
+    
+  </nav>
+</header>
+
+    <main>
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <div class="cols" style="--cols: 3; grid-template-columns: 3fr 2fr;">
+  
+    
+    
+      <div>
+<p>Welcome! We are a theoretical physics group at Bielefeld University. We work on understanding the fundamental forces at play in our universe, and their impact on its evolution since the big-bang. To do so, we use methods and ideas bridging <strong>quantum field theory</strong>, <strong>quantum information</strong>, and <strong>computational physics</strong>. Our work spans</p>
+<ul>
+  <li>Entanglement dynamics and quantum information measures in field theory</li>
+  <li>Non-equilibrium phase transitions and critical phenomena</li>
+  <li>Applications to early universe cosmology and high-energy physics</li>
+</ul>
+</div>
+    
+  
+    
+    
+      <div>
+<figure class="figure">
+  <a href="/chireal-site/team" class="figure-image" aria-label="The left lvert chi right rangle real group">
+    <img src="/chireal-site/images/team/group-photo-optimized.jpg" style="
+        width: 100%;
+        max-height: unset;
+      " alt="The left lvert chi right rangle real group" loading="lazy" onerror="this.src = '/chireal-site/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      The $\left\lvert\chi\right\rangle$real group
+
+    </figcaption>
+  
+</figure>
+
+</div>
+    
+  
+    
+    
+  
+</div>
+
+<!-- Call to Action Buttons -->
+<div class="homepage-cta-buttons">
+  
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="/chireal-site/research" data-style="button" data-flip="" aria-label="fa-solid fa-atom">
+      <i class="icon fa-solid fa-atom"></i>
+      
+        <span>Learn About Our Research</span>
+      
+    </a>
+  </div>
+
+
+  
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="/chireal-site/projects" data-style="button" data-flip="" aria-label="fa-solid fa-diagram-project">
+      <i class="icon fa-solid fa-diagram-project"></i>
+      
+        <span>Discover Our Projects</span>
+      
+    </a>
+  </div>
+
+
+  
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="/chireal-site/team" data-style="button" data-flip="" aria-label="fa-solid fa-users">
+      <i class="icon fa-solid fa-users"></i>
+      
+        <span>Meet Our Team</span>
+      
+    </a>
+  </div>
+
+
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<!-- News Carousel -->
+
+<div class="news-carousel-wrapper">
+  <h3 class="news-carousel-title">Latest News</h3>
+
+  <div class="swiper news-carousel">
+    <!-- Swiper wrapper -->
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide news-carousel-slide">
+          <div class="news-carousel-content">
+            
+              <a href="https://aktuell.uni-bielefeld.de/2025/11/21/extreme-matter-research-secures-renewal/?lang=en" class="news-carousel-link">
+                🎉 CRC-TR 211 renewed! Adrien as one of the new Project Leaders
+              </a>
+            
+          </div>
+        </div>
+      
+        <div class="swiper-slide news-carousel-slide">
+          <div class="news-carousel-content">
+            
+              <a href="https://indico.gsi.de/event/18729/timetable/#20251212" class="news-carousel-link">
+                Upcoming talk: KHuK 2025 meeting
+              </a>
+            
+          </div>
+        </div>
+      
+        <div class="swiper-slide news-carousel-slide">
+          <div class="news-carousel-content">
+            
+              <a href="https://arxiv.org/abs/2511.01966" class="news-carousel-link">
+                New preprint: Entanglement asymmetry in gauge theories
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev news-carousel-prev" aria-label="Previous news item"></div>
+    <div class="swiper-button-next news-carousel-next" aria-label="Next news item"></div>
+
+    <!-- Pagination dots -->
+    <div class="swiper-pagination news-carousel-pagination"></div>
+  </div>
+</div>
+  </section>
+
+
+    </main>
+    
+
+
+<footer class="background" style="--image: url('/chireal-site/images/quantum-background.jpg')" data-dark="true" data-size="wide">
+  <!-- Left Logo Section -->
+  <div class="footer-logos footer-logos-left">
+    
+      
+        <a href="https://www.uni-bielefeld.de/fakultaeten/physik/" class="footer-logo-link" aria-label="Bielefeld University" target="_blank" rel="noopener">
+          <img src="/chireal-site/images/footer/uni-bielefeld.png" alt="Bielefeld University" class="footer-logo-image" loading="lazy" onerror="this.src = '/chireal-site/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+    
+  </div>
+
+  <!-- Center Content Section (existing content) -->
+  <div class="footer-center">
+    <div class="footer-links">
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="mailto:adrien.florio@uni-bielefeld.de" data-tooltip="Email" data-style="bare" aria-label="Email" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-envelope"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0002-7276-4515" data-tooltip="ORCID" data-style="bare" aria-label="ORCID" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=AvWN0nIAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://inspirehep.net/authors/1844184" data-tooltip="INSPIRE-HEP" data-style="bare" aria-label="INSPIRE-HEP" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-graduation-cap"></i>
+      
+    </a>
+  </div>
+
+
+      
+    </div>
+
+    <div class="footer-text">
+      © 2025
+        |   Built with
+      <a href="https://github.com/greenelab/lab-website-template">
+        Lab Website Template
+      </a>
+    </div>
+
+    <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  </div>
+
+  <!-- Right Logo Section -->
+  <div class="footer-logos footer-logos-right">
+    
+      
+        <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether" class="footer-logo-link" aria-label="Emmy Noether Research Group - DFG" target="_blank" rel="noopener">
+          <img src="/chireal-site/images/projects/emmy-noether-grant.png" alt="Emmy Noether Research Group - DFG" class="footer-logo-image" loading="lazy" onerror="this.src = '/chireal-site/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+        <a href="https://crc-tr211.org/" class="footer-logo-link" aria-label="CRC-TR 211 Strong-Interaction Matter" target="_blank" rel="noopener">
+          <img src="/chireal-site/images/projects/crc-tr211-collaboration.png" alt="CRC-TR 211 Strong-Interaction Matter" class="footer-logo-image" loading="lazy" onerror="this.src = '/chireal-site/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+    
+  </div>
+</footer>
+
+  </body>
+</html>

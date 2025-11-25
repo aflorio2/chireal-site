@@ -1,0 +1,31 @@
+.tags { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px; max-width: 100%; margin: 20px 0; }
+
+.tag { max-width: 100%; margin: 0; padding: 5px 10px; border-radius: 999px; background: var(--secondary); color: white; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: background var(--transition), color var(--transition), transform var(--transition); font-weight: 500; }
+
+.tag:hover { transform: translateY(-2px); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+
+.tag[data-active] { box-shadow: 0 0 0 2px var(--primary); }
+
+a.tag[href*="theory-hep"] { background: #6366f1; }
+
+a.tag[href*="theory-nucl"] { background: #8b5cf6; }
+
+a.tag[href*="phenomenology-hep"] { background: #f59e0b; }
+
+a.tag[href*="experiment-hep"] { background: #ef4444; }
+
+a.tag[href*="experiment-nucl"] { background: #dc2626; }
+
+a.tag[href*="lattice"] { background: #10b981; }
+
+a.tag[href*="quantum-physics"] { background: #06b6d4; }
+
+a.tag[href*="condensed-matter"] { background: #ec4899; }
+
+a.tag[href*="gravitation-and-cosmology"] { background: #1e40af; }
+
+a.tag[href*="astrophysics"] { background: #1e3a8a; }
+
+a.tag[href*="general-physics"] { background: #6b7280; }
+
+/*# sourceMappingURL=tags.css.map */

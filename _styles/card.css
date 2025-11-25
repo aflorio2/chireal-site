@@ -1,0 +1,18 @@
+.card { display: flex; justify-content: stretch; align-items: stretch; flex-direction: column; width: 450px; max-width: calc(100% - 20px - 20px); margin: 20px; background: var(--background); border-radius: var(--rounded); overflow: hidden; box-shadow: var(--shadow); vertical-align: top; }
+
+/* When cards are in a grid, make them equal height and remove fixed width */
+.grid .card { width: 100%; max-width: 100%; margin: 0; height: 100%; }
+
+.card[data-style="small"] { width: 250px; }
+
+.card-image img { aspect-ratio: 3 / 2; object-fit: contain; width: 100%; background: var(--background); }
+
+.card-text { display: flex; justify-content: flex-start; align-items: center; flex-direction: column; gap: 20px; max-width: 100%; padding: 20px; flex-grow: 1; }
+
+.card-text > * { margin: 0 !important; }
+
+.card-title { font-family: var(--heading); font-weight: var(--semi-bold); }
+
+.card-subtitle { margin-top: -10px !important; font-style: italic; }
+
+/*# sourceMappingURL=card.css.map */
