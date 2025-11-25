@@ -19,17 +19,16 @@ links:
 
 Franz Sattler is a postdoctoral researcher in the $\left\lvert\chi\right\rangle$real (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
 
-His research interests include:
+Franz's research on the phase diagram of Quantum Chromodynamics (QCD) utilizes the functional renormalization group (fRG) to explore the high-density regime, which is crucial for upcoming collider experiments such as CBM at FAIR, HADES at GSI, and J-PARC-HI in Japan. 
+Franz is a member of the <a href="https://fqcd-collaboration.github.io/">fQCD-Collaboration</a>.
 
-<!-->
-Franz's research on the phase diagram of Quantum Chromodynamics (QCD)utilizes the functional renormalization group (fRG) to explore the high-density regime, which is crucial for upcoming collider experiments such as CBM at FAIR, HADES at GSI, and J-PARC-HI in Japan.
-He has developed and maintains DiFfRG, a general-purpose C++/Mathematica/Python framework for functional renormalization group calculations that is used in the fQCD collaboration between Heidelberg, Darmstadt, Gießen, Beijing, and Dalian.
-</!-->
+Franz's broader research interests include:
 
-- Real-time lattice simulations for early-universe cosmology & ultracold atoms 
-- QCD phase diagram and critical endpoint at high densities
-- Color superconductivity and neutron star physics
-- Systematics of functional Renormalization Group approaches in QFT
+- Real-time lattice simulations for early-universe cosmology & ultracold atoms.
+- Simulation of real-time quantum systems using tensor networks.
+- QCD phase diagram and critical endpoint at high densities.
+- Color superconductivity and neutron star physics.
+- Systematics of functional Renormalization Group approaches in QFT.
 
 ## Education
 
@@ -110,7 +109,9 @@ He has developed and maintains DiFfRG, a general-purpose C++/Mathematica/Python 
 <div class="cv-entry">
 <span class="cv-date">2024</span>
 <strong class="cv-title"><a href="https://arxiv.org/abs/2412.13043" target="_blank">DiFfRG</a></strong>
-<p>Lead developer of DiFfRG (Discretisation Framework for functional Renormalization Group flows), a general-purpose open-source framework for fRG calculations used in the international fQCD collaboration. The framework supports automatic diagram derivation and numerical evaluation of flows as PDEs for complex multi-sector systems.</p>
+<p>Lead developer of DiFfRG (Discretisation Framework for functional Renormalization Group flows), a general-purpose open-source framework in C++/Mathematica/Python for fRG calculations that is used in the fQCD collaboration between Heidelberg, Darmstadt, Gießen, Beijing, and Dalian.
+
+The framework supports automatic diagram derivation and numerical evaluation of flows as PDEs for complex multi-sector systems.</p>
 </div>
 
 <div class="cv-entry">
