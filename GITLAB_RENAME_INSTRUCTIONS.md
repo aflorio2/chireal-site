@@ -168,4 +168,4 @@ If you encounter any issues, check:
 ---
 
 **Document Created:** 2025-11-09
-**Related Commit:** a5d921b - "Rebrand to QuIReal - Quantum Information and Real-time evolution in QFT"
+**Related Commit:** a5d921b - "Rebrand to $\left\lvert\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT"

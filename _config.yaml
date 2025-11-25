@@ -20,6 +20,20 @@ links:
   google-scholar: AvWN0nIAAAAJ
   inspirehep: https://inspirehep.net/authors/1844184
 
+# Footer logo configuration
+footer-logos:
+  left:
+    - image: images/footer/uni-bielefeld.png
+      link: https://www.uni-bielefeld.de/fakultaeten/physik/
+      alt: Bielefeld University
+  right:
+    - image: images/projects/emmy-noether-grant.png
+      link: https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether
+      alt: Emmy Noether Research Group - DFG
+    - image: images/projects/crc-tr211-collaboration.png
+      link: https://crc-tr211.org/
+      alt: CRC-TR 211 Strong-Interaction Matter
+
 ### jekyll settings
 
 # front matter defaults

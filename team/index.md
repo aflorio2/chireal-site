@@ -6,23 +6,18 @@ nav:
 ---
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
-
-The $\left\lvert\chi\right\rangle$real group is an Emmy Noether research group at Bielefeld University
-dedicated to exploring quantum information and real-time evolution in quantum
-field theory. We combine analytical methods with numerical simulations to
-tackle fundamental questions at the intersection of quantum mechanics and
-high-energy physics.
-
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
+## Current
+
+{% include list.html data="members" component="portrait" filter="role == 'group-leader'" %}
 {% include list.html data="members" component="portrait" filter="role == 'postdoc'" %}
 {% include list.html data="members" component="portrait" filter="role == 'phd'" %}
 {% include list.html data="members" component="portrait" filter="role == 'bachelor'" %}
 
 {% include section.html %}
 
-## {% include icon.html icon="fa-solid fa-user-plus" %}Join Our Team
+## {% include icon.html icon="fa-solid fa-user-plus" %}Join us!
 
 We are always interested in motivated researchers who want to explore quantum
 field theory and quantum information. In particular, if you are interested in

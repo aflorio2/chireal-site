@@ -1,6 +1,17 @@
+{% if include.ratio %}
+<div class="cols" style="--cols: {{ include | object_items | size }}; grid-template-columns: {{ include.ratio }};">
+  {% for param in include %}
+    {% assign key = param[0] %}
+    {% unless key == "ratio" %}
+      <div>{{ include[key] | markdownify }}</div>
+    {% endunless %}
+  {% endfor %}
+</div>
+{% else %}
 <div class="cols" style="--cols: {{ include | object_items | size }}">
   {% for param in include %}
     {% assign key = param[0] %}
     <div>{{ include[key] | markdownify }}</div>
   {% endfor %}
 </div>
+{% endif %}

@@ -1036,29 +1036,40 @@ git push origin main
 #### Automated Verification:
 - [x] Team photos added: `ls site/images/team/*.jpg | wc -l` shows correct count (3 members)
 - [x] Team YAML updated: `grep "name:" site/_data/members.yaml | wc -l` shows all members (3 members)
-- [ ] Citations YAML has DOIs: `grep "doi:" site/_data/citations.yaml | wc -l` ≥ 3
-- [ ] Manubot processed: `test -f site/_data/citations-output.yaml` exists
-- [ ] Projects YAML updated: `grep "title:" site/_data/projects.yaml | wc -l` ≥ 2
-- [ ] Blog post created: `ls site/_posts/*.md | wc -l` ≥ 1
+- [x] Citations system configured: INSPIRE-HEP plugin + Manubot for metadata enrichment
+- [x] Publications auto-fetched: 27 publications from INSPIRE-HEP (author BAI: Adrien.Florio.1)
+- [x] Projects YAML updated: 4 featured projects (Emmy Noether, CosmoLattice, CRC-TR 211, ALPS)
+- [x] Publication images added: Custom highlight images in sources.yaml for 5 featured papers
+- [x] Blog functionality: Template blog posts remain but not actively used for this site
 - [x] Local build succeeds: `cd site && bundle exec jekyll build` completes
-- [ ] Git changes committed: `cd site && git log -1 --oneline` shows content commit
-- [ ] GitLab pipeline passes: Latest pipeline shows green checkmark
+- [x] Git changes committed: Multiple commits show content additions
+- [x] GitLab pipeline passes: Site deployed successfully
+
+#### Remaining Tasks:
+- [ ] **Write research highlights descriptions**: Add narrative text for featured publications explaining their significance and key findings
 
 #### Manual Verification:
-- [ ] Local team page shows all members with correct photos
-- [ ] All team member links work (email, ORCID, Google Scholar)
-- [ ] Publications page displays 3+ papers with complete metadata
-- [ ] Publication metadata looks correct (titles, authors, journals, dates)
-- [ ] arXiv/PDF buttons work on publications
-- [ ] Projects page shows research descriptions with images
-- [ ] Project images load properly
-- [ ] Blog page shows welcome post
-- [ ] Blog post displays with correct date and formatting
-- [ ] Deployed site (GitLab Pages) shows all new content
-- [ ] No broken images or 404 errors on deployed site
-- [ ] Mobile view displays content correctly
+- [x] Local team page shows all members with correct photos
+- [x] All team member links work (email, ORCID, Google Scholar)
+- [x] Publications page displays 27 papers with complete metadata
+- [x] Publication metadata correct (titles, authors, journals, dates from INSPIRE-HEP)
+- [x] arXiv/INSPIRE-HEP buttons work on publications
+- [x] Projects page shows 4 research descriptions with images
+- [x] Project images load properly
+- [x] Blog page not used (template posts remain but not actively maintained)
+- [x] Deployed site (GitLab Pages) shows all content
+- [x] Publication highlight images display correctly for featured papers
+- [ ] Research highlights need written descriptions explaining scientific significance
+- [x] Mobile view displays content correctly
 
-**Implementation Note**: This is the most content-heavy phase. After automated verification, thoroughly review the local site to ensure all content displays correctly. Test all links (ORCID, Google Scholar, arXiv, email) to verify they work. Check that Manubot correctly fetched publication metadata - if any citations look wrong, verify the DOI and re-run Manubot. Only proceed to Phase 6 after confirming all content is accurate and displays properly on both local and deployed sites.
+**Implementation Note**: Phase 5 is essentially complete. The site uses cite.py with multiple plugins: INSPIRE-HEP plugin auto-fetches publications using author BAI, then Manubot enriches metadata. Custom highlight images added via sources.yaml for featured publications. The main remaining task is writing narrative descriptions for the research highlights section.
+
+**Key Differences from Original Plan**:
+- ✅ **Citation Management**: Uses cite.py orchestration script with INSPIRE-HEP plugin + Manubot (not manual Manubot)
+- ✅ **Blog**: Template includes blog but group doesn't actively use it (example posts remain)
+- ✅ **Projects**: 4 high-quality featured projects added
+- ✅ **Publication Images**: Highlight images created for 5 featured publications
+- ⚠️ **Research Highlights**: Need narrative descriptions explaining significance of featured publications
 
 ---
 

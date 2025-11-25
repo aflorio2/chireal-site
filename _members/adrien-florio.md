@@ -1,7 +1,7 @@
 ---
 name: Adrien Florio
 image: images/team/adrien-florio.jpg
-role: principal-investigator
+role: group-leader
 affiliation: Bielefeld University
 aliases:
   - A. Florio
@@ -15,7 +15,7 @@ links:
   google-scholar: AvWN0nIAAAAJ
 ---
 
-Adrien Florio is the Principal Investigator of the $\left\lvert\chi\right\rangle$real (Quantum Information and Real-time evolution in QFT) Emmy Noether research group at Bielefeld University.
+Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Emmy Noether** research group at **Bielefeld University** and **Project Leader** in the Collaborative Research Center-Transregio **CRC-TR 211** (Project A02).
 
 ## Education
 
@@ -33,8 +33,15 @@ Adrien Florio is the Principal Investigator of the $\left\lvert\chi\right\rangle
 
 ## Professional Experience
 
+
 <div class="cv-entry">
-<span class="cv-date">2025-present</span>
+<span class="cv-date">2026-</span>
+<strong class="cv-title">Project Leader </strong>
+<span class="cv-institution">Project A02 of <a href="https://crc-tr211.org" target="_blank">Collaborative Research Center-Transregio 211</a></span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2025-</span>
 <strong class="cv-title">Emmy Noether Junior Group Leader</strong>
 <span class="cv-institution">Bielefeld University, Germany</span>
 </div>

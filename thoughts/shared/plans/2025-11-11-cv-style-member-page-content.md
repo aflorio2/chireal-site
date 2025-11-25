@@ -101,8 +101,12 @@ Each phase builds incrementally and is testable before proceeding.
 
 ## Phase 1: Create Custom CSS for CV Timeline Styling
 
+**Status**: Completed with styling adjustments in progress
+
 ### Overview
-Add custom CSS styling for timeline-style CV entries with date badges, position titles, and clean visual hierarchy. This creates a professional, scannable layout similar to repond.ch while maintaining Jekyll's existing architecture.
+Add custom CSS styling for timeline-style CV entries with date badges, position titles, and clean visual hierarchy. This creates a professional, scannable layout similar to aleksas.eu/cv/ with a two-column grid layout (dates left, content right) while maintaining Jekyll's existing architecture.
+
+**Note**: Initial implementation used fancy styling (colored dates, background boxes). Simplified to match reference site with clean two-column grid layout. Portrait column width set to 250px to align with CV date column.
 
 ### Changes Required:
 
@@ -276,16 +280,24 @@ Add custom CSS styling for timeline-style CV entries with date badges, position 
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] CV styles file exists: `test -f _styles/cv.scss`
-- [ ] CV styles imported in main.scss: `grep -q "cv" _styles/main.scss`
-- [ ] Site builds without SCSS errors: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
-- [ ] No broken CSS: Check build output for SCSS compilation errors
+- [x] CV styles file exists: `test -f _styles/cv.scss`
+- [x] CV styles imported in main.scss: Jekyll auto-includes all _styles/*.scss files
+- [x] Site builds without SCSS errors: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
+- [x] No broken CSS: Check build output for SCSS compilation errors
 
 #### Manual Verification:
-- [ ] Local build completes successfully
-- [ ] No console errors when viewing site in browser
-- [ ] CSS file is generated in `_site/main.css`
-- [ ] Opening any member page shows no styling regressions
+- [x] Local build completes successfully
+- [x] No console errors when viewing site in browser
+- [x] CSS file is generated in `_site/_styles/cv.css`
+- [x] Two-column grid layout working (250px date column, content in right column)
+- [x] Dates right-aligned within their column
+- [x] Portrait column (250px) extends with dates below links
+
+**Styling Notes**:
+- Grid layout: `grid-template-columns: 250px 1fr; gap: 40px`
+- Portrait float width matched to date column: 250px
+- Dates right-aligned for clean visual separation
+- All content uses `grid-column: 2` to stay in right column
 
 **Implementation Note**: After automated checks pass, verify that the site still builds and displays correctly. The CSS won't be visible yet since we haven't applied the classes, but this ensures no syntax errors. Only proceed to Phase 2 after confirming the build succeeds.
 
@@ -356,12 +368,12 @@ links:
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] ORCID updated: `grep "0000-0002-7276-4515" _members/adrien-florio.md`
-- [ ] Homepage updated: `grep "cosmolattice.net" _members/adrien-florio.md`
-- [ ] INSPIRE-HEP added: `grep "inspirehep" _members/adrien-florio.md`
-- [ ] Google Scholar added: `grep "google-scholar" _members/adrien-florio.md`
-- [ ] Site builds: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
-- [ ] No YAML errors: Check build output for parsing errors
+- [x] ORCID updated: `grep "0000-0002-7276-4515" _members/adrien-florio.md`
+- [x] Homepage updated: `grep "cosmolattice.net" _members/adrien-florio.md`
+- [x] INSPIRE-HEP added: `grep "inspirehep" _members/adrien-florio.md`
+- [x] Google Scholar added: `grep "google-scholar" _members/adrien-florio.md`
+- [x] Site builds: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
+- [x] No YAML errors: Check build output for parsing errors
 
 #### Manual Verification:
 - [ ] Local site builds without errors
@@ -482,11 +494,11 @@ Add concise Education and Professional Experience sections using custom CV styli
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Education section exists: `grep -q "## Education" _members/adrien-florio.md`
-- [ ] Professional Experience section exists: `grep -q "## Professional Experience" _members/adrien-florio.md`
-- [ ] CV styling classes used: `grep -q "cv-entry" _members/adrien-florio.md`
-- [ ] All 5 degrees listed: `grep -c "cv-title" _members/adrien-florio.md` returns at least 8 (5 education + 3 positions)
-- [ ] Site builds successfully: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
+- [x] Education section exists: `grep -q "## Education" _members/adrien-florio.md`
+- [x] Professional Experience section exists: `grep -q "## Professional Experience" _members/adrien-florio.md`
+- [x] CV styling classes used: `grep -q "cv-entry" _members/adrien-florio.md`
+- [x] All 5 degrees listed: `grep -c "cv-title" _members/adrien-florio.md` returns at least 8 (5 education + 3 positions)
+- [x] Site builds successfully: `cd /Users/aflorio/Documents/GroupWebsite/site && bundle exec jekyll build`
 
 #### Manual Verification:
 - [ ] Navigate to http://localhost:4000/team/adrien-florio/
