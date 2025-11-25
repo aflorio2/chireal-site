@@ -63,6 +63,13 @@ header a {
   font-size: var(--large);
 }
 
+// Hide title on mobile, show only subtitle
+@media (max-width: 600px) {
+  .title {
+    display: none !important;
+  }
+}
+
 .subtitle {
   opacity: 0.65;
   font-weight: var(--thin);

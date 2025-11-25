@@ -221,7 +221,7 @@ $mobile-breakpoint: 600px;
     padding: 0 30px; // Extra padding to avoid overlapping arrows
   }
 
-  // Smaller arrows on mobile
+  // Smaller arrows on mobile, positioned further out
   .news-carousel-prev,
   .news-carousel-next {
     width: 25px;
@@ -231,6 +231,14 @@ $mobile-breakpoint: 600px;
     &::after {
       font-size: 14px;
     }
+  }
+
+  .news-carousel-prev {
+    left: -10px;
+  }
+
+  .news-carousel-next {
+    right: -10px;
   }
 }
 
