@@ -166,4 +166,34 @@ header[data-big] {
   .subtitle {
     font-size: var(--large);
   }
+
+  // Compact header on mobile
+  @media (max-width: 600px) {
+    padding: 25px 15px;
+    gap: 10px;
+
+    .logo {
+      height: 60px;
+    }
+
+    .title {
+      font-size: var(--large);
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Compact regular header on mobile
+@media (max-width: 600px) {
+  header:not([data-big]) {
+    padding: 10px 15px;
+    gap: 10px;
+
+    .logo {
+      height: 50px;
+    }
+  }
 }
