@@ -55,7 +55,8 @@
   file: inspire-hep.yaml
   image: images/publications/2601.02331.png
 - id: arxiv:2512.15627
-  title: The art of simulating the early Universe. Part II
+  title: The art of simulating the early Universe. Part II. Non-canonical cases &
+    gravitational waves
   authors:
   - Jorge Baeza-Ballesteros
   - Daniel G. Figueroa
@@ -68,7 +69,7 @@
   - "Francisco Torrent\xC3\xAD"
   - Ander Urio
   publisher: arXiv
-  date: '2025-12-18'
+  date: '2026-01-21'
   link: https://arxiv.org/abs/2512.15627
   buttons:
   - type: preprint
