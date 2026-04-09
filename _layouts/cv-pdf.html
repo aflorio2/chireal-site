@@ -216,6 +216,13 @@
       column-gap: 24px;
     }
 
+    .cv-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+      row-gap: 4px;
+    }
+
     .cv-multicol .cv-entry,
     .cv-education-multicol .cv-entry,
     .cv-supervision-multicol .cv-entry {
@@ -262,8 +269,12 @@
 
     .cv-talk-entry {
       font-size: 10pt;
-      margin: 0 0 2px 0;
+      margin: 0;
+      padding: 2px 4px;
       line-height: 1.35;
+    }
+    .cv-talk-entry:nth-child(even) {
+      background: #f0f0f4;
     }
 
     .cv-talk-type {
@@ -288,7 +299,7 @@
     .cv-talks-legend {
       font-size: 8.5pt;
       color: var(--text-muted);
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
     .cv-talks-legend .cv-talk-type { font-size: 7pt; }
 
@@ -436,8 +447,6 @@
 
   <!-- Professional Services -->
   <h2 class="cv-pdf-section">Professional Services</h2>
-  <div class="cv-multicol">
-
   <h3 class="cv-pdf-subsection">Advisory Committees</h3>
   {% for item in site.data.cv.professional_services.advisory_committees %}
   <div class="cv-entry">
@@ -446,6 +455,8 @@
     <span class="cv-institution">{{ item.institution }}, {{ item.location }}</span>
   </div>
   {% endfor %}
+
+  <div class="cv-multicol">
 
   <h3 class="cv-pdf-subsection">Organizing Committees</h3>
   {% for item in site.data.cv.professional_services.organizing_committees %}
