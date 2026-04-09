@@ -149,3 +149,36 @@
     grid-column: 1;
   }
 }
+
+// ===== Print styles =====
+@media print {
+  @page {
+    size: a4 portrait;
+    margin: 2cm 2.5cm;
+  }
+
+  body {
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #333;
+  }
+
+  .cv-entry,
+  .cv-award {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+// Hidden by default, shown only in print
+.print-only {
+  display: none;
+}
