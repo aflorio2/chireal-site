@@ -13,15 +13,21 @@
     /* ===== Page setup ===== */
     @page {
       size: a4 portrait;
-      margin: 2cm 2.5cm;
+      margin: 2cm 2.375cm;
       @bottom-left {
         content: "Adrien Florio — CV";
         font-family: "Cabin", "Helvetica Neue", sans-serif;
         font-size: 10pt;
         color: #1a3a5f;
       }
+      @bottom-center {
+        content: "aflorio.science";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
       @bottom-right {
-        content: counter(page);
+        content: counter(page) "/" counter(pages);
         font-family: "Cabin", "Helvetica Neue", sans-serif;
         font-size: 10pt;
         color: #1a3a5f;
@@ -262,10 +268,29 @@
 
     .cv-talk-type {
       display: inline-block;
-      font-style: italic;
-      color: var(--text-muted);
-      min-width: 80px;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-align: center;
+      min-width: 14px;
+      padding: 0 4px;
+      margin-right: 4px;
+      border-radius: 3px;
+      color: #fff;
+      vertical-align: middle;
     }
+    .cv-talk-type-P  { background: #c0392b; } /* Plenary */
+    .cv-talk-type-I  { background: #2980b9; } /* Invited */
+    .cv-talk-type-Co { background: #8e44ad; } /* Colloquium */
+    .cv-talk-type-S  { background: #27ae60; } /* Seminar / HET Seminar / Lattice Seminar */
+    .cv-talk-type-Cf { background: #e67e22; } /* Conference */
+    .cv-talk-type-J  { background: #16a085; } /* Journal club */
+
+    .cv-talks-legend {
+      font-size: 8.5pt;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .cv-talks-legend .cv-talk-type { font-size: 7pt; }
 
     /* ===== Grade indicators (CSS circles) ===== */
     .cv-grade {
@@ -314,9 +339,8 @@
 
     /* ===== Footer links ===== */
     .cv-pdf-footer {
-      margin-top: 16px;
-      padding-top: 8px;
-      border-top: 1px solid var(--main-color);
+      margin-top: 0;
+      padding-top: 0;
       font-size: 10pt;
       color: var(--text-muted);
     }
@@ -344,6 +368,7 @@
       Nationality: {{ site.data.cv.personal.nationality }}<br>
       ORCID: <a href="{{ site.data.cv.personal.orcid_url }}">{{ site.data.cv.personal.orcid }}</a><br>
       <a href="{{ site.data.cv.personal.inspire }}">Inspire-HEP page</a>
+      · <a href="{{ site.data.cv.personal.google_scholar }}">Google Scholar profile</a>
     </div>
     <img class="cv-pdf-photo" src="images/team/adrien-florio.jpg" alt="{{ site.data.cv.personal.name }}">
   </div>
@@ -559,13 +584,29 @@
 
   <!-- Full Talks List -->
   <h2 class="cv-pdf-section">Full List of Talks</h2>
+  <div class="cv-talks-legend">
+    <span class="cv-talk-type cv-talk-type-P">P</span>Plenary
+    <span class="cv-talk-type cv-talk-type-I">I</span>Invited
+    <span class="cv-talk-type cv-talk-type-Co">Co</span>Colloquium
+    <span class="cv-talk-type cv-talk-type-S">S</span>Seminar
+    <span class="cv-talk-type cv-talk-type-Cf">Cf</span>Conference
+    <span class="cv-talk-type cv-talk-type-J">J</span>Journal club
+  </div>
   <div class="cv-talks-multicol">
   {% for year_group in site.data.cv.talks %}
   <div class="cv-talks-year">{{ year_group.year }}</div>
   {% for talk in year_group.entries %}
   <div class="cv-talk-entry">
-    <span class="cv-talk-type">{{ talk.type }}</span>
-    "{{ talk.title }}"{% if talk.event %}, {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.url %} · <a href="{{ talk.url }}">link</a>{% endif %}
+    {% case talk.type %}
+      {% when 'Plenary' %}<span class="cv-talk-type cv-talk-type-P">P</span>
+      {% when 'Invited' %}<span class="cv-talk-type cv-talk-type-I">I</span>
+      {% when 'Colloquium' %}<span class="cv-talk-type cv-talk-type-Co">Co</span>
+      {% when 'Seminar' or 'HET Seminar' or 'Lattice Seminar' %}<span class="cv-talk-type cv-talk-type-S">S</span>
+      {% when 'Conference' %}<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+      {% when 'Journal club' %}<span class="cv-talk-type cv-talk-type-J">J</span>
+      {% else %}<span class="cv-talk-type cv-talk-type-S">S</span>
+    {% endcase %}
+    "{{ talk.title }}"{% if talk.event %}, {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.url %} · <a href="{{ talk.url }}">↗</a>{% endif %}
   </div>
   {% endfor %}
   {% endfor %}
@@ -610,10 +651,11 @@
   {% endfor %}
   </div>
 
-  <!-- Footer -->
+  <!-- Publications -->
+  <h2 class="cv-pdf-section">Publications</h2>
   <div class="cv-pdf-footer">
-    Full publication list: <a href="{{ site.data.cv.footer_links.inspire }}">Inspire-HEP</a>
-    <a href="{{ site.data.cv.footer_links.google_scholar }}">Google Scholar</a>
+    Full publication list at: <a href="{{ site.data.cv.footer_links.inspire }}">Inspire-HEP</a>
+    · <a href="{{ site.data.cv.footer_links.google_scholar }}">Google Scholar</a>
   </div>
 
 </body>
