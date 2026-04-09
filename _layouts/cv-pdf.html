@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>{{ site.data.cv.personal.name }} — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     /* ===== Reset ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -13,16 +16,16 @@
       margin: 2cm 2.5cm;
       @bottom-right {
         content: counter(page);
-        font-family: "Barlow", "Helvetica Neue", sans-serif;
-        font-size: 9pt;
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
         color: #565f93;
       }
     }
 
     /* ===== Base typography ===== */
     body {
-      font-family: "Barlow", "Helvetica Neue", Arial, sans-serif;
-      font-size: 10pt;
+      font-family: "Cabin", "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
       line-height: 1.35;
       color: #333;
       text-align: left;
@@ -40,7 +43,7 @@
     /* ===== Header (moderncv classic style: name | contact | photo) ===== */
     .cv-pdf-header {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: 1.08fr 1fr auto;
       align-items: center;
       gap: 12px;
       margin-bottom: 10px;
@@ -71,7 +74,7 @@
     }
 
     .cv-pdf-contact {
-      font-size: 8.5pt;
+      font-size: 9.5pt;
       color: #555;
       line-height: 1.5;
       text-align: left;
@@ -89,11 +92,12 @@
       object-fit: cover;
       border-radius: 50%;
       border: 0.8pt solid #ccc;
+      justify-self: end;
     }
 
     /* ===== Section headings ===== */
     .cv-pdf-section {
-      font-size: 13pt;
+      font-size: 14pt;
       font-weight: 600;
       color: var(--chemise);
       border-bottom: none;
@@ -107,7 +111,7 @@
     }
 
     .cv-pdf-subsection {
-      font-size: 10.5pt;
+      font-size: 11.5pt;
       font-weight: 600;
       color: var(--chemise);
       margin: 10px 0 4px 0;
@@ -125,7 +129,7 @@
     }
 
     .cv-date {
-      font-size: 9pt;
+      font-size: 10pt;
       color: #555;
       text-align: right;
       padding-top: 1px;
@@ -133,13 +137,13 @@
 
     .cv-title {
       font-weight: 600;
-      font-size: 10pt;
+      font-size: 11pt;
       color: #333;
       grid-column: 2;
     }
 
     .cv-institution {
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       color: #555;
       grid-column: 2;
     }
@@ -149,7 +153,7 @@
       padding: 0;
       list-style: disc;
       grid-column: 2;
-      font-size: 9.5pt;
+      font-size: 10.5pt;
     }
 
     .cv-details li {
@@ -159,7 +163,7 @@
 
     .cv-entry p {
       margin: 1px 0;
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       line-height: 1.35;
       grid-column: 2;
       text-align: left;
@@ -180,7 +184,7 @@
     .cv-award .cv-title { grid-column: 2; text-align: left; }
     .cv-award p {
       margin: 1px 0;
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       line-height: 1.35;
       grid-column: 2;
       text-align: left !important;
@@ -213,7 +217,7 @@
     }
 
     .cv-talks-year {
-      font-size: 10pt;
+      font-size: 11pt;
       font-weight: 600;
       color: var(--chemise-light);
       margin: 8px 0 3px 0;
@@ -222,7 +226,7 @@
     }
 
     .cv-talk-entry {
-      font-size: 9pt;
+      font-size: 10pt;
       margin: 0 0 2px 0;
       line-height: 1.35;
     }
@@ -267,13 +271,13 @@
 
     .cv-list li {
       margin: 2px 0;
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       line-height: 1.4;
     }
 
     /* ===== Summary paragraph ===== */
     .cv-summary {
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       font-style: italic;
       margin: 0 0 6px 82px;
       color: #555;
@@ -284,7 +288,7 @@
       margin-top: 16px;
       padding-top: 8px;
       border-top: 1px solid var(--chemise);
-      font-size: 9pt;
+      font-size: 10pt;
       color: #555;
     }
 
@@ -343,9 +347,6 @@
     <span class="cv-date">{{ a.date }}</span>
     <strong class="cv-title">{{ a.title }}{% if a.institution %}, {{ a.institution }}{% endif %}</strong>
     {% if a.description %}<p>{{ a.description }}</p>{% endif %}
-    {% if a.links %}
-    <p>{% for link in a.links %}<a href="{{ link.url }}">{{ link.text }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
-    {% endif %}
   </div>
   {% endfor %}
 
@@ -363,13 +364,21 @@
 
   <!-- Selected Talks -->
   <h2 class="cv-pdf-section">Selected Talks</h2>
-  {% for talk in site.data.cv.selected_talks %}
+  <h3 class="cv-pdf-subsection">Plenary Talks</h3>
+  {% for talk in site.data.cv.selected_talks %}{% if talk.type == "Plenary talk" %}
   <div class="cv-entry">
     <span class="cv-date">{{ talk.date }}</span>
-    <strong class="cv-title">{{ talk.type }}: {{ talk.event }}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
-    <span class="cv-institution">{{ talk.location }}{% if talk.url %} · <a href="{{ talk.url }}">link</a>{% endif %}</span>
+    <strong class="cv-title">{{ talk.event }}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
   </div>
-  {% endfor %}
+  {% endif %}{% endfor %}
+
+  <h3 class="cv-pdf-subsection">Invited Talks</h3>
+  {% for talk in site.data.cv.selected_talks %}{% if talk.type == "Invited talk" %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ talk.date }}</span>
+    <strong class="cv-title">{{ talk.event }}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+  </div>
+  {% endif %}{% endfor %}
 
   <!-- Professional Services -->
   <h2 class="cv-pdf-section">Professional Services</h2>
@@ -484,9 +493,8 @@
   {% for t in site.data.cv.teaching.phd_schools %}
   <div class="cv-entry">
     <span class="cv-date">{{ t.date }}</span>
-    <strong class="cv-title">{{ t.title }}</strong>
+    <strong class="cv-title">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</strong>
     {% if t.topic %}<span class="cv-institution">{{ t.topic }}</span>{% endif %}
-    {% if t.url %}<span class="cv-institution"><a href="{{ t.url }}">link</a></span>{% endif %}
   </div>
   {% endfor %}
 
