@@ -17,101 +17,346 @@ links:
 
 Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Emmy Noether** research group at **Bielefeld University** and **Project Leader** in the Collaborative Research Center-Transregio **CRC-TR 211** (Project A02).
 
-## Education
+<details class="cv-section" open>
+<summary><h2>Positions</h2></summary>
 
+{% for pos in site.data.cv.positions %}
 <div class="cv-entry">
-<span class="cv-date">2016-2020</span>
-<strong class="cv-title">PhD in Physics</strong>
-<span class="cv-institution">EPFL, Lausanne, Switzerland • Supervisor: Prof. Mikhail Shaposhnikov</span>
+<span class="cv-date">{{ pos.date }}</span>
+<strong class="cv-title">{{ pos.title }}</strong>
+<span class="cv-institution">{{ pos.institution }}, {{ pos.location }}{% if pos.details %} · {{ pos.details }}{% endif %}</span>
 </div>
+{% endfor %}
 
+</details>
+
+<details class="cv-section" open>
+<summary><h2>Funding</h2></summary>
+
+{% for f in site.data.cv.funding %}
 <div class="cv-entry">
-<span class="cv-date">2011-2016</span>
-<strong class="cv-title">BSc & MSc in Physics</strong>
-<span class="cv-institution">EPFL, Lausanne, Switzerland</span>
+<span class="cv-date">{{ f.date }}</span>
+<strong class="cv-title">{{ f.title }}</strong>
+<span class="cv-institution">{{ f.funder }}</span>
+{% if f.details %}<p>{{ f.details }}</p>{% endif %}
 </div>
+{% endfor %}
 
-## Professional Experience
+</details>
 
+<details class="cv-section" open>
+<summary><h2>Awards &amp; Highlights</h2></summary>
 
-<div class="cv-entry">
-<span class="cv-date">2026-</span>
-<strong class="cv-title">Project Leader </strong>
-<span class="cv-institution">Project A02 of <a href="https://crc-tr211.org" target="_blank">Collaborative Research Center-Transregio 211</a></span>
-</div>
-
-<div class="cv-entry">
-<span class="cv-date">2025-</span>
-<strong class="cv-title">Emmy Noether Junior Group Leader</strong>
-<span class="cv-institution">Bielefeld University, Germany</span>
-</div>
-
-<div class="cv-entry">
-<span class="cv-date">2022-2025</span>
-<strong class="cv-title">Goldhaber Distinguished Fellow</strong>
-<span class="cv-institution">Brookhaven National Laboratory, Nuclear Theory Group, US</span>
-</div>
-
-<div class="cv-entry">
-<span class="cv-date">2020-2022</span>
-<strong class="cv-title">Postdoctoral Researcher</strong>
-<span class="cv-institution">Center for Nuclear Theory, Stony Brook University, US</span>
-</div>
-
-## Awards & Highlights
-
+{% for a in site.data.cv.awards %}
 <div class="cv-award">
-<span class="cv-date">2025-present</span>
-<strong class="cv-title"><a href="https://gepris.dfg.de/gepris/projekt/545261797?language=en" target="_blank">Emmy Noether Grant</a></strong>
-<p>German Research Foundation (DfG) to establish a junior research group on quantum information and real-time QFT evolution.</p>
+<span class="cv-date">{{ a.date }}</span>
+<strong class="cv-title">{{ a.title }}{% if a.institution %}, {{ a.institution }}{% endif %}</strong>
+{% if a.description %}<p>{{ a.description }}</p>{% endif %}
 </div>
+{% endfor %}
 
-<div class="cv-award">
-<span class="cv-date">2022-2025</span>
-<strong class="cv-title"><a href="https://www.bnl.gov/newsroom/news.php?a=220996" target="_blank">Goldhaber Distinguished Fellowship</a></strong>
-<p>Brookhaven National Laboratory's distinguished postdoc fellowship.</p>
-</div>
+</details>
 
-<div class="cv-award">
-<span class="cv-date">2022</span>
-<strong class="cv-title"><a href="http://www.buchaltercosmologyprize.org/" target="_blank">Buchalter Cosmology Prize</a></strong>
-<p>Third place for "'Stairway to Heaven' – Spectroscopy of Particle Couplings with Gravitational Waves."</p>
-</div>
+<details class="cv-section" open>
+<summary><h2>Education</h2></summary>
 
-<div class="cv-award">
-<span class="cv-date">2024</span>
-<strong class="cv-title">DOE Highlight and Public Coverage</strong>
-<p><a href="/research/?search=%22Vacuum%20Modification%22">PRL 131, 021902</a> highlighted by <a href="https://science.osti.gov/np/Highlights/2023/NP-2023-11-g" target="_blank">US Department of Energy</a>, <a href="https://www.bnl.gov/newsroom/news.php?a=221731" target="_blank">BNL</a>, and featured on <a href="https://francis.naukas.com/2024/02/05/podcast-cb-syr-449-eskirmiones-ingenuity-niac-doom-boson-de-higgs-agujeros-negros-supermasivos-y-entrelazamiento-cuantico-en-chorros-hadronicos/" target="_blank">popular science podcast</a>.</p>
-</div>
-
-## Teaching & Outreach
-
+<div class="cv-multicol">
+{% for edu in site.data.cv.education %}
 <div class="cv-entry">
-<span class="cv-date">2024-2026</span>
-<strong class="cv-title">Advanced Lectures in Physics in Switzerland (ALPS <a href="https://indico.global/event/9618/" target="_blank">I</a>, <a href="https://indico.global/event/9641/" target="_blank">II</a>, <a href="https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf" target="_blank">III</a>)</strong>
-<span class="cv-institution">Organizer, SwissMAP-funded PhD summer school series</span>
+<span class="cv-date">{{ edu.date }}</span>
+<strong class="cv-title">{{ edu.degree }}</strong>
+<span class="cv-institution">{{ edu.institution }}, {{ edu.location }}{% if edu.details %} · {{ edu.details }}{% endif %}</span>
+</div>
+{% endfor %}
 </div>
 
+</details>
+
+<details class="cv-section" open>
+<summary><h2>Selected Talks</h2></summary>
+
+<h3 class="cv-subsection">Plenary Talks</h3>
+
+{% for talk in site.data.cv.selected_talks %}{% if talk.type == "Plenary talk" %}
 <div class="cv-entry">
-<span class="cv-date">2022-2023</span>
-<strong class="cv-title">CosmoLattice Summer School (<a href="https://indico.ific.uv.es/event/6631/" target="_blank">2022</a>, <a href="https://indico.ific.uv.es/event/7055/" target="_blank">2023</a>)</strong>
-<span class="cv-institution">Organizer and Lecturer on lattice field theory simulations</span>
+<span class="cv-date">{{ talk.date }}</span>
+<strong class="cv-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+{% if talk.location %}<span class="cv-institution">{{ talk.location }}</span>{% endif %}
+</div>
+{% endif %}{% endfor %}
+
+<h3 class="cv-subsection">Invited Talks</h3>
+
+{% for talk in site.data.cv.selected_talks %}{% if talk.type == "Invited talk" %}
+<div class="cv-entry">
+<span class="cv-date">{{ talk.date }}</span>
+<strong class="cv-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+{% if talk.location %}<span class="cv-institution">{{ talk.location }}</span>{% endif %}
+</div>
+{% endif %}{% endfor %}
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Professional Services</h2></summary>
+
+<h3 class="cv-subsection">Advisory Committees</h3>
+
+{% for item in site.data.cv.professional_services.advisory_committees %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+<span class="cv-institution">{{ item.institution }}, {{ item.location }}</span>
+</div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Organizing Committees</h3>
+
+{% for item in site.data.cv.professional_services.organizing_committees %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+{% if item.description %}<p>{{ item.description }}</p>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">Referee</h3>
+
+{% for item in site.data.cv.professional_services.referee %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+{% if item.journals %}
+<strong class="cv-title">{{ item.journals }}</strong>
+{% else %}
+<strong class="cv-title">{{ item.title }}</strong>
+{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">Seminar Organization</h3>
+
+{% for item in site.data.cv.professional_services.seminar_organization %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+</div>
+{% endfor %}
+
 </div>
 
+</details>
+
+<details class="cv-section">
+<summary><h2>Supervision</h2></summary>
+
+<p class="cv-summary">{{ site.data.cv.supervision.summary }}</p>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">PhD Students</h3>
+
+{% for s in site.data.cv.supervision.phd_students %}
 <div class="cv-entry">
-<span class="cv-date">2022</span>
-<strong class="cv-title"><a href="https://conference.ippp.dur.ac.uk/event/1099/#:~:text=YETI%20aims%20to%20give%20a,D" target="_blank">YETI 2022 "Phenomenology in the sky"</a></strong>
-<span class="cv-institution">Lecturer on real-time simulations and CosmoLattice software</span>
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
 </div>
 
+<h3 class="cv-subsection">Postdocs</h3>
+
+{% for s in site.data.cv.supervision.postdocs %}
 <div class="cv-entry">
-<span class="cv-date">2024</span>
-<strong class="cv-title"><a href="https://physics.berkeley.edu/visiting-students/reyes-remote-experience-young-engineers-and-scientists" target="_blank">REYES Program</a></strong>
-<span class="cv-institution">Online tutor, Lawrence Berkeley National Lab</span>
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Master Students</h3>
+
+{% for s in site.data.cv.supervision.master_students %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
 </div>
 
+<h3 class="cv-subsection">Bachelor Students</h3>
+
+{% for s in site.data.cv.supervision.bachelor_students %}
 <div class="cv-entry">
-<span class="cv-date">2022-2024</span>
-<strong class="cv-title"><a href="https://vtq.vt.edu/outreach/Quantum-Information-Science-and-Engineering-High-School-level-Summer-School.html" target="_blank">QISE High School Summer School</a></strong>
-<span class="cv-institution">Tutor teaching quantum computing, Virginia Tech (3 sessions)</span>
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
 </div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Mentorship</h3>
+
+{% for s in site.data.cv.supervision.mentorship %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Teaching</h2></summary>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Courses</h3>
+
+{% for t in site.data.cv.teaching.courses %}
+<div class="cv-entry">
+<span class="cv-date">{{ t.date }}</span>
+<strong class="cv-title">{{ t.title }}</strong>
+{% if t.description %}<span class="cv-institution">{{ t.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">PhD Schools &amp; Lectures</h3>
+
+{% for t in site.data.cv.teaching.phd_schools %}
+<div class="cv-entry">
+<span class="cv-date">{{ t.date }}</span>
+<strong class="cv-title">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</strong>
+{% if t.topic %}<span class="cv-institution">{{ t.topic }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">Teaching Assistant</h3>
+
+{% for t in site.data.cv.teaching.teaching_assistant %}
+<div class="cv-entry">
+<span class="cv-date">{{ t.date }}</span>
+<strong class="cv-title">{{ t.title }}</strong>
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">Workshops</h3>
+
+{% for t in site.data.cv.teaching.workshops %}
+<div class="cv-entry">
+<span class="cv-date">{{ t.date }}</span>
+<strong class="cv-title">{{ t.title }}</strong>
+</div>
+{% endfor %}
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Outreach</h2></summary>
+
+<div class="cv-multicol">
+{% for o in site.data.cv.outreach %}
+<div class="cv-entry">
+<span class="cv-date">{{ o.date }}</span>
+<strong class="cv-title">{{ o.title }}</strong>
+{% if o.description %}<p>{{ o.description }}</p>{% endif %}
+</div>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Full List of Talks</h2></summary>
+
+<div class="cv-talks-legend">
+<span class="cv-talk-type cv-talk-type-P">P</span>Plenary
+<span class="cv-talk-type cv-talk-type-I">I</span>Invited
+<span class="cv-talk-type cv-talk-type-Co">Co</span>Colloquium
+<span class="cv-talk-type cv-talk-type-S">S</span>Seminar
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>Conference
+<span class="cv-talk-type cv-talk-type-J">J</span>Journal club
+</div>
+
+<div class="cv-talks-list">
+{% for year_group in site.data.cv.talks %}
+<details class="cv-talks-year-group"{% if forloop.first %} open{% endif %}>
+<summary class="cv-talks-year">{{ year_group.year }}</summary>
+{% for talk in year_group.entries %}
+<div class="cv-talk-entry">
+{% case talk.type %}
+{% when 'Plenary' %}<span class="cv-talk-type cv-talk-type-P">P</span>
+{% when 'Invited' %}<span class="cv-talk-type cv-talk-type-I">I</span>
+{% when 'Colloquium' %}<span class="cv-talk-type cv-talk-type-Co">Co</span>
+{% when 'Seminar' or 'HET Seminar' or 'Lattice Seminar' %}<span class="cv-talk-type cv-talk-type-S">S</span>
+{% when 'Conference' %}<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+{% when 'Journal club' %}<span class="cv-talk-type cv-talk-type-J">J</span>
+{% else %}<span class="cv-talk-type cv-talk-type-S">S</span>
+{% endcase %}
+"{{ talk.title }}"{% if talk.event %}, {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.url %} · <a href="{{ talk.url }}">↗</a>{% endif %}
+</div>
+{% endfor %}
+</details>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Computing Skills</h2></summary>
+
+<div class="cv-multicol">
+{% for skill in site.data.cv.computing_skills %}
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+{% assign full = skill.grade | floor %}
+{% assign has_half = skill.grade | modulo: 1 %}
+{% assign half_pos = full | plus: 1 %}
+{% for i in (1..5) %}
+{% if i <= full %}
+<span class="cv-grade-circle filled"></span>
+{% elsif has_half != 0 and i == half_pos %}
+<span class="cv-grade-circle half"></span>
+{% else %}
+<span class="cv-grade-circle"></span>
+{% endif %}
+{% endfor %}
+</span>
+</span>
+<strong class="cv-title">{{ skill.name }}</strong>
+{% if skill.description %}<p>{{ skill.description }}</p>{% endif %}
+</div>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Languages</h2></summary>
+
+<div class="cv-multicol">
+{% for lang in site.data.cv.languages %}
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">{{ lang.name }}</strong>
+<span class="cv-institution">{{ lang.level }}{% if lang.note %} ({{ lang.note }}){% endif %}</span>
+</div>
+{% endfor %}
+</div>
+
+</details>
+
