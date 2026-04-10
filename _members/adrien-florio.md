@@ -58,21 +58,6 @@ Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Em
 </details>
 
 <details class="cv-section" open>
-<summary><h2>Education</h2></summary>
-
-<div class="cv-multicol">
-{% for edu in site.data.cv.education %}
-<div class="cv-entry">
-<span class="cv-date">{{ edu.date }}</span>
-<strong class="cv-title">{{ edu.degree }}</strong>
-<span class="cv-institution">{{ edu.institution }}, {{ edu.location }}{% if edu.details %} · {{ edu.details }}{% endif %}</span>
-</div>
-{% endfor %}
-</div>
-
-</details>
-
-<details class="cv-section" open>
 <summary><h2>Selected Talks</h2></summary>
 
 <h3 class="cv-subsection">Plenary Talks</h3>
@@ -94,6 +79,21 @@ Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Em
 {% if talk.location %}<span class="cv-institution">{{ talk.location }}</span>{% endif %}
 </div>
 {% endif %}{% endfor %}
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Education</h2></summary>
+
+<div class="cv-multicol">
+{% for edu in site.data.cv.education %}
+<div class="cv-entry">
+<span class="cv-date">{{ edu.date }}</span>
+<strong class="cv-title">{{ edu.degree }}</strong>
+<span class="cv-institution">{{ edu.institution }}, {{ edu.location }}{% if edu.details %} · {{ edu.details }}{% endif %}</span>
+</div>
+{% endfor %}
+</div>
 
 </details>
 
