@@ -587,7 +587,7 @@
   {% for o in site.data.cv.outreach %}
   <div class="cv-entry">
     <span class="cv-date">{{ o.date }}</span>
-    <strong class="cv-title">{{ o.title }}</strong>
+    <strong class="cv-title">{{ o.title }}{% if o.url %} · <a href="{{ o.url }}">↗</a>{% endif %}</strong>
     {% if o.description %}<p>{{ o.description }}</p>{% endif %}
   </div>
   {% endfor %}
@@ -665,8 +665,8 @@
   <!-- Publications -->
   <h2 class="cv-pdf-section">Publications</h2>
   <div class="cv-pdf-footer">
-    Full publication list at: <a href="{{ site.data.cv.footer_links.inspire }}">Inspire-HEP</a>
-    · <a href="{{ site.data.cv.footer_links.google_scholar }}">Google Scholar</a>
+    Full publication list at: Inspire-HEP <a href="{{ site.data.cv.footer_links.inspire }}">↗</a>
+    · Google Scholar <a href="{{ site.data.cv.footer_links.google_scholar }}">↗</a>
   </div>
 
 </body>

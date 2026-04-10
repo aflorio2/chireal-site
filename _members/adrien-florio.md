@@ -271,7 +271,7 @@ Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Em
 {% for o in site.data.cv.outreach %}
 <div class="cv-entry">
 <span class="cv-date">{{ o.date }}</span>
-<strong class="cv-title">{{ o.title }}</strong>
+<strong class="cv-title">{{ o.title }}{% if o.url %} · <a href="{{ o.url }}">↗</a>{% endif %}</strong>
 {% if o.description %}<p>{{ o.description }}</p>{% endif %}
 </div>
 {% endfor %}
