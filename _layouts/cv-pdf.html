@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.data.cv.personal.name }} — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== Page setup ===== */
+    @page {
+      size: a4 portrait;
+      margin: 2cm 2.375cm;
+      @bottom-left {
+        content: "Adrien Florio — CV";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-center {
+        content: "aflorio.science";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-right {
+        content: counter(page) "/" counter(pages);
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+    }
+
+    /* ===== Base typography ===== */
+    body {
+      font-family: "Cabin", "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.35;
+      color: var(--text);
+      text-align: left;
+      orphans: 3;
+      widows: 3;
+    }
+
+    a { color: var(--main-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Color scheme ===== */
+    :root {
+      --main-color: #1a3a5f;
+      --main-color-light: #4a90b8;
+      --text: #333;
+      --text-muted: #555;
+    }
+
+    /* ===== Header (moderncv classic style: name | contact | photo) ===== */
+    .cv-pdf-header {
+      display: grid;
+      grid-template-columns: 1.08fr 1fr auto;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: none;
+      background-image: linear-gradient(to right, var(--main-color), var(--main-color));
+      background-size: 100% 2px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    .cv-pdf-name h1 {
+      font-size: 26pt;
+      font-weight: 300;
+      color: var(--main-color);
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .cv-pdf-name h1 strong {
+      font-weight: 700;
+    }
+
+    .cv-pdf-name .cv-pdf-title {
+      font-size: 11pt;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .cv-pdf-contact {
+      font-size: 9.5pt;
+      color: var(--text-muted);
+      line-height: 1.5;
+      text-align: left;
+      padding-left: 12px;
+      border-left: 1px solid #ccc;
+    }
+
+    .cv-pdf-contact a {
+      color: var(--main-color);
+    }
+
+    .cv-pdf-photo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 0.8pt solid #ccc;
+      justify-self: end;
+    }
+
+    /* ===== Section headings ===== */
+    .cv-pdf-section {
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--main-color);
+      border-bottom: none;
+      padding-bottom: 4px;
+      margin: 14px 0 8px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+      background-image: linear-gradient(to right, var(--main-color) 45%, transparent);
+      background-size: 100% 1px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    .cv-pdf-subsection {
+      font-size: 11.5pt;
+      font-weight: 600;
+      color: var(--main-color);
+      margin: 10px 0 4px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* ===== CV entry (two-column: date | content) ===== */
+    .cv-entry {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      column-gap: 12px;
+      row-gap: 2px;
+      margin: 0 0 6px 0;
+      page-break-inside: avoid;
+    }
+
+    .cv-date {
+      font-size: 10pt;
+      color: var(--text-muted);
+      text-align: right;
+      padding-top: 1px;
+    }
+
+    .cv-title {
+      font-weight: 600;
+      font-size: 11pt;
+      color: var(--text);
+      grid-column: 2;
+    }
+
+    .cv-institution {
+      font-size: 10.5pt;
+      color: var(--text-muted);
+      grid-column: 2;
+    }
+
+    .cv-details {
+      margin: 1px 0 0 16px;
+      padding: 0;
+      list-style: disc;
+      grid-column: 2;
+      font-size: 10.5pt;
+    }
+
+    .cv-details li {
+      margin: 1px 0;
+      line-height: 1.35;
+    }
+
+    .cv-entry p {
+      margin: 1px 0;
+      font-size: 10.5pt;
+      line-height: 1.35;
+      grid-column: 2;
+      text-align: left;
+    }
+
+    /* ===== Award entry ===== */
+    .cv-award {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      column-gap: 12px;
+      row-gap: 2px;
+      margin: 0 0 6px 0;
+      page-break-inside: avoid;
+      text-align: left;
+    }
+
+    .cv-award .cv-date { grid-column: 1; }
+    .cv-award .cv-title { grid-column: 2; text-align: left; }
+    .cv-award p {
+      margin: 1px 0;
+      font-size: 10.5pt;
+      line-height: 1.35;
+      grid-column: 2;
+      text-align: left !important;
+    }
+
+    /* ===== Two-column sections ===== */
+    .cv-multicol,
+    .cv-education-multicol,
+    .cv-supervision-multicol {
+      column-count: 2;
+      column-gap: 24px;
+    }
+
+    .cv-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+      row-gap: 4px;
+    }
+
+    .cv-multicol .cv-entry,
+    .cv-education-multicol .cv-entry,
+    .cv-supervision-multicol .cv-entry {
+      break-inside: avoid;
+    }
+
+    .cv-multicol .cv-pdf-subsection,
+    .cv-supervision-multicol .cv-pdf-subsection {
+      column-span: all;
+      break-after: avoid;
+      page-break-after: avoid;
+      margin-bottom: 0;
+    }
+
+    /* Keep subsection heading glued to first entry */
+    .cv-multicol .cv-pdf-subsection + .cv-entry,
+    .cv-supervision-multicol .cv-pdf-subsection + .cv-entry {
+      break-before: avoid;
+      page-break-before: avoid;
+    }
+
+    .cv-multicol .cv-entry {
+      margin-bottom: 3px;
+    }
+
+    .cv-multicol .cv-pdf-subsection {
+      margin: 6px 0 3px 0;
+    }
+
+    /* ===== Talks list (compact, two-column) ===== */
+    .cv-talks-multicol {
+      column-count: 2;
+      column-gap: 24px;
+    }
+
+    .cv-talks-year {
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--main-color-light);
+      margin: 8px 0 3px 0;
+      break-after: avoid;
+      column-span: none;
+    }
+
+    .cv-talk-entry {
+      font-size: 10pt;
+      margin: 0;
+      padding: 2px 4px;
+      line-height: 1.35;
+    }
+    .cv-talk-entry:nth-child(even) {
+      background: #f0f0f4;
+    }
+
+    .cv-talk-type {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-align: center;
+      min-width: 14px;
+      padding: 0 4px;
+      margin-right: 4px;
+      border-radius: 3px;
+      color: #fff;
+      vertical-align: middle;
+    }
+    .cv-talk-type-P  { background: #c0392b; } /* Plenary */
+    .cv-talk-type-I  { background: #2980b9; } /* Invited */
+    .cv-talk-type-Co { background: #8e44ad; } /* Colloquium */
+    .cv-talk-type-S  { background: #27ae60; } /* Seminar / HET Seminar / Lattice Seminar */
+    .cv-talk-type-Cf { background: #e67e22; } /* Conference */
+    .cv-talk-type-J  { background: #16a085; } /* Journal club */
+
+    .cv-talks-legend {
+      font-size: 8.5pt;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .cv-talks-legend .cv-talk-type { font-size: 7pt; }
+
+    /* ===== Grade indicators (CSS circles) ===== */
+    .cv-grade {
+      display: inline-flex;
+      gap: 3px;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    .cv-grade-circle {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid var(--main-color-light);
+      background: transparent;
+    }
+
+    .cv-grade-circle.filled {
+      background: var(--main-color-light);
+    }
+
+    .cv-grade-circle.half {
+      background: linear-gradient(90deg, var(--main-color-light) 50%, transparent 50%);
+    }
+
+    /* ===== Simple list ===== */
+    .cv-list {
+      margin: 4px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cv-list li {
+      margin: 2px 0;
+      font-size: 10.5pt;
+      line-height: 1.4;
+    }
+
+    /* ===== Summary paragraph ===== */
+    .cv-summary {
+      font-size: 10.5pt;
+      font-style: italic;
+      margin: 0 0 6px 82px;
+      color: var(--text-muted);
+    }
+
+    /* ===== Footer links ===== */
+    .cv-pdf-footer {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 10pt;
+      color: var(--text-muted);
+    }
+
+    .cv-pdf-footer a {
+      margin-right: 16px;
+    }
+
+    /* ===== Utility ===== */
+    .no-print { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="cv-pdf-header">
+    <div class="cv-pdf-name">
+      <h1>Adrien <strong>Florio</strong></h1>
+      <div class="cv-pdf-title">{{ site.data.cv.personal.title }}</div>
+    </div>
+    <div class="cv-pdf-contact">
+      ✉ <a href="mailto:{{ site.data.cv.personal.email }}">{{ site.data.cv.personal.email }}</a><br>
+      ⌂ <a href="https://{{ site.data.cv.personal.homepage }}">{{ site.data.cv.personal.homepage }}</a>
+      · <a href="https://{{ site.data.cv.personal.cosmolattice }}">{{ site.data.cv.personal.cosmolattice }}</a><br>
+      Nationality: {{ site.data.cv.personal.nationality }}<br>
+      ORCID: <a href="{{ site.data.cv.personal.orcid_url }}">{{ site.data.cv.personal.orcid }}</a><br>
+      <a href="{{ site.data.cv.personal.inspire }}">Inspire-HEP page</a>
+      · <a href="{{ site.data.cv.personal.google_scholar }}">Google Scholar profile</a>
+    </div>
+    <img class="cv-pdf-photo" src="images/team/adrien-florio.jpg" alt="{{ site.data.cv.personal.name }}">
+  </div>
+
+  <!-- Positions -->
+  <h2 class="cv-pdf-section">Positions</h2>
+  {% for pos in site.data.cv.positions %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ pos.date }}</span>
+    <strong class="cv-title">{{ pos.title }}</strong>
+    <span class="cv-institution">{{ pos.institution }}, {{ pos.location }}{% if pos.details %} · {{ pos.details }}{% endif %}</span>
+  </div>
+  {% endfor %}
+
+  <!-- Funding -->
+  <h2 class="cv-pdf-section">Funding</h2>
+  {% for f in site.data.cv.funding %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ f.date }}</span>
+    <strong class="cv-title">{{ f.title }}</strong>
+    <span class="cv-institution">{{ f.funder }}</span>
+    {% if f.details %}<p>{{ f.details }}</p>{% endif %}
+  </div>
+  {% endfor %}
+
+  <!-- Awards -->
+  <h2 class="cv-pdf-section">Awards &amp; Highlights</h2>
+  {% for a in site.data.cv.awards %}
+  <div class="cv-award">
+    <span class="cv-date">{{ a.date }}</span>
+    <strong class="cv-title">{{ a.title }}{% if a.institution %}, {{ a.institution }}{% endif %}</strong>
+    {% if a.description %}<p>{{ a.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+
+  <!-- Education -->
+  <h2 class="cv-pdf-section">Education</h2>
+  <div class="cv-education-multicol">
+  {% for edu in site.data.cv.education %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ edu.date }}</span>
+    <strong class="cv-title">{{ edu.degree }}</strong>
+    <span class="cv-institution">{{ edu.institution }}, {{ edu.location }}{% if edu.details %} · {{ edu.details }}{% endif %}</span>
+  </div>
+  {% endfor %}
+  </div>
+
+  <!-- Selected Talks -->
+  <h2 class="cv-pdf-section">Selected Talks</h2>
+  <h3 class="cv-pdf-subsection">Plenary Talks</h3>
+  {% for talk in site.data.cv.selected_talks %}{% if talk.type == "Plenary talk" %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ talk.date }}</span>
+    <strong class="cv-title">{{ talk.event }}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+  </div>
+  {% endif %}{% endfor %}
+
+  <h3 class="cv-pdf-subsection">Invited Talks</h3>
+  {% for talk in site.data.cv.selected_talks %}{% if talk.type == "Invited talk" %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ talk.date }}</span>
+    <strong class="cv-title">{{ talk.event }}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+  </div>
+  {% endif %}{% endfor %}
+
+  <!-- Professional Services -->
+  <h2 class="cv-pdf-section">Professional Services</h2>
+  <h3 class="cv-pdf-subsection">Advisory Committees</h3>
+  {% for item in site.data.cv.professional_services.advisory_committees %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ item.date }}</span>
+    <strong class="cv-title">{{ item.title }}</strong>
+    <span class="cv-institution">{{ item.institution }}, {{ item.location }}</span>
+  </div>
+  {% endfor %}
+
+  <div class="cv-multicol">
+
+  <h3 class="cv-pdf-subsection">Organizing Committees</h3>
+  {% for item in site.data.cv.professional_services.organizing_committees %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ item.date }}</span>
+    <strong class="cv-title">{{ item.title }}</strong>
+    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Referee</h3>
+  {% for item in site.data.cv.professional_services.referee %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ item.date }}</span>
+    {% if item.journals %}
+    <strong class="cv-title">{{ item.journals }}</strong>
+    {% else %}
+    <strong class="cv-title">{{ item.title }}</strong>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Seminar Organization</h3>
+  {% for item in site.data.cv.professional_services.seminar_organization %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ item.date }}</span>
+    <strong class="cv-title">{{ item.title }}</strong>
+  </div>
+  {% endfor %}
+
+  </div>
+
+  <!-- Supervision -->
+  <h2 class="cv-pdf-section">Supervision</h2>
+  <p class="cv-summary">{{ site.data.cv.supervision.summary }}</p>
+  <div class="cv-supervision-multicol">
+
+  <h3 class="cv-pdf-subsection">PhD Students</h3>
+  {% for s in site.data.cv.supervision.phd_students %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ s.date }}</span>
+    <strong class="cv-title">{{ s.name }}</strong>
+    <span class="cv-institution">{{ s.description }}</span>
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Postdocs</h3>
+  {% for s in site.data.cv.supervision.postdocs %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ s.date }}</span>
+    <strong class="cv-title">{{ s.name }}</strong>
+    <span class="cv-institution">{{ s.description }}</span>
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Master Students</h3>
+  {% for s in site.data.cv.supervision.master_students %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ s.date }}</span>
+    <strong class="cv-title">{{ s.name }}</strong>
+    <span class="cv-institution">{{ s.description }}</span>
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Bachelor Students</h3>
+  {% for s in site.data.cv.supervision.bachelor_students %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ s.date }}</span>
+    <strong class="cv-title">{{ s.name }}</strong>
+    <span class="cv-institution">{{ s.description }}</span>
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Mentorship</h3>
+  {% for s in site.data.cv.supervision.mentorship %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ s.date }}</span>
+    <strong class="cv-title">{{ s.name }}</strong>
+    <span class="cv-institution">{{ s.description }}</span>
+  </div>
+  {% endfor %}
+
+  </div>
+
+  <!-- Teaching -->
+  <h2 class="cv-pdf-section">Teaching</h2>
+  <div class="cv-multicol">
+
+  <h3 class="cv-pdf-subsection">Courses</h3>
+  {% for t in site.data.cv.teaching.courses %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ t.date }}</span>
+    <strong class="cv-title">{{ t.title }}</strong>
+    {% if t.description %}<span class="cv-institution">{{ t.description }}</span>{% endif %}
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">PhD Schools &amp; Lectures</h3>
+  {% for t in site.data.cv.teaching.phd_schools %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ t.date }}</span>
+    <strong class="cv-title">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</strong>
+    {% if t.topic %}<span class="cv-institution">{{ t.topic }}</span>{% endif %}
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Teaching Assistant</h3>
+  {% for t in site.data.cv.teaching.teaching_assistant %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ t.date }}</span>
+    <strong class="cv-title">{{ t.title }}</strong>
+  </div>
+  {% endfor %}
+
+  <h3 class="cv-pdf-subsection">Workshops</h3>
+  {% for t in site.data.cv.teaching.workshops %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ t.date }}</span>
+    <strong class="cv-title">{{ t.title }}</strong>
+  </div>
+  {% endfor %}
+
+  </div>
+
+  <!-- Outreach -->
+  <h2 class="cv-pdf-section">Outreach</h2>
+  <div class="cv-multicol">
+  {% for o in site.data.cv.outreach %}
+  <div class="cv-entry">
+    <span class="cv-date">{{ o.date }}</span>
+    <strong class="cv-title">{{ o.title }}{% if o.url %} · <a href="{{ o.url }}">↗</a>{% endif %}</strong>
+    {% if o.description %}<p>{{ o.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+  </div>
+
+  <!-- Full Talks List -->
+  <h2 class="cv-pdf-section">Full List of Talks</h2>
+  <div class="cv-talks-legend">
+    <span class="cv-talk-type cv-talk-type-P">P</span>Plenary
+    <span class="cv-talk-type cv-talk-type-I">I</span>Invited
+    <span class="cv-talk-type cv-talk-type-Co">Co</span>Colloquium
+    <span class="cv-talk-type cv-talk-type-S">S</span>Seminar
+    <span class="cv-talk-type cv-talk-type-Cf">Cf</span>Conference
+    <span class="cv-talk-type cv-talk-type-J">J</span>Journal club
+  </div>
+  <div class="cv-talks-multicol">
+  {% for year_group in site.data.cv.talks %}
+  <div class="cv-talks-year">{{ year_group.year }}</div>
+  {% for talk in year_group.entries %}
+  <div class="cv-talk-entry">
+    {% case talk.type %}
+      {% when 'Plenary' %}<span class="cv-talk-type cv-talk-type-P">P</span>
+      {% when 'Invited' %}<span class="cv-talk-type cv-talk-type-I">I</span>
+      {% when 'Colloquium' %}<span class="cv-talk-type cv-talk-type-Co">Co</span>
+      {% when 'Seminar' or 'HET Seminar' or 'Lattice Seminar' %}<span class="cv-talk-type cv-talk-type-S">S</span>
+      {% when 'Conference' %}<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+      {% when 'Journal club' %}<span class="cv-talk-type cv-talk-type-J">J</span>
+      {% else %}<span class="cv-talk-type cv-talk-type-S">S</span>
+    {% endcase %}
+    "{{ talk.title }}"{% if talk.event %}, {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.url %} · <a href="{{ talk.url }}">↗</a>{% endif %}
+  </div>
+  {% endfor %}
+  {% endfor %}
+  </div>
+
+  <!-- Computing Skills -->
+  <h2 class="cv-pdf-section">Computing Skills</h2>
+  <div class="cv-multicol">
+  {% for skill in site.data.cv.computing_skills %}
+  <div class="cv-entry">
+    <span class="cv-date">
+      <span class="cv-grade">
+        {% assign full = skill.grade | floor %}
+        {% assign has_half = skill.grade | modulo: 1 %}
+        {% assign half_pos = full | plus: 1 %}
+        {% for i in (1..5) %}
+          {% if i <= full %}
+            <span class="cv-grade-circle filled"></span>
+          {% elsif has_half != 0 and i == half_pos %}
+            <span class="cv-grade-circle half"></span>
+          {% else %}
+            <span class="cv-grade-circle"></span>
+          {% endif %}
+        {% endfor %}
+      </span>
+    </span>
+    <strong class="cv-title">{{ skill.name }}</strong>
+    <p>{{ skill.description }}</p>
+  </div>
+  {% endfor %}
+  </div>
+
+  <!-- Languages -->
+  <h2 class="cv-pdf-section">Languages</h2>
+  <div class="cv-multicol">
+  {% for lang in site.data.cv.languages %}
+  <div class="cv-entry">
+    <span class="cv-date"></span>
+    <strong class="cv-title">{{ lang.name }}</strong>
+    <span class="cv-institution">{{ lang.level }}{% if lang.note %} ({{ lang.note }}){% endif %}</span>
+  </div>
+  {% endfor %}
+  </div>
+
+  <!-- Publications -->
+  <h2 class="cv-pdf-section">Publications</h2>
+  <div class="cv-pdf-footer">
+    Full publication list at: Inspire-HEP <a href="{{ site.data.cv.footer_links.inspire }}">↗</a>
+    · Google Scholar <a href="{{ site.data.cv.footer_links.google_scholar }}">↗</a>
+  </div>
+
+</body>
+</html>

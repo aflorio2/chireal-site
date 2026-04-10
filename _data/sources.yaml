@@ -13,6 +13,7 @@
 
 # Featured publications with custom highlight images
 - id: arxiv:2511.01966
+  highlight: true
   image: images/publications_highlights/asymmetry.png
   description: >
     We consider the entanglement asymmetry as a symmetry probe in gauge theories.
@@ -21,6 +22,7 @@
     corresponding local order parameter for the chiral symmetry.
 
 - id: doi:10.1103/sgrx-jpp9
+  highlight: true
   image: images/publications_highlights/thermalization_quantum_entanglement.png
   description: >
     This work demonstrates how quantum entanglement drives thermalization in
@@ -30,6 +32,7 @@
     interacting gauge theory.
 
 - id: doi:10.1103/PhysRevD.109.L071501
+  highlight: true
   image: images/publications_highlights/negativitynew3.png
   description: >
     We establish that the two-fermion negativity, a particular measure of
@@ -38,6 +41,7 @@
     confinement/deconfinement transition.
 
 - id: doi:10.21468/SciPostPhys.17.3.085
+  highlight: true
   image: images/publications_highlights/higher_forms.png
   description: >
     Higher-form symmetries can be used to constrain the long-range dynamics of

@@ -129,6 +129,180 @@
   margin-right: 10px;
 }
 
+// ===== Collapsible sections =====
+.cv-section {
+  margin: 0 0 5px 0;
+  padding: 0;
+  border: none;
+  background: none;
+  border-radius: 0;
+  overflow: visible;
+
+  > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 6px 0;
+    background: none;
+
+    &:hover {
+      background: none;
+    }
+
+    &::before {
+      content: "▶";
+      font-size: 0.7em;
+      color: var(--primary);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    h2 {
+      margin: 0;
+      display: inline;
+    }
+  }
+
+  &[open] > summary {
+    background: none;
+    margin-bottom: 10px;
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// ===== Two-column sections =====
+.cv-multicol {
+  column-count: 2;
+  column-gap: 30px;
+
+  .cv-entry {
+    break-inside: avoid;
+  }
+
+  .cv-subsection {
+    column-span: all;
+    break-after: avoid;
+  }
+}
+
+// ===== Subsection headings =====
+.cv-subsection {
+  font-size: 1.05rem;
+  font-weight: var(--bold);
+  color: var(--primary);
+  margin: 18px 0 8px 0;
+}
+
+// ===== Summary paragraph =====
+.cv-summary {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text);
+  opacity: 0.8;
+  margin: 0 0 12px 110px;
+}
+
+// ===== Talks legend =====
+.cv-talks-legend {
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+// ===== Talk type badges =====
+.cv-talk-type {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-align: center;
+  min-width: 18px;
+  padding: 1px 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  color: #fff;
+  vertical-align: middle;
+}
+.cv-talk-type-P  { background: #c0392b; }
+.cv-talk-type-I  { background: #2980b9; }
+.cv-talk-type-Co { background: #8e44ad; }
+.cv-talk-type-S  { background: #27ae60; }
+.cv-talk-type-Cf { background: #e67e22; }
+.cv-talk-type-J  { background: #16a085; }
+
+// ===== Full talks list =====
+.cv-talks-list {
+  columns: 2;
+  column-gap: 30px;
+}
+
+.cv-talks-year-group {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+.cv-talks-year {
+  font-size: 1rem;
+  font-weight: var(--bold);
+  color: var(--primary);
+  cursor: pointer;
+  padding: 2px 0;
+  list-style: none;
+
+  &::marker {
+    content: "";
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.cv-talk-entry {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 3px 6px;
+  line-height: 1.4;
+
+  &:nth-child(even) {
+    background: var(--background);
+    border-radius: 3px;
+  }
+}
+
+// ===== Grade indicators (CSS circles) =====
+.cv-grade {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+}
+
+.cv-grade-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary);
+  background: transparent;
+}
+
+.cv-grade-circle.filled {
+  background: var(--primary);
+}
+
+.cv-grade-circle.half {
+  background: linear-gradient(90deg, var(--primary) 50%, transparent 50%);
+}
+
 // Responsive adjustments
 @media (max-width: 600px) {
   .cv-entry,
@@ -148,4 +322,49 @@
   .cv-award p {
     grid-column: 1;
   }
+
+  .cv-summary {
+    margin-left: 0;
+  }
+
+  .cv-multicol {
+    column-count: 1;
+  }
+
+  .cv-talks-list {
+    columns: 1;
+  }
+}
+
+// ===== Print styles =====
+@media print {
+  @page {
+    size: a4 portrait;
+    margin: 2cm 2.5cm;
+  }
+
+  body {
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #333;
+  }
+
+  .cv-entry,
+  .cv-award {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+// Hidden by default, shown only in print
+.print-only {
+  display: none;
 }

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.data.cv.personal.name }} — Publication List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== Page setup ===== */
+    @page {
+      size: a4 portrait;
+      margin: 2cm 2.375cm;
+      @bottom-left {
+        content: "Adrien Florio — Publication List";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-center {
+        content: "aflorio.science";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-right {
+        content: counter(page) "/" counter(pages);
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+    }
+
+    /* ===== Base typography ===== */
+    body {
+      font-family: "Cabin", "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.35;
+      color: var(--text);
+      text-align: left;
+      orphans: 3;
+      widows: 3;
+    }
+
+    a { color: var(--main-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Color scheme ===== */
+    :root {
+      --main-color: #1a3a5f;
+      --main-color-light: #4a90b8;
+      --text: #333;
+      --text-muted: #555;
+    }
+
+    /* ===== Header (moderncv classic style) ===== */
+    .cv-pdf-header {
+      display: grid;
+      grid-template-columns: 1.08fr 1fr auto;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: none;
+      background-image: linear-gradient(to right, var(--main-color), var(--main-color));
+      background-size: 100% 2px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    .cv-pdf-name h1 {
+      font-size: 26pt;
+      font-weight: 300;
+      color: var(--main-color);
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .cv-pdf-name h1 strong {
+      font-weight: 700;
+    }
+
+    .cv-pdf-name .cv-pdf-title {
+      font-size: 11pt;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .cv-pdf-contact {
+      font-size: 9.5pt;
+      color: var(--text-muted);
+      line-height: 1.5;
+      text-align: left;
+      padding-left: 12px;
+      border-left: 1px solid #ccc;
+    }
+
+    .cv-pdf-contact a {
+      color: var(--main-color);
+    }
+
+    .cv-pdf-photo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 0.8pt solid #ccc;
+      justify-self: end;
+    }
+
+    /* ===== Section headings ===== */
+    .cv-pdf-section {
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--main-color);
+      border-bottom: none;
+      padding-bottom: 4px;
+      margin: 14px 0 8px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+      background-image: linear-gradient(to right, var(--main-color) 45%, transparent);
+      background-size: 100% 1px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    /* ===== Publication entries ===== */
+    .pub-entry {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      column-gap: 8px;
+      margin: 0 0 8px 0;
+      page-break-inside: avoid;
+      font-size: 10.5pt;
+      line-height: 1.4;
+    }
+
+    .pub-label {
+      font-weight: 600;
+      color: var(--main-color);
+      text-align: right;
+      padding-top: 1px;
+    }
+
+    .pub-body {
+      grid-column: 2;
+    }
+
+    .pub-authors {
+      margin-bottom: 1px;
+    }
+
+    .pub-author-self {
+      font-weight: 700;
+    }
+
+    .pub-title {
+      font-style: italic;
+    }
+
+    .pub-title a {
+      color: var(--text);
+    }
+
+    .pub-details {
+      color: var(--text-muted);
+      font-size: 10pt;
+    }
+
+    .pub-entry-shaded {
+      background: #f0f0f4;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+
+    /* ===== Utility ===== */
+    .no-print { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="cv-pdf-header">
+    <div class="cv-pdf-name">
+      <h1>Adrien <strong>Florio</strong></h1>
+      <div class="cv-pdf-title">{{ site.data.cv.personal.title }}</div>
+    </div>
+    <div class="cv-pdf-contact">
+      &#9993; <a href="mailto:{{ site.data.cv.personal.email }}">{{ site.data.cv.personal.email }}</a><br>
+      &#8962; <a href="https://{{ site.data.cv.personal.homepage }}">{{ site.data.cv.personal.homepage }}</a>
+      &middot; <a href="https://{{ site.data.cv.personal.cosmolattice }}">{{ site.data.cv.personal.cosmolattice }}</a><br>
+      Nationality: {{ site.data.cv.personal.nationality }}<br>
+      ORCID: <a href="{{ site.data.cv.personal.orcid_url }}">{{ site.data.cv.personal.orcid }}</a><br>
+      <a href="{{ site.data.cv.personal.inspire }}">Inspire-HEP page</a>
+      &middot; <a href="{{ site.data.cv.personal.google_scholar }}">Google Scholar profile</a>
+    </div>
+    <img class="cv-pdf-photo" src="images/team/adrien-florio.jpg" alt="{{ site.data.cv.personal.name }}">
+  </div>
+
+  {% comment %}
+    Build a comma-delimited string of highlight IDs from sources.yaml
+  {% endcomment %}
+  {% assign highlight_ids = "" %}
+  {% for s in site.data.sources %}
+    {% if s.highlight == true %}
+      {% if highlight_ids == "" %}
+        {% assign highlight_ids = s.id %}
+      {% else %}
+        {% assign highlight_ids = highlight_ids | append: "," | append: s.id %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign sorted_citations = site.data.citations | sort: "date" | reverse %}
+
+  {% comment %} ===== Highlights ===== {% endcomment %}
+  <h2 class="cv-pdf-section">Highlights</h2>
+  {% assign h_counter = 0 %}
+  {% for c in sorted_citations %}
+    {% assign is_highlight = false %}
+    {% assign id_check = "," | append: highlight_ids | append: "," %}
+    {% assign id_needle = "," | append: c.id | append: "," %}
+    {% if id_check contains id_needle %}
+      {% assign is_highlight = true %}
+    {% endif %}
+    {% if is_highlight %}
+      {% assign h_counter = h_counter | plus: 1 %}
+      {% assign h_mod = h_counter | modulo: 2 %}
+      <div class="pub-entry{% if h_mod == 0 %} pub-entry-shaded{% endif %}">
+        <span class="pub-label">H.{{ h_counter }}</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            {% for author in c.authors %}{% assign display_name = author %}{% for fix in site.data.author_names %}{% if fix.short == author %}{% assign display_name = fix.full %}{% endif %}{% endfor %}{% if display_name contains "Florio" %}<strong class="pub-author-self">{{ display_name }}</strong>{% else %}{{ display_name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span><br>
+          <span class="pub-title">{% if c.link %}<a href="{{ c.link }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span><br>
+          <span class="pub-details">
+            {{ c.publisher }}, {{ c.date | date: "%Y" }}{% for btn in c.buttons %}{% if btn.type == "preprint" %} &middot; <a href="{{ btn.link }}">arXiv</a>{% endif %}{% endfor %}
+          </span>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} ===== Published ===== {% endcomment %}
+  <h2 class="cv-pdf-section">Published</h2>
+  {% assign p_counter = 0 %}
+  {% for c in sorted_citations %}
+    {% assign id_prefix = c.id | slice: 0, 4 %}
+    {% assign is_highlight = false %}
+    {% assign id_check = "," | append: highlight_ids | append: "," %}
+    {% assign id_needle = "," | append: c.id | append: "," %}
+    {% if id_check contains id_needle %}
+      {% assign is_highlight = true %}
+    {% endif %}
+    {% if id_prefix == "doi:" and is_highlight == false and c.publisher != "Lausanne, EPFL" %}
+      {% assign p_counter = p_counter | plus: 1 %}
+      {% assign p_mod = p_counter | modulo: 2 %}
+      <div class="pub-entry{% if p_mod == 0 %} pub-entry-shaded{% endif %}">
+        <span class="pub-label">P.{{ p_counter }}</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            {% for author in c.authors %}{% assign display_name = author %}{% for fix in site.data.author_names %}{% if fix.short == author %}{% assign display_name = fix.full %}{% endif %}{% endfor %}{% if display_name contains "Florio" %}<strong class="pub-author-self">{{ display_name }}</strong>{% else %}{{ display_name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span><br>
+          <span class="pub-title">{% if c.link %}<a href="{{ c.link }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span><br>
+          <span class="pub-details">
+            {{ c.publisher }}, {{ c.date | date: "%Y" }}{% for btn in c.buttons %}{% if btn.type == "preprint" %} &middot; <a href="{{ btn.link }}">arXiv</a>{% endif %}{% endfor %}
+          </span>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} ===== Preprints ===== {% endcomment %}
+  <h2 class="cv-pdf-section">Preprints</h2>
+  {% assign pre_counter = 0 %}
+  {% for c in sorted_citations %}
+    {% assign id_prefix6 = c.id | slice: 0, 6 %}
+    {% assign is_highlight = false %}
+    {% assign id_check = "," | append: highlight_ids | append: "," %}
+    {% assign id_needle = "," | append: c.id | append: "," %}
+    {% if id_check contains id_needle %}
+      {% assign is_highlight = true %}
+    {% endif %}
+    {% if id_prefix6 == "arxiv:" and is_highlight == false %}
+      {% assign pre_counter = pre_counter | plus: 1 %}
+      {% assign pre_mod = pre_counter | modulo: 2 %}
+      <div class="pub-entry{% if pre_mod == 0 %} pub-entry-shaded{% endif %}">
+        <span class="pub-label">Pre.{{ pre_counter }}</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            {% for author in c.authors %}{% assign display_name = author %}{% for fix in site.data.author_names %}{% if fix.short == author %}{% assign display_name = fix.full %}{% endif %}{% endfor %}{% if display_name contains "Florio" %}<strong class="pub-author-self">{{ display_name }}</strong>{% else %}{{ display_name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span><br>
+          <span class="pub-title">{% if c.link %}<a href="{{ c.link }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span><br>
+          <span class="pub-details">
+            {{ c.publisher }}, {{ c.date | date: "%Y" }}{% for btn in c.buttons %}{% if btn.type == "preprint" %} &middot; <a href="{{ btn.link }}">arXiv</a>{% endif %}{% endfor %}
+          </span>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} ===== Others ===== {% endcomment %}
+  <h2 class="cv-pdf-section">Others</h2>
+  {% assign o_counter = 0 %}
+  {% for c in sorted_citations %}
+    {% assign id_prefix = c.id | slice: 0, 4 %}
+    {% assign id_prefix6 = c.id | slice: 0, 6 %}
+    {% assign is_highlight = false %}
+    {% assign id_check = "," | append: highlight_ids | append: "," %}
+    {% assign id_needle = "," | append: c.id | append: "," %}
+    {% if id_check contains id_needle %}
+      {% assign is_highlight = true %}
+    {% endif %}
+    {% assign is_published = false %}
+    {% if id_prefix == "doi:" and is_highlight == false and c.publisher != "Lausanne, EPFL" %}
+      {% assign is_published = true %}
+    {% endif %}
+    {% assign is_preprint = false %}
+    {% if id_prefix6 == "arxiv:" and is_highlight == false %}
+      {% assign is_preprint = true %}
+    {% endif %}
+    {% unless is_highlight or is_published or is_preprint %}
+      {% assign o_counter = o_counter | plus: 1 %}
+      {% assign o_mod = o_counter | modulo: 2 %}
+      <div class="pub-entry{% if o_mod == 0 %} pub-entry-shaded{% endif %}">
+        <span class="pub-label">O.{{ o_counter }}</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            {% for author in c.authors %}{% assign display_name = author %}{% for fix in site.data.author_names %}{% if fix.short == author %}{% assign display_name = fix.full %}{% endif %}{% endfor %}{% if display_name contains "Florio" %}<strong class="pub-author-self">{{ display_name }}</strong>{% else %}{{ display_name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span><br>
+          <span class="pub-title">{% if c.link %}<a href="{{ c.link }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span><br>
+          <span class="pub-details">
+            {{ c.publisher }}, {{ c.date | date: "%Y" }}{% for btn in c.buttons %}{% if btn.type == "preprint" %} &middot; <a href="{{ btn.link }}">arXiv</a>{% endif %}{% endfor %}
+          </span>
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+
+</body>
+</html>

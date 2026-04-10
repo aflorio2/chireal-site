@@ -1,0 +1,530 @@
+# CV data — single source of truth
+# Ported verbatim from cv/cv.tex (minus publications)
+
+personal:
+  name: Adrien Florio
+  title: Emmy Noether Junior Group Leader
+  email: florio.adrien@gmail.com
+  homepage: aflorio.science
+  cosmolattice: cosmolattice.net
+  nationality: Swiss
+  orcid: "0000-0002-7276-4515"
+  orcid_url: https://orcid.org/0000-0002-7276-4515
+  inspire: https://inspirehep.net/authors/1844184
+  photo: headshot
+  google_scholar: https://scholar.google.com/citations?user=AvWN0nIAAAAJ&hl=en
+
+positions:
+  - date: "04/2025-"
+    title: Emmy Noether Junior Group Leader
+    institution: Bielefeld University
+    location: Germany
+  - date: "2022-2025"
+    title: Goldhaber Distinguished Fellow
+    institution: Brookhaven National Lab.
+    location: US
+    details: "Co-design Center for Quantum Advantage (C2QA) + Nuclear Theory group"
+  - date: "2020-2022"
+    title: Postdoc. researcher
+    institution: Center for Nuclear Theory
+    location: Stony Brook, US
+
+funding:
+  - date: "01/2026-"
+    title: "Project Leader in Collaborative Research Center CRC-TR-211"
+    funder: DFG
+    details: "Project A02 on the phase diagram at finite chemical potential. Funding for a full PhD student ~150'000€"
+  - date: "04/2025-"
+    title: "Emmy Noether Grant, German Research Foundation (DFG)"
+    funder: DFG
+    details: "Personal research grant of ~ 1'500'000€ to establish a junior research group."
+
+awards:
+  - date: "2022-2025"
+    title: Goldhaber Distinguished Fellowship
+    institution: Brookhaven National Lab., US
+    description: "\\$22K yearly salary bonus + \\$12k yearly travel/material fund. Highlighted in BNL news <a href='https://www.bnl.gov/newsroom/news.php?a=220996'>↗</a>."
+  - date: "2023"
+    title: "Buchalter Cosmology Prize <a href='http://www.buchaltercosmologyprize.org/'>↗</a>"
+    description: "Third place prize of \\$2.5K for our \"Stairway to Heaven\" paper."
+  - date: "2024"
+    title: Department of Energy highlight and public coverage
+    description: "Our PRL paper <a href='https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.021902'>↗</a> on string breaking in the Schwinger model was highlighted by the DOE <a href='https://science.osti.gov/np/Highlights/2023/NP-2023-11-g'>↗</a>, BNL <a href='https://www.bnl.gov/newsroom/news.php?a=221731'>↗</a>, and a Spanish science podcast <a href='https://francis.naukas.com/2024/02/05/podcast-cb-syr-449-eskirmiones-ingenuity-niac-doom-boson-de-higgs-agujeros-negros-supermasivos-y-entrelazamiento-cuantico-en-chorros-hadronicos/'>↗</a>."
+
+education:
+  - date: "2016-2020"
+    degree: PhD in Physics
+    institution: EPFL
+    location: Lausanne, Switzerland
+    details: "Supervisor: Pr. M. Shaposhnikov"
+  - date: "2014-2016"
+    degree: MSc in Physics
+    institution: EPFL
+    location: Lausanne, Switzerland
+  - date: "2014-2016"
+    degree: Minor in Mathematics
+    institution: EPFL
+    location: Lausanne, Switzerland
+  - date: "2011-2014"
+    degree: BSc in Physics
+    institution: EPFL
+    location: Lausanne, Switzerland
+
+selected_talks:
+  - date: "03/2026"
+    type: Invited talk
+    event: "APS March meeting"
+    event_detail: "Symposium \"Advances in Quantum Simulation for Nuclear Physics\""
+    location: Denver
+    url: https://summit.aps.org/smt/2026/events/MAR-J07/2
+  - date: "12/2025"
+    type: Invited talk
+    event: "Komittee für Hadron und Kern Physik yearly meeting"
+    location: Bad Honnef
+    url: https://indico.gsi.de/event/18729/contributions/94202/
+  - date: "09/2025"
+    type: Invited talk
+    event: "DPG Quantum 2025"
+    event_detail: "Symposium \"Quantum Thermalization\""
+    location: Göttingen
+    url: https://www.dpg-verhandlungen.de/year/2025/conference/quantum/part/syqt/session/1/contribution/2
+  - date: "08/2025"
+    type: Invited talk
+    event: "Workshop \"Bridging Analytical and Numerical Methods for Quantum Field Theory\""
+    location: "ECT* Trento"
+    url: https://indico.ectstar.eu/event/241/contributions/5960/
+  - date: "09/2024"
+    type: Plenary talk
+    event: "Conference \"Strong and Electroweak Matter\""
+    location: Frankfurt
+    url: https://indico.physik.uni-bielefeld.de/event/100/contributions/320/
+  - date: "05/2024"
+    type: Invited talk
+    event: "Workshop \"Non-perturbative and Topological Aspects of QCD Workshop\""
+    location: CERN
+    url: https://indico.cern.ch/event/1383721/contributions/5816654/
+  - date: "03/2024"
+    type: Invited talk
+    event: "Workshop \"Exploring Quantum Mechanics in High Energy Physics\""
+    location: Pittsburgh
+    url: https://indico.global/event/806/contributions/23859/
+  - date: "09/2023"
+    type: Invited talk
+    event: "Workshop \"Thermalization, from Cold Atoms to Hot QCD\""
+    location: IQuS, Seattle
+    url: https://iqus.uw.edu/events/iqus-workshop-thermalization/
+  - date: "05/2023"
+    type: Invited talk
+    event: "Workshop \"Quantum Entanglement in HEP\""
+    location: Cracow
+    url: https://zakopane.if.uj.edu.pl/event/21/contributions/567/
+
+professional_services:
+  organizing_committees:
+    - date: "06/2026"
+      title: "Advanced Lectures in Physics in Switzerland (ALPS III) <a href='https://indico.global/event/9670/'>↗</a>"
+      description: "PhD summer school on generalized symmetries and quantum simulation methods. Funding: SwissMAP (CHF30K), Bielefeld University (€5K), CRC-TR-211 (€2K)."
+    - date: "06/2025"
+      title: "Advanced Lectures in Physics in Switzerland (ALPS II) <a href='https://indico.global/event/9641/'>↗</a>"
+      description: "PhD summer school on integrability breaking and hydrodynamics. Funding: SwissMAP (CHF30K), University of Geneva (CHF7K)."
+    - date: "05/2024"
+      title: "Advanced Lectures in Physics in Switzerland (ALPS I) <a href='https://indico.global/event/9618/'>↗</a>"
+      description: "PhD summer school on quantum computing. Funding: SwissMAP (CHF30K), Quantinuum (CHF5K)."
+    - date: "2022"
+      title: "CosmoLattice School 2022"
+      description: "PhD summer school 09/2022 about the CosmoLattice software."
+    - date: "2021"
+      title: "6th Chirality, Vorticity and Magnetic Field in Heavy Ion Collisions"
+  advisory_committees:
+    - date: "on-going"
+      title: Advisory Board Member
+      institution: "Graduate and Academic Career Development Centre (GRACE)"
+      location: Bielefeld University
+  referee:
+    - date: "on-going"
+      journals: "PRL, PRB, PRD, PRE, JHEP, JCAP, Nature Communications"
+    - date: "2024"
+      title: "Office of Science Graduate Student Research (SCGSR) Program"
+  seminar_organization:
+    - date: "2025-"
+      title: Bielefeld E6/D6 seminars
+    - date: "2022-2025"
+      title: BNL Nuclear Theory Seminars
+    - date: "2020-2022"
+      title: CFNS/CNT seminars
+
+supervision:
+  summary: "Current group: 2 PhD students, 1 postdoc, 1 master student, 1 bachelor student."
+  phd_students:
+    - date: "2026-"
+      name: Marta Memon
+    - date: "2025-"
+      name: Vasundhara Krishnan
+  postdocs:
+    - date: "2025-"
+      name: Franz Sattler
+  master_students:
+    - date: "2026-"
+      name: Jonathan Knospe
+    - date: "2019-2020"
+      name: Alexandra Tchalakian
+      description: "EPFL, Master project, supervisor"
+    - date: "2020-2021"
+      name: José Matos
+      description: "EPFL/Porto, Master project, co-supervisor"
+    - date: "2020-2021"
+      name: Frédéric Dux
+      description: "EPFL, Master project, co-supervisor"
+  bachelor_students:
+    - date: "2025-"
+      name: Florian Weimhoener
+  mentorship:
+    - date: "2020-2022"
+      name: Nicolas Loayza
+      description: "Valencia, PhD student, mentorship"
+    - date: "2021-2024"
+      name: David Frenklakh
+      description: "Stony Brook U., PhD student, mentorship"
+
+teaching:
+  courses:
+    - date: "2026"
+      title: Cosmology
+      description: "Master course, Bielefeld"
+  phd_schools:
+    - date: "2026"
+      title: "Heidelberg Graduate Summer School (projected)"
+      topic: "Anomalous real-time dynamics"
+    - date: "2026"
+      title: "CRC retreat, Bonn"
+      topic: "Tensor networks and quantum simulations"
+    - date: "2023"
+      title: "CosmoLattice summer school, online"
+      topic: "Real-time simulations <a href='https://indico.ific.uv.es/event/7055/contributions/20590/'>↗</a>"
+    - date: "2022"
+      title: "CosmoLattice summer school, Valencia"
+      topic: "Real-time simulations <a href='https://indico.ific.uv.es/event/6631/contributions/18541/'>↗</a>"
+    - date: "2022"
+      title: "YETI 2022 \"Phenomenology in the sky\", Durham/online"
+      topic: "Real-time simulations and the use of the CosmoLattice software <a href='https://conference.ippp.dur.ac.uk/event/1099/sessions/1325/'>↗</a>"
+  teaching_assistant:
+    - date: "2016-2019"
+      title: "General Relativity and Cosmology, 1st year MSc, EPFL"
+    - date: "2017-2019"
+      title: "Quantum Mechanics III, 1st year MSc, EPFL"
+    - date: "2017"
+      title: "Remedial General Physics, 1st year BSc, EPFL"
+  workshops:
+    - date: "2017"
+      title: "Teaching Toolkits, Participant, EPFL's Teaching Support Center"
+
+outreach:
+  - date: "08/2024"
+    title: "REYES, tutor, LBNL (online)"
+    description: "Remote Experience for Young Engineers and Scientists. Online program to develop STEM literacy in high-school students."
+  - date: "08/2022-2024"
+    title: "QISE High School Summer School, tutor, Virginia Tech (online)"
+    description: "1 week summer school to teach quantum computations to high school students (3x)."
+  - date: "03/2023"
+    title: "C2QA's Quantum Thursdays, Invited Speaker"
+    description: "Outreach talk aimed at science undergrads"
+    url: https://www.bnl.gov/video/index.php?v=845
+
+talks:
+  - year: "2026"
+    entries:
+      - type: Invited
+        title: "Quantum revolution for hadrons"
+        event: "APS March meeting"
+        location: Denver
+        url: https://summit.aps.org/smt/2026/events/MAR-J07/2
+  - year: "2025"
+    entries:
+      - type: Invited
+        title: "Quantum revolution for hadrons"
+        event: "Komittee für Hadron und Kern Physik"
+        location: Bad Honnef
+        url: https://indico.gsi.de/event/18729/contributions/94202/
+      - type: Colloquium
+        title: "Early Universe dynamics"
+        event: "Physics PhD day colloquium"
+        location: Bielefeld
+      - type: Colloquium
+        title: "Strong interaction dynamics and their quantum origin"
+        event: "Physics colloquium"
+        location: Bielefeld
+      - type: Seminar
+        title: "Thermalization of 'Jets' in the Massive Schwinger Model"
+        event: "IsoQuant YS Seminar"
+        location: Heidelberg
+      - type: Seminar
+        title: "ditto"
+        event: "Nuclear and Particle Theory seminar"
+        location: MIT
+      - type: Invited
+        title: "Emergent thermalisation in the Schwinger model"
+        event: "ECT*"
+        location: Trento
+        url: https://indico.ectstar.eu/event/241/contributions/5960/
+      - type: Invited
+        title: "Approach to thermalisation in the Schwinger model"
+        event: "DPG Quantum 2025"
+        event_detail: "Symposium \"Quantum Thermalization\""
+        location: Göttingen
+        url: https://www.dpg-verhandlungen.de/year/2025/conference/quantum/part/syqt/session/1/contribution/2
+      - type: Seminar
+        title: "ditto"
+        event: "École Polytechnique"
+        location: Paris
+  - year: "2024"
+    entries:
+      - type: Invited
+        title: "QCD dynamics: some theory developments"
+        event: "CERN workshop"
+        url: https://indico.cern.ch/event/1383721/contributions/5816654/
+      - type: Plenary
+        title: "New physics from lower dimensions"
+        event: "Strong and Electroweak Matter"
+        location: Frankfurt
+        url: https://indico.physik.uni-bielefeld.de/event/100/contributions/320/
+      - type: Seminar
+        title: "ditto"
+        event: "UMD"
+        location: College Park
+      - type: Seminar
+        title: "ditto"
+        event: "UIC"
+        location: Chicago
+      - type: Job talk
+        title: "ditto"
+        event: "Stony Brook/CFNS"
+      - type: Invited
+        title: "Entanglement in pair creation"
+        event: "Workshop \"Exploring Quantum Mechanics in High Energy Physics\""
+        location: Pittsburgh
+        url: https://indico.global/event/806/contributions/23859/
+  - year: "2023"
+    entries:
+      - type: Invited
+        title: "Entanglement in pair creation"
+        event: "Workshop \"Probing the Frontiers of Nucl. Phys. with AI at the EIC\""
+        location: CFNS
+        url: https://indico.bnl.gov/event/18416/contributions/81225/
+      - type: Invited
+        title: "ditto"
+        event: "Workshop \"Thermalization, from Cold Atoms to Hot QCD\""
+        location: Seattle
+        url: https://iqus.uw.edu/events/iqus-workshop-thermalization/
+      - type: Seminar
+        title: "ditto"
+        event: "Jefferson Lab"
+        url: https://www.jlab.org/video/theory-seminar-adrien-florio
+      - type: Seminar
+        title: "ditto"
+        event: "Florence U."
+      - type: Invited
+        title: "Real-time non-perturbative dynamics of jet production in Schwinger model: quantum entanglement and vacuum modifications"
+        event: "Workshop \"Quantum Entanglement in HEP\""
+        location: Cracow
+        url: https://zakopane.if.uj.edu.pl/event/21/contributions/567/
+      - type: Seminar
+        title: "ditto"
+        event: "IQuS"
+        location: Seattle
+        url: https://iqus.uw.edu/events/adrien-florio/
+      - type: Invited
+        title: "News from magnetohydrodynamics and anomalous transport"
+        event: "Symposium on Extreme Quantum Matter"
+        location: BNL
+      - type: Invited
+        title: "ditto"
+        event: "Workshop \"Chiral Matter: from quarks to quantum computers\""
+        location: Tours
+        url: https://www.lestudium-ias.com/events/chiral-matter-quarks-quantum-computers
+      - type: Colloquium
+        title: "Early universe dynamics: from preheating to the spectroscopy of gravitational waves"
+        event: "Physics colloquium"
+        location: BNL
+      - type: Seminar
+        title: "The O(4) critical point in QCD"
+        event: "Durham U."
+      - type: HET Seminar
+        title: "ditto"
+        event: "EPFL"
+        location: Lausanne
+  - year: "2022"
+    entries:
+      - type: Seminar
+        title: "The O(4) critical point in QCD"
+        event: "Iowa State University"
+        location: Ames
+      - type: Seminar
+        title: "ditto"
+        event: "University of Minnesota"
+        location: Minneapolis
+      - type: Conference
+        title: "ditto"
+        event: "SEWM2022"
+        location: Saclay
+        url: https://indico.in2p3.fr/event/26461/contributions/111649/
+      - type: Conference
+        title: "ditto"
+        event: "FunQCD2022"
+        location: Valencia
+        url: https://sites.google.com/view/funqcd22/program
+      - type: Seminar
+        title: "ditto"
+        event: "Theory seminar"
+        location: Bern
+      - type: Seminar
+        title: "ditto"
+        event: "Nuclear and Particle Theory seminar"
+        location: MIT
+      - type: Seminar
+        title: "ditto"
+        event: "RBRC seminar"
+        location: BNL
+        url: https://indico.bnl.gov/event/13941/
+      - type: Journal club
+        title: "Gibbs entropy from entanglement in electric quenches"
+        event: "IFT"
+        location: "Madrid, online"
+      - type: Journal club
+        title: "CosmoLattice"
+        event: "YITP"
+        location: Stony Brook
+  - year: "2021"
+    entries:
+      - type: Seminar
+        title: "Gibbs entropy from entanglement in electric quenches"
+        event: "NT seminar"
+        location: "BNL, online"
+      - type: Conference
+        title: "ditto"
+        event: "Quark Confinement and Hadron Spectrum 2021"
+        location: online
+        url: https://indico.uis.no/event/12/contributions/98/
+      - type: Conference
+        title: "ditto"
+        event: "SEWM2021"
+        location: online
+        url: https://indico.in2p3.fr/event/24019/contributions/96940/
+      - type: Seminar
+        title: "CosmoLattice"
+        event: "Cosmo Coffee"
+        location: "CERN, online"
+      - type: Seminar
+        title: "ditto"
+        event: "IMSC"
+        location: "Chennai, online"
+      - type: Seminar
+        title: "Searching for a critical point in 5D SU(2)"
+        event: "Asymptotic safety seminar series"
+        location: online
+        url: https://as-seminars.quantum-spacetime.net/2021/05/31/Adrien-Florio.html
+      - type: Seminar
+        title: "ditto"
+        event: "IHES"
+        location: "Saclay, online"
+  - year: "2020"
+    entries:
+      - type: Seminar
+        title: "Abelian Finite Temperature Chiral Charge Dynamics"
+        event: "Bielefeld University"
+  - year: "2019"
+    entries:
+      - type: Seminar
+        title: "Abelian Finite Temperature Chiral Charge Dynamics"
+        event: "Basel University"
+      - type: Seminar
+        title: "ditto"
+        event: "INT"
+        location: Seattle
+      - type: Seminar
+        title: "ditto"
+        event: "UChicago"
+        location: Chicago
+      - type: Seminar
+        title: "ditto"
+        event: "Stony Brook"
+      - type: Seminar
+        title: "ditto"
+        event: "RIKEN Lunch Seminar"
+        location: BNL
+      - type: Seminar
+        title: "ditto"
+        event: "NYU"
+        location: New York
+      - type: Seminar
+        title: "ditto"
+        event: "IFIC"
+        location: Valencia
+      - type: Seminar
+        title: "ditto"
+        event: "CosmoCoffee"
+        location: CERN
+      - type: Seminar
+        title: "Schwinger Pair-Production from Padé-Borel Reconstruction"
+        event: "Imperial College London"
+  - year: "2018"
+    entries:
+      - type: Conference
+        title: "Abelian Finite Temperature Chiral Charge Dynamics"
+        event: "Lattice2018"
+        location: Michigan
+        url: https://indico.fnal.gov/event/15949/contributions/34717/attachments/21827/27100/Florio_Lat18.pdf
+      - type: Seminar
+        title: "Open vs Periodic Boundary Conditions in the Deconfined Phase"
+        event: "DESY Zeuthen"
+      - type: Lattice Seminar
+        title: "ditto"
+        event: "CERN"
+  - year: "2017"
+    entries:
+      - type: Conference
+        title: "Open vs Periodic Boundary Conditions in the Deconfined Phase"
+        event: "Lattice2017"
+        location: Granada
+      - type: Summer school
+        title: "ditto"
+        event: "HISS"
+        location: Dubna
+  - year: "2016"
+    entries:
+      - type: Seminar
+        title: "Open vs Periodic Boundary Conditions in the Deconfined Phase"
+        event: "Bielefeld University"
+      - type: Talk
+        title: "COMBI, Improved Field Solvers"
+        event: "CERN"
+        location: Geneva
+
+computing_skills:
+  - name: C/C++
+    grade: 4.5
+    description: "Developed CosmoLattice <a href='https://github.com/cosmolattice/cosmolattice'>↗</a> and TempLat <a href='https://github.com/cosmolattice/templat'>↗</a>."
+  - name: MPI/OpenMP
+    grade: 4
+  - name: Python
+    grade: 3.5
+  - name: Julia
+    grade: 3.5
+  - name: Bash
+    grade: 3
+  - name: Mathematica
+    grade: 3.5
+
+languages:
+  - name: French
+    level: Mother tongue
+  - name: English
+    level: Fluent
+    note: CAE in 2014
+  - name: German
+    level: B1-B2
+  - name: Italian
+    level: Good written and oral comprehension
+
+footer_links:
+  inspire: https://inspirehep.net/authors/1844184
+  google_scholar: https://scholar.google.com/citations?user=AvWN0nIAAAAJ&hl=en
