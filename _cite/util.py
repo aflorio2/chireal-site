@@ -12,6 +12,18 @@ from rich import print
 from diskcache import Cache
 
 
+def fix_double_encoded_utf8(s):
+    """
+    Repair strings where UTF-8 bytes were decoded as Latin-1 then re-encoded,
+    e.g. "Ã¡" (U+00C3 U+00A1) should be "á" (U+00E1).
+    Returns the original string if it's already valid.
+    """
+    try:
+        return s.encode("latin-1").decode("utf-8")
+    except (UnicodeDecodeError, UnicodeEncodeError):
+        return s
+
+
 # cache for time-consuming network requests
 cache = Cache("./_cite/.cache")
 
@@ -168,7 +180,7 @@ def save_data(path, data):
     # try to save data as yaml
     try:
         with file:
-            yaml.dump(data, file, default_flow_style=False, sort_keys=False)
+            yaml.dump(data, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
     except Exception:
         raise Exception("Can't save YAML to file")
 
@@ -211,13 +223,13 @@ def cite_with_manubot(_id):
     citation["id"] = _id
 
     # title
-    citation["title"] = get_safe(manubot, "title", "").strip()
+    citation["title"] = fix_double_encoded_utf8(get_safe(manubot, "title", "").strip())
 
     # authors
     citation["authors"] = []
     for author in get_safe(manubot, "author", {}):
-        given = get_safe(author, "given", "").strip()
-        family = get_safe(author, "family", "").strip()
+        given = fix_double_encoded_utf8(get_safe(author, "given", "").strip())
+        family = fix_double_encoded_utf8(get_safe(author, "family", "").strip())
         if given or family:
             citation["authors"].append(" ".join([given, family]))
 

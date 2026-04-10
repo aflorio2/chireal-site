@@ -1,0 +1,12 @@
+# Map abbreviated author names (as they appear in citations.yaml)
+# to their full names. Used by publist-pdf.html at render time.
+- short: "F. Dux"
+  full: "Frédéric Dux"
+- short: "A. Florio"
+  full: "Adrien Florio"
+- short: "J. Klarić"
+  full: "Juraj Klarić"
+- short: "A. Shkerin"
+  full: "Andrey Shkerin"
+- short: "I. Timiryasov"
+  full: "Inar Timiryasov"

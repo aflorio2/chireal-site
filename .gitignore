@@ -1,3 +1,4 @@
+.beads
 _site
 .sass-cache
 .jekyll-cache
@@ -11,3 +12,6 @@ package.json
 package-lock.json
 yarn.lock
 node_modules
+cv.pdf
+cv-footer-test.pdf
+publications.pdf
