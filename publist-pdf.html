@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Adrien Florio — Publication List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== Page setup ===== */
+    @page {
+      size: a4 portrait;
+      margin: 2cm 2.375cm;
+      @bottom-left {
+        content: "Adrien Florio — Publication List";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-center {
+        content: "aflorio.science";
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+      @bottom-right {
+        content: counter(page) "/" counter(pages);
+        font-family: "Cabin", "Helvetica Neue", sans-serif;
+        font-size: 10pt;
+        color: #1a3a5f;
+      }
+    }
+
+    /* ===== Base typography ===== */
+    body {
+      font-family: "Cabin", "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.35;
+      color: var(--text);
+      text-align: left;
+      orphans: 3;
+      widows: 3;
+    }
+
+    a { color: var(--main-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Color scheme ===== */
+    :root {
+      --main-color: #1a3a5f;
+      --main-color-light: #4a90b8;
+      --text: #333;
+      --text-muted: #555;
+    }
+
+    /* ===== Header (moderncv classic style) ===== */
+    .cv-pdf-header {
+      display: grid;
+      grid-template-columns: 1.08fr 1fr auto;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: none;
+      background-image: linear-gradient(to right, var(--main-color), var(--main-color));
+      background-size: 100% 2px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    .cv-pdf-name h1 {
+      font-size: 26pt;
+      font-weight: 300;
+      color: var(--main-color);
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .cv-pdf-name h1 strong {
+      font-weight: 700;
+    }
+
+    .cv-pdf-name .cv-pdf-title {
+      font-size: 11pt;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .cv-pdf-contact {
+      font-size: 9.5pt;
+      color: var(--text-muted);
+      line-height: 1.5;
+      text-align: left;
+      padding-left: 12px;
+      border-left: 1px solid #ccc;
+    }
+
+    .cv-pdf-contact a {
+      color: var(--main-color);
+    }
+
+    .cv-pdf-photo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 0.8pt solid #ccc;
+      justify-self: end;
+    }
+
+    /* ===== Section headings ===== */
+    .cv-pdf-section {
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--main-color);
+      border-bottom: none;
+      padding-bottom: 4px;
+      margin: 14px 0 8px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+      background-image: linear-gradient(to right, var(--main-color) 45%, transparent);
+      background-size: 100% 1px;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    /* ===== Publication entries ===== */
+    .pub-entry {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      column-gap: 8px;
+      margin: 0 0 8px 0;
+      page-break-inside: avoid;
+      font-size: 10.5pt;
+      line-height: 1.4;
+    }
+
+    .pub-label {
+      font-weight: 600;
+      color: var(--main-color);
+      text-align: right;
+      padding-top: 1px;
+    }
+
+    .pub-body {
+      grid-column: 2;
+    }
+
+    .pub-authors {
+      margin-bottom: 1px;
+    }
+
+    .pub-author-self {
+      font-weight: 700;
+    }
+
+    .pub-title {
+      font-style: italic;
+    }
+
+    .pub-title a {
+      color: var(--text);
+    }
+
+    .pub-details {
+      color: var(--text-muted);
+      font-size: 10pt;
+    }
+
+    .pub-entry-shaded {
+      background: #f0f0f4;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+
+    /* ===== Utility ===== */
+    .no-print { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="cv-pdf-header">
+    <div class="cv-pdf-name">
+      <h1>Adrien <strong>Florio</strong>
+</h1>
+      <div class="cv-pdf-title">Emmy Noether Junior Group Leader</div>
+    </div>
+    <div class="cv-pdf-contact">
+      ✉ <a href="mailto:florio.adrien@gmail.com">florio.adrien@gmail.com</a><br>
+      ⌂ <a href="https://aflorio.science">aflorio.science</a>
+      · <a href="https://cosmolattice.net">cosmolattice.net</a><br>
+      Nationality: Swiss<br>
+      ORCID: <a href="https://orcid.org/0000-0002-7276-4515">0000-0002-7276-4515</a><br>
+      <a href="https://inspirehep.net/authors/1844184">Inspire-HEP page</a>
+      · <a href="https://scholar.google.com/citations?user=AvWN0nIAAAAJ&hl=en">Google Scholar profile</a>
+    </div>
+    <img class="cv-pdf-photo" src="images/team/adrien-florio.jpg" alt="Adrien Florio">
+  </div>
+
+  
+  
+  
+
+  
+
+  
+  <h2 class="cv-pdf-section">Highlights</h2>
+  
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">H.1</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, David Frenklakh, Sebastian Grieninger, Dmitri E. Kharzeev, Andrea Palermo, Shuzhe Shi
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbn">Thermalization from quantum entanglement: Jet simulations in the massive Schwinger model</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2025 · <a href="https://arxiv.org/abs/2506.14983">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">H.2</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Sara Murciano
+          </span><br>
+          <span class="pub-title"><a href="https://arxiv.org/abs/2511.01966">Entanglement asymmetry in gauge theories: chiral anomaly in the finite temperature massless Schwinger model</a></span><br>
+          <span class="pub-details">
+            arXiv, 2025 · <a href="https://arxiv.org/abs/2511.01966">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">H.3</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Arpit Das, <strong class="pub-author-self">Adrien Florio</strong>, Nabil Iqbal, Napat Poovuttikul
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbv">Higher-form symmetry and chiral transport in real-time Abelian lattice gauge theory</a></span><br>
+          <span class="pub-details">
+            SciPost Physics, 2024 · <a href="https://arxiv.org/abs/2309.14438">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">H.4</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbs">Two-fermion negativity and confinement in the Schwinger model</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2024 · <a href="https://arxiv.org/abs/2312.05298">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+  
+
+  
+  <h2 class="cv-pdf-section">Published</h2>
+  
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.1</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Eduardo Grossi, Aleksas Mazeliauskas, Alexander Soloviev, Derek Teaney
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/hbfpzs">Supercooled Goldstone Bosons at the QCD Chiral Phase Transition</a></span><br>
+          <span class="pub-details">
+            Physical Review Letters, 2025 · <a href="https://arxiv.org/abs/2504.03516">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.2</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Eduardo Grossi, Aleksas Mazeliauskas, Alexander Soloviev, Derek Teaney
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/hbfpzr">Quenching through the QCD chiral phase transition</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2025 · <a href="https://arxiv.org/abs/2504.03514">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.3</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Erik Gustafson, Kyle Sherbert, <strong class="pub-author-self">Adrien Florio</strong>, Karunya Shirali, Yanzhu Chen, Henry Lamm, Semeon Valgushev, Andreas Weichselbaum, Sophia E. Economou, Robert D. Pisarski, Norm M. Tubman
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbp">Surrogate-constructed scalable-circuits adaptive variational quantum eigensolver in the Schwinger model</a></span><br>
+          <span class="pub-details">
+            Physical Review Applied, 2025 · <a href="https://arxiv.org/abs/2408.12641">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.4</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, David Frenklakh, Kazuki Ikeda, Dmitri Kharzeev, Vladimir Korepin, Shuzhe Shi, Kwangmin Yu
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbq">Quantum real-time evolution of entanglement and hadronization in jet production: Lessons from the massive Schwinger model</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2024 · <a href="https://arxiv.org/abs/2404.00087">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.5</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Andreas Weichselbaum, Semeon Valgushev, Robert D. Pisarski
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbt">Mass gaps of a 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi mathvariant="double-struck">Z</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:math>
+ gauge theory with three fermion flavors in 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:math>
+ dimensions</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2024 · <a href="https://arxiv.org/abs/2310.18312">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.6</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel G Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Francisco Torrenti
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbr">Present and future of 
+	    
+	    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                     <mml:mrow>
+                        <mml:mrow>
+                           <mml:mrow>
+                              <mml:mi>C</mml:mi>
+                           </mml:mrow>
+                        </mml:mrow>
+                     </mml:mrow>
+                  </mml:math>
+	    
+	  
+                  <tt>osmo</tt>
+               
+	    
+                  <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                     <mml:mrow>
+                        <mml:mrow>
+                           <mml:mrow>
+                              <mml:mi>L</mml:mi>
+                           </mml:mrow>
+                        </mml:mrow>
+                     </mml:mrow>
+                  </mml:math>
+	    
+	  
+                  <tt>attice</tt></a></span><br>
+          <span class="pub-details">
+            Reports on Progress in Physics, 2024 · <a href="https://arxiv.org/abs/2312.15056">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.7</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Eduardo Grossi, Derek Teaney
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbw">Dynamics of the 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>O</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:math>
+ critical point in QCD: Critical pions and diffusion in model G</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2024 · <a href="https://arxiv.org/abs/2306.06887">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.8</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Toby Opferkuch, Benjamin Stefanek
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb4">Lattice simulations of non-minimally coupled scalar fields in the Jordan frame</a></span><br>
+          <span class="pub-details">
+            SciPost Physics, 2023 · <a href="https://arxiv.org/abs/2112.08388">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.9</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Gerald V. Dunne, <strong class="pub-author-self">Adrien Florio</strong>, Dmitri E. Kharzeev
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbx">Entropy suppression through quantum interference in electric pulses</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2023 · <a href="https://arxiv.org/abs/2211.13347">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.10</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, David Frenklakh, Kazuki Ikeda, Dmitri Kharzeev, Vladimir Korepin, Shuzhe Shi, Kwangmin Yu
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/gtf947">Real-Time Nonperturbative Dynamics of Jet Production in Schwinger Model: Quantum Entanglement and Vacuum Modification</a></span><br>
+          <span class="pub-details">
+            Physical Review Letters, 2023 · <a href="https://arxiv.org/abs/2301.11991">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.11</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel G. Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Francisco Torrenti, Wessel Valkenburg
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb6"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.svg"><mml:mi mathvariant="script">C</mml:mi></mml:math>osmo<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si2.svg"><mml:mi mathvariant="script">L</mml:mi></mml:math>attice: A modern code for lattice simulations of scalar and gauge field dynamics in an expanding universe</a></span><br>
+          <span class="pub-details">
+            Computer Physics Communications, 2023 · <a href="https://arxiv.org/abs/2102.01031">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.12</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, David Frenklakh, Dmitri E. Kharzeev
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wbz">Chirality distributions inside baryons in 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mrow><mml:mi>QCD</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2022 · <a href="https://arxiv.org/abs/2204.10827">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.13</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel G. Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Nicolás Loayza, Mauro Pieroni
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb3">Spectroscopy of particle couplings with gravitational waves</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2022 · <a href="https://arxiv.org/abs/2202.05805">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.14</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Frédéric Dux, <strong class="pub-author-self">Adrien Florio</strong>, Juraj Klarić, Andrey Shkerin, Inar Timiryasov
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb2">Preheating in Palatini Higgs inflation on the lattice</a></span><br>
+          <span class="pub-details">
+            Journal of Cosmology and Astroparticle Physics, 2022 · <a href="https://arxiv.org/abs/2203.13286">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.15</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Eduardo Grossi, Alexander Soloviev, Derek Teaney
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g692w9">Dynamics of the 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>O</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math>
+ critical point in QCD</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2022 · <a href="https://arxiv.org/abs/2111.03640">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.16</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, João M. Viana P. Lopes, José Matos, João Penedones
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g7j2f2">Searching for continuous phase transitions in 5D SU(2) lattice gauge theory</a></span><br>
+          <span class="pub-details">
+            Journal of High Energy Physics, 2021 · <a href="https://arxiv.org/abs/2103.15242">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.17</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Dmitri E. Kharzeev
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb5">Gibbs entropy from entanglement in electric quenches</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2021 · <a href="https://arxiv.org/abs/2106.00838">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.18</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel G. Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Francisco Torrenti, Wessel Valkenburg
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/gmpgrt">The art of simulating the early universe.
+Part I. Integration techniques and canonical cases</a></span><br>
+          <span class="pub-details">
+            Journal of Cosmology and Astroparticle Physics, 2021 · <a href="https://arxiv.org/abs/2006.15122">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.19</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb8">Schwinger pair production from Padé-Borel reconstruction</a></span><br>
+          <span class="pub-details">
+            Physical Review D, 2020 · <a href="https://arxiv.org/abs/1911.03489">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">P.20</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>, Olaf Kaczmarek, Lukas Mazur
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wcb">Open-boundary conditions in the deconfined phase</a></span><br>
+          <span class="pub-details">
+            The European Physical Journal C, 2019 · <a href="https://arxiv.org/abs/1903.02894">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">P.21</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Daniel G. Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Mikhail Shaposhnikov
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb9">Chiral charge dynamics in Abelian gauge theories at finite temperature</a></span><br>
+          <span class="pub-details">
+            Journal of High Energy Physics, 2019 · <a href="https://arxiv.org/abs/1904.11892">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+
+  
+  <h2 class="cv-pdf-section">Preprints</h2>
+  
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">Pre.1</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Jorge Baeza-Ballesteros, Daniel G. Figueroa, <strong class="pub-author-self">Adrien Florio</strong>, Joanes Lizarraga, Nicolás Loayza, Kenneth Marschall, Toby Opferkuch, Ben A. Stefanek, Francisco Torrentí, Ander Urio
+          </span><br>
+          <span class="pub-title"><a href="https://arxiv.org/abs/2512.15627">The art of simulating the early Universe. Part II. Non-canonical cases &amp; gravitational waves</a></span><br>
+          <span class="pub-details">
+            arXiv, 2026 · <a href="https://arxiv.org/abs/2512.15627">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">Pre.2</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Kim V. Berghaus, <strong class="pub-author-self">Adrien Florio</strong>, M. Laine, Franz R. Sattler
+          </span><br>
+          <span class="pub-title"><a href="https://arxiv.org/abs/2601.09784">Classical equipartition dynamics between axions and non-Abelian gauge fields</a></span><br>
+          <span class="pub-details">
+            arXiv, 2026 · <a href="https://arxiv.org/abs/2601.09784">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">Pre.3</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Evan Budd, <strong class="pub-author-self">Adrien Florio</strong>, David Frenklakh, Swagato Mukherjee
+          </span><br>
+          <span class="pub-title"><a href="https://arxiv.org/abs/2601.02331">Quantum dynamics of cosmological particle production: interacting quantum field theories with matrix product states</a></span><br>
+          <span class="pub-details">
+            arXiv, 2026 · <a href="https://arxiv.org/abs/2601.02331">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry pub-entry-shaded">
+        <span class="pub-label">Pre.4</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            Karunya Shailesh Shirali, Kyle Sherbert, Yanzhu Chen, <strong class="pub-author-self">Adrien Florio</strong>, Andreas Weichselbaum, Robert D. Pisarski, Sophia E. Economou
+          </span><br>
+          <span class="pub-title"><a href="https://arxiv.org/abs/2510.03083">To break, or not to break: Symmetries in adaptive quantum simulations, a case study on the Schwinger model</a></span><br>
+          <span class="pub-details">
+            arXiv, 2025 · <a href="https://arxiv.org/abs/2510.03083">arXiv</a>
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+  <h2 class="cv-pdf-section">Others</h2>
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      <div class="pub-entry">
+        <span class="pub-label">O.1</span>
+        <div class="pub-body">
+          <span class="pub-authors">
+            <strong class="pub-author-self">Adrien Florio</strong>
+          </span><br>
+          <span class="pub-title"><a href="https://doi.org/g99wb7">Aspects of Gauge Theories Vacua</a></span><br>
+          <span class="pub-details">
+            Lausanne, EPFL, 2020
+          </span>
+        </div>
+      </div>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+</body>
+</html>
