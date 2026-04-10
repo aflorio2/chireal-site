@@ -160,6 +160,12 @@ for index, source in enumerate(sources):
                 # discard source from citations
                 continue
 
+    # fix double-encoded UTF-8 from manubot (e.g. "Ã¡" → "á")
+    if "title" in citation:
+        citation["title"] = fix_double_encoded_utf8(citation["title"])
+    if "authors" in citation:
+        citation["authors"] = [fix_double_encoded_utf8(a) for a in citation["authors"]]
+
     # preserve fields from input source, overriding existing fields
     citation.update(source)
 
