@@ -20,7 +20,7 @@ Her research focuses on exploring strongly correlated phases of matter through q
 <div class="cv-entry">
 <span class="cv-date">2023-2025</span>
 <strong class="cv-title">M.Sc. in Physics</strong>
-<span class="cv-institution">University of Milan, Italy</span>
+<span class="cv-institution">Milan University, Italy</span>
 </div>
 
 <div class="cv-entry">
@@ -32,5 +32,51 @@ Her research focuses on exploring strongly correlated phases of matter through q
 <div class="cv-entry">
 <span class="cv-date">2019-2022</span>
 <strong class="cv-title">B.Sc. in Physics</strong>
-<span class="cv-institution">University of Milan, Italy</span>
+<span class="cv-institution">Milan University, Italy</span>
+</div>
+
+## Research Experience
+
+<div class="cv-entry">
+
+<div class="cv-date"> </div>
+
+<div class="cv-title">
+Measurement uncertainties in semiclassical gravity — <i>Master thesis</i>
+</div>
+
+<ul class="cv-details">
+  <li>Advisor: Prof. Dr. Rainer Verch, Leipzig University; Dr. Markus Fröb, Leipzig University</li>
+</ul>
+
+</div>
+
+
+<div class="cv-entry">
+
+<div class="cv-date"> </div>
+
+<div class="cv-title">
+Interacting fields in the perturbative approach to the massless Sine–Gordon model — <i>Practical course</i>
+</div>
+
+<ul class="cv-details">
+  <li>Advisor: Daniela Cadamuro, Leipzig University</li>
+</ul>
+
+</div>
+
+
+<div class="cv-entry">
+
+<div class="cv-date"> </div>
+
+<div class="cv-title">
+Multiplanarizable Quivers — <i>Bachelor thesis</i>
+</div>
+
+<ul class="cv-details">
+  <li>Advisor: Antonio Amariti, Milan University</li>
+</ul>
+
 </div>
