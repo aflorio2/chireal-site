@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--
+  put your analytics (e.g. Google Analytics) tracking code here
+-->
+
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Adrien Florio | Quantum Info and Real-time Evolution</title>
+
+<link rel="icon" href="/preview/pr-3/images/icon.png">
+
+<meta name="title" content="Adrien Florio">
+<meta name="description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+
+<meta property="og:title" content="Adrien Florio">
+<meta property="og:site_title" content="$\small\left|\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT">
+<meta property="og:description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+<meta property="og:url" content="https://aflorio.science/preview/pr-3">
+<meta property="og:image" content="/preview/pr-3/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="Adrien Florio">
+<meta property="twitter:description" content="Adrien Florio's Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.">
+<meta property="twitter:url" content="https://aflorio.science/preview/pr-3">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="/preview/pr-3/images/share.jpg">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Adrien Florio",
+    "description": "Adrien Florio&apos;s Emmy Noether group. Research group specializing in out-of-equilibrium dynamics of quantum fields, quantum information aspects of field theory, and real-time simulations of quantum and classical fields.",
+    "headline": "Adrien Florio",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "/preview/pr-3/images/icon.png" }
+    },
+    "url": "https://aflorio.science/preview/pr-3"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://aflorio.science/preview/pr-3/feed.xml">
+
+  <!-- Google Fonts -->
+<!-- automatically get url from fonts used in theme file -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+
+<link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet">
+</noscript>
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-3/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/cv.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/details.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/member.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/news-carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-3/_styles/util.css" rel="stylesheet">
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- Swiper.js for news carousel -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-3/_scripts/anchors.js"></script>
+
+  <script src="/preview/pr-3/_scripts/dark-mode.js"></script>
+
+  <script src="/preview/pr-3/_scripts/fetch-tags.js"></script>
+
+  <script src="/preview/pr-3/_scripts/header-height.js"></script>
+
+  <script src="/preview/pr-3/_scripts/news-carousel.js"></script>
+
+  <script src="/preview/pr-3/_scripts/search.js"></script>
+
+  <script src="/preview/pr-3/_scripts/site-search.js"></script>
+
+  <script src="/preview/pr-3/_scripts/table-wrap.js"></script>
+
+  <script src="/preview/pr-3/_scripts/tooltip.js"></script>
+
+
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body>
+    
+
+
+
+
+
+
+
+<header class="background" style="--image: url('/preview/pr-3/images/quantum-background.jpg')" data-dark="true">
+  <a href="/preview/pr-3/" class="home">
+    
+      <span class="logo">
+        
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-50 -35 100 70">
+  <style>
+    .particle-1 {
+      animation: straight-line 4s linear infinite;
+      transform-origin: center;
+    }
+    .particle-2 {
+      animation: orbit-2 5s linear infinite;
+      transform-origin: center;
+    }
+    .particle-3 {
+      animation: orbit-3 4.5s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes orbit-1 {
+      0% {
+        transform: rotate(0deg) translateX(32px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(32px) rotate(-360deg);
+      }
+    }
+      @keyframes straight-line {
+    0% {
+      transform: translate(-200px, -60px);
+    }
+    100% {
+      transform: translate(60px, 60px);
+    }
+  }
+
+    @keyframes orbit-2 {
+      0% {
+        transform: rotate(120deg) translateX(28px) rotate(-120deg);
+      }
+      100% {
+        transform: rotate(480deg) translateX(28px) rotate(-480deg);
+      }
+    }
+
+    @keyframes orbit-3 {
+      0% {
+        transform: rotate(240deg) translateX(28px) rotate(-240deg);
+      }
+      100% {
+        transform: rotate(600deg) translateX(28px) rotate(-600deg);
+      }
+    }
+  </style>
+
+  <!-- Bra-ket notation | ⟩ -->
+  <g fill="#935099" opacity="0.9">
+    <!-- Left bar | -->
+    <rect x="-12" y="-12" width="3.5" height="24" rx="1"></rect>
+
+    <!-- Right angle bracket ⟩ -->
+    <path d="M 10,-10.25 L 16,0 L 10,10.25" stroke="#935099" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+
+  <!-- Central chi symbol (LaTeX Computer Modern) -->
+  <defs>
+    <path id="chi-path" d="M5.808219-4.014944C5.917808-4.124533 5.917808-4.144458 5.917808-4.174346C5.917808-4.234122 5.877958-4.293898 5.798257-4.293898C5.738481-4.293898 5.69863-4.244085 5.638854-4.174346L3.35741-1.633873C2.958904-2.899128 2.879203-3.148194 2.650062-3.676214C2.540473-3.905355 2.321295-4.403487 1.444583-4.403487C.86675-4.403487 .607721-3.88543 .607721-3.745953C.607721-3.73599 .607721-3.646326 .727273-3.646326C.816936-3.646326 .836862-3.706102 .856787-3.755915C1.006227-4.144458 1.325031-4.184309 1.384807-4.184309C1.683686-4.184309 1.982565-3.427148 2.15193-2.988792C2.470735-2.201743 2.789539-1.046077 2.789539-1.016189C2.789539-1.006227 2.789539-.986301 2.709838-.9066L.418431 1.653798C.308842 1.763387 .308842 1.783313 .308842 1.8132C.308842 1.872976 .368618 1.932752 .428394 1.932752C.498132 1.932752 .547945 1.863014 .587796 1.823163L2.86924-.737235C3.188045 .298879 3.307597 .687422 3.5467 1.24533C3.676214 1.544209 3.895392 2.042341 4.782067 2.042341C5.3599 2.042341 5.628892 1.524284 5.628892 1.39477C5.628892 1.344956 5.608966 1.285181 5.50934 1.285181S5.399751 1.325031 5.369863 1.424658C5.280199 1.663761 5.031133 1.823163 4.841843 1.823163C4.333748 1.823163 3.656289-.587796 3.437111-1.354919L5.808219-4.014944Z"></path>
+  </defs>
+  <g transform="translate(1, 1) scale(2.2) translate(-3.1, 1.1)">
+    <use href="#chi-path" fill="#D158C0" stroke="#D158C0" stroke-width="0.5"></use>
+  </g>
+
+  <!-- Orbiting particles -->
+  <circle class="particle-1" cx="0" cy="-35" r="3.5" fill="#00CED1" opacity="0.9"></circle>
+  <circle class="particle-2" cx="0" cy="-35" r="3.5" fill="#FF8C42" opacity="0.9"></circle>
+  <circle class="particle-3" cx="-30" cy="0" r="3" fill="#DC143C" opacity="0.8"></circle>
+</svg>
+
+        
+      </span>
+    
+    
+      <span class="title-text" data-tooltip="Home">
+        
+          <span class="title">$\small\left|\chi\right\rangle$real - Quantum Information and Real-time evolution in QFT</span>
+        
+        
+          <span class="subtitle">Adrien Florio's Emmy Noether group</span>
+        
+      </span>
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-3/research/" data-tooltip="Published works">
+          Research
+        </a>
+      
+    
+      
+        <a href="/preview/pr-3/projects/" data-tooltip="Software, datasets, and more">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-3/team/" data-tooltip="About our team">
+          Team
+        </a>
+      
+    
+  </nav>
+</header>
+
+    <main>
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <div class="member-layout">
+  <aside class="member-sidebar">
+    
+
+
+
+<div class="portrait-wrapper">
+  
+    <a class="portrait" data-style="" aria-label="Adrien Florio">
+  
+    
+      
+    
+
+    <img src="/preview/pr-3/images/team/adrien-florio.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/preview/pr-3/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Adrien Florio
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Group Leader
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        Bielefeld University
+      </span>
+    
+  
+  </a>
+  
+</div>
+
+
+    <div>
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="mailto:adrien.florio@uni-bielefeld.de" data-tooltip="Email" data-style="bare" aria-label="Email" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-envelope"></i>
+      
+        <span>Email</span>
+      
+    </a>
+  </div>
+
+<br>
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0002-7276-4515" data-tooltip="ORCID" data-style="bare" aria-label="ORCID" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+        <span>ORCID</span>
+      
+    </a>
+  </div>
+
+<br>
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://cosmolattice.net" data-tooltip="Home page" data-style="bare" aria-label="Home page" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-house-user"></i>
+      
+        <span>Home Page</span>
+      
+    </a>
+  </div>
+
+<br>
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://inspirehep.net/authors/1844184" data-tooltip="INSPIRE-HEP" data-style="bare" aria-label="INSPIRE-HEP" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-graduation-cap"></i>
+      
+        <span>INSPIRE-HEP</span>
+      
+    </a>
+  </div>
+
+<br>
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=AvWN0nIAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-google"></i>
+      
+        <span>Google Scholar</span>
+      
+    </a>
+  </div>
+
+<br>
+      
+    </div>
+  </aside>
+
+  <main class="member-content">
+    <p>Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real <strong>Emmy Noether</strong> research group at <strong>Bielefeld University</strong> and <strong>Project Leader</strong> in the Collaborative Research Center-Transregio <strong>CRC-TR 211</strong> (Project A02).</p>
+
+<details class="cv-section" open="">
+<summary><h2>Positions</h2></summary>
+
+
+<div class="cv-entry">
+<span class="cv-date">04/2025-</span>
+<strong class="cv-title">Emmy Noether Junior Group Leader</strong>
+<span class="cv-institution">Bielefeld University, Germany</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2022-2025</span>
+<strong class="cv-title">Goldhaber Distinguished Fellow</strong>
+<span class="cv-institution">Brookhaven National Lab., US · Co-design Center for Quantum Advantage (C2QA) + Nuclear Theory group</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2020-2022</span>
+<strong class="cv-title">Postdoc. researcher</strong>
+<span class="cv-institution">Center for Nuclear Theory, Stony Brook, US</span>
+</div>
+
+
+</details>
+
+<details class="cv-section" open="">
+<summary><h2>Funding</h2></summary>
+
+
+<div class="cv-entry">
+<span class="cv-date">01/2026-</span>
+<strong class="cv-title">Project Leader in Collaborative Research Center CRC-TR-211</strong>
+<span class="cv-institution">DFG</span>
+<p>Project A02 on the phase diagram at finite chemical potential. Funding for a full PhD student ~150'000€</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">04/2025-</span>
+<strong class="cv-title">Emmy Noether Grant, German Research Foundation (DFG)</strong>
+<span class="cv-institution">DFG</span>
+<p>Personal research grant of ~ 1'500'000€ to establish a junior research group.</p>
+</div>
+
+
+</details>
+
+<details class="cv-section" open="">
+<summary><h2>Awards &amp; Highlights</h2></summary>
+
+
+<div class="cv-award">
+<span class="cv-date">2022-2025</span>
+<strong class="cv-title">Goldhaber Distinguished Fellowship, Brookhaven National Lab., US</strong>
+<p>\$22K yearly salary bonus + \$12k yearly travel/material fund. Highlighted in BNL news <a href="https://www.bnl.gov/newsroom/news.php?a=220996">↗</a>.</p>
+</div>
+
+<div class="cv-award">
+<span class="cv-date">2023</span>
+<strong class="cv-title">Buchalter Cosmology Prize <a href="http://www.buchaltercosmologyprize.org/">↗</a></strong>
+<p>Third place prize of \$2.5K for our "Stairway to Heaven" paper.</p>
+</div>
+
+<div class="cv-award">
+<span class="cv-date">2024</span>
+<strong class="cv-title">Department of Energy highlight and public coverage</strong>
+<p>Our PRL paper <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.021902">↗</a> on string breaking in the Schwinger model was highlighted by the DOE <a href="https://science.osti.gov/np/Highlights/2023/NP-2023-11-g">↗</a>, BNL <a href="https://www.bnl.gov/newsroom/news.php?a=221731">↗</a>, and a Spanish science podcast <a href="https://francis.naukas.com/2024/02/05/podcast-cb-syr-449-eskirmiones-ingenuity-niac-doom-boson-de-higgs-agujeros-negros-supermasivos-y-entrelazamiento-cuantico-en-chorros-hadronicos/">↗</a>.</p>
+</div>
+
+
+</details>
+
+<details class="cv-section" open="">
+<summary><h2>Selected Talks</h2></summary>
+
+<h3 class="cv-subsection">Plenary Talks</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">09/2024</span>
+<strong class="cv-title"><a href="https://indico.physik.uni-bielefeld.de/event/100/contributions/320/">Conference "Strong and Electroweak Matter"</a></strong>
+<span class="cv-institution">Frankfurt</span>
+</div>
+
+
+<h3 class="cv-subsection">Invited Talks</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">03/2026</span>
+<strong class="cv-title"><a href="https://summit.aps.org/smt/2026/events/MAR-J07/2">APS March meeting</a> — Symposium "Advances in Quantum Simulation for Nuclear Physics"</strong>
+<span class="cv-institution">Denver</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">12/2025</span>
+<strong class="cv-title"><a href="https://indico.gsi.de/event/18729/contributions/94202/">Komittee für Hadron und Kern Physik yearly meeting</a></strong>
+<span class="cv-institution">Bad Honnef</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">09/2025</span>
+<strong class="cv-title"><a href="https://www.dpg-verhandlungen.de/year/2025/conference/quantum/part/syqt/session/1/contribution/2">DPG Quantum 2025</a> — Symposium "Quantum Thermalization"</strong>
+<span class="cv-institution">Göttingen</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">08/2025</span>
+<strong class="cv-title"><a href="https://indico.ectstar.eu/event/241/contributions/5960/">Workshop "Bridging Analytical and Numerical Methods for Quantum Field Theory"</a></strong>
+<span class="cv-institution">ECT* Trento</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">05/2024</span>
+<strong class="cv-title"><a href="https://indico.cern.ch/event/1383721/contributions/5816654/">Workshop "Non-perturbative and Topological Aspects of QCD Workshop"</a></strong>
+<span class="cv-institution">CERN</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">03/2024</span>
+<strong class="cv-title"><a href="https://indico.global/event/806/contributions/23859/">Workshop "Exploring Quantum Mechanics in High Energy Physics"</a></strong>
+<span class="cv-institution">Pittsburgh</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">09/2023</span>
+<strong class="cv-title"><a href="https://iqus.uw.edu/events/iqus-workshop-thermalization/">Workshop "Thermalization, from Cold Atoms to Hot QCD"</a></strong>
+<span class="cv-institution">IQuS, Seattle</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">05/2023</span>
+<strong class="cv-title"><a href="https://zakopane.if.uj.edu.pl/event/21/contributions/567/">Workshop "Quantum Entanglement in HEP"</a></strong>
+<span class="cv-institution">Cracow</span>
+</div>
+
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Education</h2></summary>
+
+<div class="cv-multicol">
+
+<div class="cv-entry">
+<span class="cv-date">2016-2020</span>
+<strong class="cv-title">PhD in Physics</strong>
+<span class="cv-institution">EPFL, Lausanne, Switzerland · Supervisor: Pr. M. Shaposhnikov</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2014-2016</span>
+<strong class="cv-title">MSc in Physics</strong>
+<span class="cv-institution">EPFL, Lausanne, Switzerland</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2014-2016</span>
+<strong class="cv-title">Minor in Mathematics</strong>
+<span class="cv-institution">EPFL, Lausanne, Switzerland</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2011-2014</span>
+<strong class="cv-title">BSc in Physics</strong>
+<span class="cv-institution">EPFL, Lausanne, Switzerland</span>
+</div>
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Professional Services</h2></summary>
+
+<h3 class="cv-subsection">Advisory Committees</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">on-going</span>
+<strong class="cv-title">Advisory Board Member</strong>
+<span class="cv-institution">Graduate and Academic Career Development Centre (GRACE), Bielefeld University</span>
+</div>
+
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Organizing Committees</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">06/2026</span>
+<strong class="cv-title">Advanced Lectures in Physics in Switzerland (ALPS III) <a href="https://indico.global/event/9670/">↗</a></strong>
+<p>PhD summer school on generalized symmetries and quantum simulation methods. Funding: SwissMAP (CHF30K), Bielefeld University (€5K), CRC-TR-211 (€2K).</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">06/2025</span>
+<strong class="cv-title">Advanced Lectures in Physics in Switzerland (ALPS II) <a href="https://indico.global/event/9641/">↗</a></strong>
+<p>PhD summer school on integrability breaking and hydrodynamics. Funding: SwissMAP (CHF30K), University of Geneva (CHF7K).</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">05/2024</span>
+<strong class="cv-title">Advanced Lectures in Physics in Switzerland (ALPS I) <a href="https://indico.global/event/9618/">↗</a></strong>
+<p>PhD summer school on quantum computing. Funding: SwissMAP (CHF30K), Quantinuum (CHF5K).</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2022</span>
+<strong class="cv-title">CosmoLattice School 2022</strong>
+<p>PhD summer school 09/2022 about the CosmoLattice software.</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2021</span>
+<strong class="cv-title">6th Chirality, Vorticity and Magnetic Field in Heavy Ion Collisions</strong>
+
+</div>
+
+
+<h3 class="cv-subsection">Referee</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">on-going</span>
+
+<strong class="cv-title">PRL, PRB, PRD, PRE, JHEP, JCAP, Nature Communications</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2024</span>
+
+<strong class="cv-title">Office of Science Graduate Student Research (SCGSR) Program</strong>
+
+</div>
+
+
+<h3 class="cv-subsection">Seminar Organization</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2025-</span>
+<strong class="cv-title">Bielefeld E6/D6 seminars</strong>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2022-2025</span>
+<strong class="cv-title">BNL Nuclear Theory Seminars</strong>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2020-2022</span>
+<strong class="cv-title">CFNS/CNT seminars</strong>
+</div>
+
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Supervision</h2></summary>
+
+<p class="cv-summary">Current group: 2 PhD students, 1 postdoc, 1 master student, 1 bachelor student.</p>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">PhD Students</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2026-</span>
+<strong class="cv-title">Marta Memon</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2025-</span>
+<strong class="cv-title">Vasundhara Krishnan</strong>
+
+</div>
+
+
+</div>
+
+<h3 class="cv-subsection">Postdocs</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2025-</span>
+<strong class="cv-title">Franz Sattler</strong>
+
+</div>
+
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Master Students</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2026-</span>
+<strong class="cv-title">Jonathan Knospe</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2019-2020</span>
+<strong class="cv-title">Alexandra Tchalakian</strong>
+<span class="cv-institution">EPFL, Master project, supervisor</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2020-2021</span>
+<strong class="cv-title">José Matos</strong>
+<span class="cv-institution">EPFL/Porto, Master project, co-supervisor</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2020-2021</span>
+<strong class="cv-title">Frédéric Dux</strong>
+<span class="cv-institution">EPFL, Master project, co-supervisor</span>
+</div>
+
+
+</div>
+
+<h3 class="cv-subsection">Bachelor Students</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2025-</span>
+<strong class="cv-title">Florian Weimhoener</strong>
+
+</div>
+
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Mentorship</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2020-2022</span>
+<strong class="cv-title">Nicolas Loayza</strong>
+<span class="cv-institution">Valencia, PhD student, mentorship</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2021-2024</span>
+<strong class="cv-title">David Frenklakh</strong>
+<span class="cv-institution">Stony Brook U., PhD student, mentorship</span>
+</div>
+
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Teaching</h2></summary>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">Courses</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2026</span>
+<strong class="cv-title">Cosmology</strong>
+<span class="cv-institution">Master course, Bielefeld</span>
+</div>
+
+
+<h3 class="cv-subsection">PhD Schools &amp; Lectures</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2026</span>
+<strong class="cv-title">Heidelberg Graduate Summer School (projected)</strong>
+<span class="cv-institution">Anomalous real-time dynamics</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2026</span>
+<strong class="cv-title">CRC retreat, Bonn</strong>
+<span class="cv-institution">Tensor networks and quantum simulations</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2023</span>
+<strong class="cv-title">CosmoLattice summer school, online</strong>
+<span class="cv-institution">Real-time simulations <a href="https://indico.ific.uv.es/event/7055/contributions/20590/">↗</a></span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2022</span>
+<strong class="cv-title">CosmoLattice summer school, Valencia</strong>
+<span class="cv-institution">Real-time simulations <a href="https://indico.ific.uv.es/event/6631/contributions/18541/">↗</a></span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2022</span>
+<strong class="cv-title">YETI 2022 "Phenomenology in the sky", Durham/online</strong>
+<span class="cv-institution">Real-time simulations and the use of the CosmoLattice software <a href="https://conference.ippp.dur.ac.uk/event/1099/sessions/1325/">↗</a></span>
+</div>
+
+
+<h3 class="cv-subsection">Teaching Assistant</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2016-2019</span>
+<strong class="cv-title">General Relativity and Cosmology, 1st year MSc, EPFL</strong>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2017-2019</span>
+<strong class="cv-title">Quantum Mechanics III, 1st year MSc, EPFL</strong>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">2017</span>
+<strong class="cv-title">Remedial General Physics, 1st year BSc, EPFL</strong>
+</div>
+
+
+<h3 class="cv-subsection">Workshops</h3>
+
+
+<div class="cv-entry">
+<span class="cv-date">2017</span>
+<strong class="cv-title">Teaching Toolkits, Participant, EPFL's Teaching Support Center</strong>
+</div>
+
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Outreach</h2></summary>
+
+<div class="cv-multicol">
+
+<div class="cv-entry">
+<span class="cv-date">08/2024</span>
+<strong class="cv-title">REYES, tutor, LBNL (online)</strong>
+<p>Remote Experience for Young Engineers and Scientists. Online program to develop STEM literacy in high-school students.</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">08/2022-2024</span>
+<strong class="cv-title">QISE High School Summer School, tutor, Virginia Tech (online)</strong>
+<p>1 week summer school to teach quantum computations to high school students (3x).</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">03/2023</span>
+<strong class="cv-title">C2QA's Quantum Thursdays, Invited Speaker · <a href="https://www.bnl.gov/video/index.php?v=845">↗</a></strong>
+<p>Outreach talk aimed at science undergrads</p>
+</div>
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Full List of Talks</h2></summary>
+
+<div class="cv-talks-legend">
+<span class="cv-talk-type cv-talk-type-P">P</span>Plenary
+<span class="cv-talk-type cv-talk-type-I">I</span>Invited
+<span class="cv-talk-type cv-talk-type-Co">Co</span>Colloquium
+<span class="cv-talk-type cv-talk-type-S">S</span>Seminar
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>Conference
+<span class="cv-talk-type cv-talk-type-J">J</span>Journal club
+</div>
+
+<div class="cv-talks-list">
+
+<details class="cv-talks-year-group" open="">
+<summary class="cv-talks-year">2026</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Quantum revolution for hadrons", APS March meeting, Denver · <a href="https://summit.aps.org/smt/2026/events/MAR-J07/2">↗</a>
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2025</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Quantum revolution for hadrons", Komittee für Hadron und Kern Physik, Bad Honnef · <a href="https://indico.gsi.de/event/18729/contributions/94202/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Co">Co</span>
+
+"Early Universe dynamics", Physics PhD day colloquium, Bielefeld
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Co">Co</span>
+
+"Strong interaction dynamics and their quantum origin", Physics colloquium, Bielefeld
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Thermalization of 'Jets' in the Massive Schwinger Model", IsoQuant YS Seminar, Heidelberg
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Nuclear and Particle Theory seminar, MIT
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Emergent thermalisation in the Schwinger model", ECT*, Trento · <a href="https://indico.ectstar.eu/event/241/contributions/5960/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Approach to thermalisation in the Schwinger model", DPG Quantum 2025, Göttingen · <a href="https://www.dpg-verhandlungen.de/year/2025/conference/quantum/part/syqt/session/1/contribution/2">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", École Polytechnique, Paris
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2024</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"QCD dynamics: some theory developments", CERN workshop · <a href="https://indico.cern.ch/event/1383721/contributions/5816654/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-P">P</span>
+
+"New physics from lower dimensions", Strong and Electroweak Matter, Frankfurt · <a href="https://indico.physik.uni-bielefeld.de/event/100/contributions/320/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", UMD, College Park
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", UIC, Chicago
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Stony Brook/CFNS
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Entanglement in pair creation", Workshop "Exploring Quantum Mechanics in High Energy Physics", Pittsburgh · <a href="https://indico.global/event/806/contributions/23859/">↗</a>
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2023</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Entanglement in pair creation", Workshop "Probing the Frontiers of Nucl. Phys. with AI at the EIC", CFNS · <a href="https://indico.bnl.gov/event/18416/contributions/81225/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"ditto", Workshop "Thermalization, from Cold Atoms to Hot QCD", Seattle · <a href="https://iqus.uw.edu/events/iqus-workshop-thermalization/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Jefferson Lab · <a href="https://www.jlab.org/video/theory-seminar-adrien-florio">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Florence U.
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"Real-time non-perturbative dynamics of jet production in Schwinger model: quantum entanglement and vacuum modifications", Workshop "Quantum Entanglement in HEP", Cracow · <a href="https://zakopane.if.uj.edu.pl/event/21/contributions/567/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", IQuS, Seattle · <a href="https://iqus.uw.edu/events/adrien-florio/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"News from magnetohydrodynamics and anomalous transport", Symposium on Extreme Quantum Matter, BNL
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-I">I</span>
+
+"ditto", Workshop "Chiral Matter: from quarks to quantum computers", Tours · <a href="https://www.lestudium-ias.com/events/chiral-matter-quarks-quantum-computers">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Co">Co</span>
+
+"Early universe dynamics: from preheating to the spectroscopy of gravitational waves", Physics colloquium, BNL
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"The O(4) critical point in QCD", Durham U.
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", EPFL, Lausanne
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2022</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"The O(4) critical point in QCD", Iowa State University, Ames
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", University of Minnesota, Minneapolis
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"ditto", SEWM2022, Saclay · <a href="https://indico.in2p3.fr/event/26461/contributions/111649/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"ditto", FunQCD2022, Valencia · <a href="https://sites.google.com/view/funqcd22/program">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Theory seminar, Bern
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Nuclear and Particle Theory seminar, MIT
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", RBRC seminar, BNL · <a href="https://indico.bnl.gov/event/13941/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-J">J</span>
+
+"Gibbs entropy from entanglement in electric quenches", IFT, Madrid, online
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-J">J</span>
+
+"CosmoLattice", YITP, Stony Brook
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2021</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Gibbs entropy from entanglement in electric quenches", NT seminar, BNL, online
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"ditto", Quark Confinement and Hadron Spectrum 2021, online · <a href="https://indico.uis.no/event/12/contributions/98/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"ditto", SEWM2021, online · <a href="https://indico.in2p3.fr/event/24019/contributions/96940/">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"CosmoLattice", Cosmo Coffee, CERN, online
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", IMSC, Chennai, online
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Searching for a critical point in 5D SU(2)", Asymptotic safety seminar series, online · <a href="https://as-seminars.quantum-spacetime.net/2021/05/31/Adrien-Florio.html">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", IHES, Saclay, online
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2020</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Abelian Finite Temperature Chiral Charge Dynamics", Bielefeld University
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2019</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Abelian Finite Temperature Chiral Charge Dynamics", Basel University
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", INT, Seattle
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", UChicago, Chicago
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", Stony Brook
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", RIKEN Lunch Seminar, BNL
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", NYU, New York
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", IFIC, Valencia
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", CosmoCoffee, CERN
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Schwinger Pair-Production from Padé-Borel Reconstruction", Imperial College London
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2018</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"Abelian Finite Temperature Chiral Charge Dynamics", Lattice2018, Michigan · <a href="https://indico.fnal.gov/event/15949/contributions/34717/attachments/21827/27100/Florio_Lat18.pdf">↗</a>
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Open vs Periodic Boundary Conditions in the Deconfined Phase", DESY Zeuthen
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", CERN
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2017</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+
+"Open vs Periodic Boundary Conditions in the Deconfined Phase", Lattice2017, Granada
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"ditto", HISS, Dubna
+</div>
+
+</details>
+
+<details class="cv-talks-year-group">
+<summary class="cv-talks-year">2016</summary>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"Open vs Periodic Boundary Conditions in the Deconfined Phase", Bielefeld University
+</div>
+
+<div class="cv-talk-entry">
+<span class="cv-talk-type cv-talk-type-S">S</span>
+
+"COMBI, Improved Field Solvers", CERN, Geneva
+</div>
+
+</details>
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Computing Skills</h2></summary>
+
+<div class="cv-multicol">
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle half"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">C/C++</strong>
+<p>Developed CosmoLattice <a href="https://github.com/cosmolattice/cosmolattice">↗</a> and TempLat <a href="https://github.com/cosmolattice/templat">↗</a>.</p>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">MPI/OpenMP</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle half"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">Python</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle half"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">Julia</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">Bash</strong>
+
+</div>
+
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+
+
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle filled"></span>
+
+
+
+<span class="cv-grade-circle half"></span>
+
+
+
+<span class="cv-grade-circle"></span>
+
+
+</span>
+</span>
+<strong class="cv-title">Mathematica</strong>
+
+</div>
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>Languages</h2></summary>
+
+<div class="cv-multicol">
+
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">French</strong>
+<span class="cv-institution">Mother tongue</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">English</strong>
+<span class="cv-institution">Fluent (CAE in 2014)</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">German</strong>
+<span class="cv-institution">B1-B2</span>
+</div>
+
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">Italian</strong>
+<span class="cv-institution">Good written and oral comprehension</span>
+</div>
+
+</div>
+
+</details>
+
+
+  </main>
+</div>
+  </section>
+
+
+    </main>
+    
+
+
+<footer class="background" style="--image: url('/preview/pr-3/images/quantum-background.jpg')" data-dark="true" data-size="wide">
+  <!-- Left Logo Section -->
+  <div class="footer-logos footer-logos-left">
+    
+      
+        <a href="https://www.uni-bielefeld.de/fakultaeten/physik/" class="footer-logo-link" aria-label="Bielefeld University" target="_blank" rel="noopener">
+          <img src="/preview/pr-3/images/footer/uni-bielefeld.png" alt="Bielefeld University" class="footer-logo-image" loading="lazy" onerror="this.src = '/preview/pr-3/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+    
+  </div>
+
+  <!-- Center Content Section (existing content) -->
+  <div class="footer-center">
+    <div class="footer-links">
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="mailto:adrien.florio@uni-bielefeld.de" data-tooltip="Email" data-style="bare" aria-label="Email" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-envelope"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0002-7276-4515" data-tooltip="ORCID" data-style="bare" aria-label="ORCID" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=AvWN0nIAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+      
+        
+        
+        
+
+
+
+  
+  
+  <div class="button-wrapper">
+    <a class="button" href="https://inspirehep.net/authors/1844184" data-tooltip="INSPIRE-HEP" data-style="bare" aria-label="INSPIRE-HEP" target="_blank" rel="noopener noreferrer">
+      <i class="icon fa-solid fa-graduation-cap"></i>
+      
+    </a>
+  </div>
+
+
+      
+    </div>
+
+    <div class="footer-text">
+      © 2026
+        |   Built with
+      <a href="https://github.com/greenelab/lab-website-template">
+        Lab Website Template
+      </a>
+    </div>
+
+    <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  </div>
+
+  <!-- Right Logo Section -->
+  <div class="footer-logos footer-logos-right">
+    
+      
+        <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether" class="footer-logo-link" aria-label="Emmy Noether Research Group - DFG" target="_blank" rel="noopener">
+          <img src="/preview/pr-3/images/projects/emmy-noether-grant.png" alt="Emmy Noether Research Group - DFG" class="footer-logo-image" loading="lazy" onerror="this.src = '/preview/pr-3/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+        <a href="https://crc-tr211.org/" class="footer-logo-link" aria-label="CRC-TR 211 Strong-Interaction Matter" target="_blank" rel="noopener">
+          <img src="/preview/pr-3/images/projects/crc-tr211-collaboration.png" alt="CRC-TR 211 Strong-Interaction Matter" class="footer-logo-image" loading="lazy" onerror="this.src = '/preview/pr-3/images/fallback.svg'; this.onerror = null;">
+        </a>
+      
+    
+  </div>
+</footer>
+
+  </body>
+</html>

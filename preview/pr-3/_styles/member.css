@@ -1,0 +1,9 @@
+.member-layout { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: start; margin: 20px 0; }
+
+.member-sidebar { position: sticky; top: calc(var(--header-height, 80px) + 20px); width: 250px; }
+
+.member-content { min-width: 0; }
+
+@media (max-width: 600px) { .member-layout { grid-template-columns: 1fr; gap: 20px; } .member-sidebar { position: static; width: 100%; margin: 0 auto; text-align: center; } }
+
+/*# sourceMappingURL=member.css.map */

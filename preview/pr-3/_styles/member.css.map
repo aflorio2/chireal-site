@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "member.css",
+	"sources": [
+		"member.scss"
+	],
+	"sourcesContent": [
+		"// Member page layout - CSS Grid instead of floats\n.member-layout {\n  display: grid;\n  grid-template-columns: 250px 1fr;\n  gap: 40px;\n  align-items: start;\n  margin: 20px 0;\n}\n\n.member-sidebar {\n  position: sticky;\n  top: calc(var(--header-height, 80px) + 20px);\n  width: 250px;\n}\n\n.member-content {\n  min-width: 0; // Allows content to shrink properly\n}\n\n// Mobile responsive\n@media (max-width: 600px) {\n  .member-layout {\n    grid-template-columns: 1fr;\n    gap: 20px;\n  }\n\n  .member-sidebar {\n    position: static;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AACA,AAAA,cAAc,CAAC,EACb,OAAO,EAAE,IAAI,EACb,qBAAqB,EAAE,SAAS,EAChC,GAAG,EAAE,IAAI,EACT,WAAW,EAAE,KAAK,EAClB,MAAM,EAAE,MAAM,GACf;;AAED,AAAA,eAAe,CAAC,EACd,QAAQ,EAAE,MAAM,EAChB,GAAG,EAAE,uCAAuC,EAC5C,KAAK,EAAE,KAAK,GACb;;AAED,AAAA,eAAe,CAAC,EACd,SAAS,EAAE,CAAC,GACb;;AAGD,MAAM,mBACJ,GAAA,AAAA,cAAc,CAAC,EACb,qBAAqB,EAAE,GAAG,EAC1B,GAAG,EAAE,IAAI,GACV,CAED,AAAA,eAAe,CAAC,EACd,QAAQ,EAAE,MAAM,EAChB,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,MAAM,EACd,UAAU,EAAE,MAAM,GACnB,EAPA"
+}
