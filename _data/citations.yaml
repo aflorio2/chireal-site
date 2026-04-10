@@ -25,6 +25,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/publications/2601.09784.png
 - id: arxiv:2601.02331
   title: 'Quantum dynamics of cosmological particle production: interacting quantum
     field theories with matrix product states'
@@ -52,6 +53,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/publications/2601.02331.png
 - id: arxiv:2512.15627
   title: The art of simulating the early Universe. Part II. Non-canonical cases &
     gravitational waves
@@ -84,6 +86,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/publications/2512.15627.png
 - id: arxiv:2511.01966
   title: 'Entanglement asymmetry in gauge theories: chiral anomaly in the finite temperature
     massless Schwinger model'
@@ -146,6 +149,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/publications/2510.03083.png
 - id: doi:10.1103/sgrx-jpp9
   title: 'Thermalization from quantum entanglement: Jet simulations in the massive
     Schwinger model'
@@ -210,6 +214,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1103/wyn4-ncdc
   title: Supercooled Goldstone Bosons at the QCD Chiral Phase Transition
   authors:
@@ -237,6 +242,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRL.jpg
 - id: doi:10.1103/PhysRevApplied.23.064002
   title: Surrogate-constructed scalable-circuits adaptive variational quantum eigensolver
     in the Schwinger model
@@ -270,6 +276,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRApplied.jpg
 - id: doi:10.1103/PhysRevD.110.094029
   title: 'Quantum real-time evolution of entanglement and hadronization in jet production:
     Lessons from the massive Schwinger model'
@@ -300,6 +307,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1088/1361-6633/ad616a
   title: "Present and future of \n\t    \n\t    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     >\n                     <mml:mrow>\n                        <mml:mrow>\n     \
@@ -337,6 +345,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/ReptProgPhys.jpg
 - id: doi:10.1103/PhysRevD.109.L071501
   title: Two-fermion negativity and confinement in the Schwinger model
   authors:
@@ -400,6 +409,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.21468/SciPostPhys.17.3.085
   title: Higher-form symmetry and chiral transport in real-time Abelian lattice gauge
     theory
@@ -462,6 +472,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1103/PhysRevLett.131.021902
   title: 'Real-Time Nonperturbative Dynamics of Jet Production in Schwinger Model:
     Quantum Entanglement and Vacuum Modification'
@@ -493,6 +504,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRL.jpg
 - id: doi:10.1103/PhysRevD.108.L031901
   title: Entropy suppression through quantum interference in electric pulses
   authors:
@@ -518,6 +530,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1103/PhysRevD.106.096025
   title: "Chirality distributions inside baryons in \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>QCD</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math>"
@@ -543,6 +556,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1088/1475-7516/2022/09/015
   title: Preheating in Palatini Higgs inflation on the lattice
   authors:
@@ -569,6 +583,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/JCAP.jpeg
 - id: doi:10.1103/PhysRevD.106.063522
   title: Spectroscopy of particle couplings with gravitational waves
   authors:
@@ -593,6 +608,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.21468/SciPostPhys.15.3.077
   title: Lattice simulations of non-minimally coupled scalar fields in the Jordan
     frame
@@ -619,6 +635,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/logo_scipost_RGB_HTML_groot.png
 - id: doi:10.1103/PhysRevD.105.054512
   title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
     \ display=\"inline\"><mml:mrow><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>4</mml:mn><mml:mo\
@@ -647,6 +664,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1103/PhysRevD.104.056021
   title: Gibbs entropy from entanglement in electric quenches
   authors:
@@ -676,6 +694,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1007/JHEP12(2021)076
   title: Searching for continuous phase transitions in 5D SU(2) lattice gauge theory
   authors:
@@ -702,6 +721,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: doi:10.1016/j.cpc.2022.108586
   title: '<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.svg"><mml:mi
     mathvariant="script">C</mml:mi></mml:math>osmo<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"
@@ -736,6 +756,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/publications/2102.01031.png
 - id: doi:10.1088/1475-7516/2021/04/035
   title: 'The art of simulating the early universe.
 
@@ -770,6 +791,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/JCAP.jpeg
 - id: doi:10.5075/epfl-thesis-8139
   title: Aspects of Gauge Theories Vacua
   authors:
@@ -809,6 +831,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/PRD.jpg
 - id: doi:10.1007/JHEP10(2019)142
   title: Chiral charge dynamics in Abelian gauge theories at finite temperature
   authors:
@@ -836,6 +859,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: doi:10.1140/epjc/s10052-019-7564-z
   title: Open-boundary conditions in the deconfined phase
   authors:
@@ -863,3 +887,4 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
+  image: images/journals/EPJC.png
