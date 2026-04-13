@@ -201,22 +201,63 @@
   </div>
 
   {% comment %}
-    Build a comma-delimited string of highlight IDs from sources.yaml
+    Build a comma-delimited string of highlight IDs.
+    - site.publist_highlight_ids unset: default from sources.yaml
+    - site.publist_highlight_ids == "none": no highlights
+    - otherwise: resolve arXiv numbers to citation IDs
   {% endcomment %}
-  {% assign highlight_ids = "" %}
-  {% for s in site.data.sources %}
-    {% if s.highlight == true %}
-      {% if highlight_ids == "" %}
-        {% assign highlight_ids = s.id %}
-      {% else %}
-        {% assign highlight_ids = highlight_ids | append: "," | append: s.id %}
+  {% if site.publist_highlight_ids == nil %}
+    {% assign highlight_ids = "" %}
+    {% for s in site.data.sources %}
+      {% if s.highlight == true %}
+        {% if highlight_ids == "" %}
+          {% assign highlight_ids = s.id %}
+        {% else %}
+          {% assign highlight_ids = highlight_ids | append: "," | append: s.id %}
+        {% endif %}
       {% endif %}
-    {% endif %}
-  {% endfor %}
+    {% endfor %}
+  {% elsif site.publist_highlight_ids == "none" %}
+    {% assign highlight_ids = "" %}
+  {% else %}
+    {% assign input_ids = site.publist_highlight_ids | split: "," %}
+    {% assign highlight_ids = "" %}
+    {% for input_id in input_ids %}
+      {% assign trimmed = input_id | strip %}
+      {% assign arxiv_id = "arxiv:" | append: trimmed %}
+      {% assign resolved_id = "" %}
+      {% for c in site.data.citations %}
+        {% if c.id == arxiv_id %}
+          {% assign resolved_id = c.id %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if resolved_id == "" %}
+        {% for c in site.data.citations %}
+          {% for b in c.buttons %}
+            {% assign arxiv_suffix = "/abs/" | append: trimmed %}
+            {% if b.link contains arxiv_suffix %}
+              {% assign resolved_id = c.id %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if resolved_id != "" %}{% break %}{% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if resolved_id != "" %}
+        {% if highlight_ids == "" %}
+          {% assign highlight_ids = resolved_id %}
+        {% else %}
+          {% assign highlight_ids = highlight_ids | append: "," | append: resolved_id %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 
   {% assign sorted_citations = site.data.citations | sort: "date" | reverse %}
 
   {% comment %} ===== Highlights ===== {% endcomment %}
+  {% if highlight_ids != "" %}
   <h2 class="cv-pdf-section">Highlights</h2>
   {% assign h_counter = 0 %}
   {% for c in sorted_citations %}
@@ -243,6 +284,7 @@
       </div>
     {% endif %}
   {% endfor %}
+  {% endif %}
 
   {% comment %} ===== Published ===== {% endcomment %}
   <h2 class="cv-pdf-section">Published</h2>
