@@ -4,10 +4,28 @@ set -euo pipefail
 SITE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
 OUTPUT="${1:-publications.pdf}"
+shift || true
+
+HIGHLIGHT_OVERRIDE=""
+HAS_HIGHLIGHT_FLAG=false
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --highlights) HAS_HIGHLIGHT_FLAG=true; HIGHLIGHT_OVERRIDE="$2"; shift 2 ;;
+    *) shift ;;
+  esac
+done
+
+JEKYLL_CONFIG="_config.yaml"
+if $HAS_HIGHLIGHT_FLAG; then
+  OVERRIDE_CFG=$(mktemp /tmp/_config_publist_XXXXXX.yaml)
+  echo "publist_highlight_ids: \"${HIGHLIGHT_OVERRIDE}\"" > "$OVERRIDE_CFG"
+  JEKYLL_CONFIG="_config.yaml,${OVERRIDE_CFG}"
+  trap "rm -f '$OVERRIDE_CFG'" EXIT
+fi
 
 echo "==> Building Jekyll site..."
 cd "$SITE_DIR"
-bundle exec jekyll build --quiet
+bundle exec jekyll build --quiet --config "$JEKYLL_CONFIG"
 
 echo "==> Generating PDF with Chromium..."
 if command -v chromium-browser &>/dev/null; then
