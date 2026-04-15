@@ -60,11 +60,6 @@ def main(entry):
         document_types = get_safe(metadata, "document_type", [])
         is_proceedings = "conference paper" in document_types or "proceedings" in document_types
 
-        # Filter: Skip papers with more than 20 authors
-        authors = get_safe(metadata, "authors", [])
-        if len(authors) > 20:
-            continue
-
         # Create source dict
         source = {}
 

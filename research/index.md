@@ -29,4 +29,4 @@ Our research is at the intersection of quantum information theory and quantum fi
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" style="rich" filter="type != 'proceedings'" %}

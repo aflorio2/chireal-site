@@ -499,6 +499,130 @@
   plugin: inspire-hep.py
   file: inspire-hep.yaml
   image: images/journals/PRD.jpg
+- id: arxiv:2303.00113
+  title: Quantum Information Science and Technology for Nuclear Physics. Input into
+    U.S. Long-Range Planning, 2023
+  authors:
+  - Douglas Beck
+  - Joseph Carlson
+  - Zohreh Davoudi
+  - Joseph Formaggio
+  - Sofia Quaglioni
+  - Martin Savage
+  - Joao Barata
+  - Tanmoy Bhattacharya
+  - Michael Bishof
+  - Ian Cloet
+  - Andrea Delgado
+  - Michael DeMarco
+  - Caleb Fink
+  - Adrien Florio
+  - Marianne Francois
+  - Dorota Grabowska
+  - Shannon Hoogerheide
+  - Mengyao Huang
+  - Kazuki Ikeda
+  - Marc Illa
+  - Kyungseon Joo
+  - Dmitri Kharzeev
+  - Karol Kowalski
+  - Wai Kin Lai
+  - Kyle Leach
+  - Ben Loer
+  - Ian Low
+  - Joshua Martin
+  - David Moore
+  - Thomas Mehen
+  - Niklas Mueller
+  - James Mulligan
+  - Pieter Mumm
+  - Francesco Pederiva
+  - Rob Pisarski
+  - Mateusz Ploskon
+  - Sanjay Reddy
+  - Gautam Rupak
+  - Hersh Singh
+  - Maninder Singh
+  - Ionel Stetcu
+  - Jesse Stryker
+  - Paul Szypryt
+  - Semeon Valgushev
+  - Brent VanDevender
+  - Samuel Watkins
+  - Christopher Wilson
+  - Xiaojun Yao
+  - Andrei Afanasev
+  - Akif Baha Balantekin
+  - Alessandro Baroni
+  - Raymond Bunker
+  - Bipasha Chakraborty
+  - Ivan Chernyshev
+  - Vincenzo Cirigliano
+  - Benjamin Clark
+  - Shashi Kumar Dhiman
+  - Weijie Du
+  - Dipangkar Dutta
+  - Robert Edwards
+  - Abraham Flores
+  - Alfredo Galindo-Uribarri
+  - Ronald Fernando Garcia Ruiz
+  - Vesselin Gueorguiev
+  - Fanqing Guo
+  - Erin Hansen
+  - Hector Hernandez
+  - Koichi Hattori
+  - Philipp Hauke
+  - Morten Hjorth-Jensen
+  - Keith Jankowski
+  - Calvin Johnson
+  - Denis Lacroix
+  - Dean Lee
+  - Huey-Wen Lin
+  - Xiaohui Liu
+  - Felipe J. Llanes-Estrada
+  - John Looney
+  - Misha Lukin
+  - Alexis Mercenne
+  - Jeff Miller
+  - Emil Mottola
+  - Berndt Mueller
+  - Benjamin Nachman
+  - John Negele
+  - John Orrell
+  - Amol Patwardhan
+  - Daniel Phillips
+  - Stephen Poole
+  - Irene Qualters
+  - Mike Rumore
+  - Thomas Schaefer
+  - Jeremy Scott
+  - Rajeev Singh
+  - James Vary
+  - Juan-Jose Galvez-Viruet
+  - Kyle Wendt
+  - Hongxi Xing
+  - Liang Yang
+  - Glenn Young
+  - Fanyi Zhao
+  publisher: arXiv
+  date: '2023-03-02'
+  link: https://arxiv.org/abs/2303.00113
+  buttons:
+  - type: preprint
+    text: arXiv
+    link: https://arxiv.org/abs/2303.00113
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/2637668
+  type: proceedings
+  tags:
+  - Experiment-Nucl
+  - Theory-Nucl
+  - Quantum Physics
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/2303.00113.png
 - id: doi:10.1103/PhysRevLett.131.021902
   title: 'Real-Time Nonperturbative Dynamics of Jet Production in Schwinger Model:
     Quantum Entanglement and Vacuum Modification'
