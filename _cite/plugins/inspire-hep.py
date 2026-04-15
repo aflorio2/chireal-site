@@ -56,10 +56,9 @@ def main(entry):
     for paper in papers:
         metadata = get_safe(paper, "metadata", {})
 
-        # Filter: Skip conference papers/proceedings
+        # Check document types
         document_types = get_safe(metadata, "document_type", [])
-        if "conference paper" in document_types or "proceedings" in document_types:
-            continue
+        is_proceedings = "conference paper" in document_types or "proceedings" in document_types
 
         # Filter: Skip papers with more than 20 authors
         authors = get_safe(metadata, "authors", [])
@@ -133,6 +132,10 @@ def main(entry):
                     term = get_safe(category, "term", "")
                     if term:
                         source["tags"].append(term)
+
+        # Tag proceedings so the template can route them appropriately
+        if is_proceedings:
+            source["type"] = "proceedings"
 
         # Copy fields from entry to source (preserves configuration)
         source.update(entry)

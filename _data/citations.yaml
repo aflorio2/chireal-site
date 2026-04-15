@@ -121,6 +121,32 @@
     corresponding local order parameter for the chiral symmetry.
 
     '
+- id: doi:10.22323/1.483.0056
+  title: 'Quantum simulation of entanglement and hadronization in jet production:
+    lessons from the massive Schwinger model'
+  authors:
+  - Shuzhe Shi
+  - Adrien Florio
+  - David Frenklakh
+  - Kazuki Ikeda
+  - Dmitri Kharzeev
+  - Vladimir Korepin
+  - Kwangmin Yu
+  publisher: Proceedings of The XVIth Quark Confinement and the Hadron Spectrum Conference
+    — PoS(QCHSC24)
+  date: '2025-10-24'
+  link: https://doi.org/g99wbm
+  buttons:
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/3074198
+  type: proceedings
+  tags:
+  - Phenomenology-HEP
+  - Quantum Physics
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
 - id: arxiv:2510.03083
   title: 'To break, or not to break: Symmetries in adaptive quantum simulations, a
     case study on the Schwinger model'
@@ -888,3 +914,73 @@
   plugin: inspire-hep.py
   file: inspire-hep.yaml
   image: images/journals/EPJC.png
+- id: doi:10.22323/1.334.0044
+  title: U(1) vacuum, Chern-Simons diffusion and real-time simulations
+  authors:
+  - Adrien Florio
+  publisher: Proceedings of The 36th Annual International Symposium on Lattice Field
+    Theory — PoS(LATTICE2018)
+  date: '2019-05-29'
+  link: https://doi.org/g99wcc
+  buttons:
+  - type: preprint
+    text: arXiv
+    link: https://arxiv.org/abs/1810.13410
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1701178
+  type: proceedings
+  tags:
+  - Theory-HEP
+  - Lattice
+  - Theory-HEP
+  - Lattice
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/1810.13410.png
+- id: doi:10.1051/epjconf/201817507004
+  title: Thermal Simulations, Open Boundary Conditions and Switches
+  authors:
+  - Yannis Burnier
+  - Adrien Florio
+  - Olaf Kaczmarek
+  - Lukas Mazur
+  publisher: EPJ Web of Conferences
+  date: '2018-01-01'
+  link: https://doi.org/gkh553
+  buttons:
+  - type: preprint
+    text: arXiv
+    link: https://arxiv.org/abs/1710.06472
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1631338
+  type: proceedings
+  tags:
+  - Lattice
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/1710.06472.png
+- id: doi:10.18429/JACoW-IPAC2016-TUPMW009
+  title: Simulation of Head-on Beam-Beam Limitations in Future High Energy Colliders
+  authors:
+  - Xavier Buffat
+  - Javier Barranco
+  - Adrien Florio
+  - Tatiana Pieloni
+  - Claudia Tambasco
+  publisher: Proceedings of the 7th Int. Particle Accelerator Conf.
+  date: '2016-01-01'
+  link: https://doi.org/g99wcd
+  buttons:
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/1469923
+  type: proceedings
+  tags:
+  - Accelerators
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
