@@ -33,7 +33,7 @@ funding:
   - date: "01/2026-"
     title: "Project Leader in Collaborative Research Center CRC-TR-211"
     funder: DFG
-    details: "Project A02 on the phase diagram at finite chemical potential. Funding for a full PhD student ~150'000€"
+    details: "Project A02 on the phase diagram at finite chemical potential. Funds a full PhD student position (~150'000€)."
   - date: "04/2025-"
     title: "Emmy Noether Grant, German Research Foundation (DFG)"
     funder: DFG
@@ -79,7 +79,7 @@ selected_talks:
     url: https://summit.aps.org/smt/2026/events/MAR-J07/2
   - date: "12/2025"
     type: Invited talk
-    event: "Komittee für Hadron und Kern Physik yearly meeting"
+    event: "Komitee für Hadronen- und Kernphysik (KHuK) yearly meeting"
     location: Bad Honnef
     url: https://indico.gsi.de/event/18729/contributions/94202/
   - date: "09/2025"
@@ -100,7 +100,7 @@ selected_talks:
     url: https://indico.physik.uni-bielefeld.de/event/100/contributions/320/
   - date: "05/2024"
     type: Invited talk
-    event: "Workshop \"Non-perturbative and Topological Aspects of QCD Workshop\""
+    event: "Workshop \"Non-perturbative and Topological Aspects of QCD\""
     location: CERN
     url: https://indico.cern.ch/event/1383721/contributions/5816654/
   - date: "03/2024"
@@ -242,7 +242,7 @@ talks:
     entries:
       - type: Invited
         title: "Quantum revolution for hadrons"
-        event: "Komittee für Hadron und Kern Physik"
+        event: "Komitee für Hadronen- und Kernphysik (KHuK)"
         location: Bad Honnef
         url: https://indico.gsi.de/event/18729/contributions/94202/
       - type: Colloquium
