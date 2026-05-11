@@ -26,7 +26,7 @@
   plugin: inspire-hep.py
   file: inspire-hep.yaml
   image: images/publications/2601.09784.png
-- id: arxiv:2601.02331
+- id: doi:10.1007/JHEP04(2026)183
   title: 'Quantum dynamics of cosmological particle production: interacting quantum
     field theories with matrix product states'
   authors:
@@ -34,9 +34,9 @@
   - Adrien Florio
   - David Frenklakh
   - Swagato Mukherjee
-  publisher: arXiv
-  date: '2026-01-06'
-  link: https://arxiv.org/abs/2601.02331
+  publisher: Journal of High Energy Physics
+  date: '2026-04-23'
+  link: https://doi.org/hb2b84
   buttons:
   - type: preprint
     text: arXiv
@@ -53,7 +53,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
-  image: images/publications/2601.02331.png
+  image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: arxiv:2512.15627
   title: The art of simulating the early Universe. Part II. Non-canonical cases &
     gravitational waves
@@ -87,15 +87,15 @@
   plugin: inspire-hep.py
   file: inspire-hep.yaml
   image: images/publications/2512.15627.png
-- id: arxiv:2511.01966
-  title: 'Entanglement asymmetry in gauge theories: chiral anomaly in the finite temperature
+- id: doi:10.1103/q386-v4ch
+  title: 'Entanglement asymmetry in gauge theories: Chiral anomaly in the finite temperature
     massless Schwinger model'
   authors:
   - Adrien Florio
   - Sara Murciano
-  publisher: arXiv
-  date: '2025-11-05'
-  link: https://arxiv.org/abs/2511.01966
+  publisher: Physical Review D
+  date: '2026-05-05'
+  link: https://doi.org/hb3fj8
   buttons:
   - type: preprint
     text: arXiv

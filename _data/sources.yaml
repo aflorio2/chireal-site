@@ -12,7 +12,7 @@
   image: https://infoscience.epfl.ch/bitstreams/ba65466f-2aeb-415d-86ef-285f53482e9b/download
 
 # Featured publications with custom highlight images
-- id: arxiv:2511.01966
+- id: doi:10.1103/q386-v4ch
   highlight: true
   image: images/publications_highlights/asymmetry.png
   description: >
