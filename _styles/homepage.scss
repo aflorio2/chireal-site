@@ -5,41 +5,40 @@
 
 // Target only the homepage body
 body[data-page="index"] {
-  // Reduce the first cols section (hero) by 20%
+  // Hero section: single column, image on top
   .cols:first-of-type {
-    margin: 32px 0; // Reduced from 40px (20% reduction)
-    gap: 32px; // Reduced from 40px (20% reduction)
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 82%;
+    margin: 32px auto;
+    gap: 32px;
 
-    // Scale down text content slightly
     font-size: 0.95em;
 
-    // Reduce figure/image container
-    figure {
-      transform: scale(0.9);
-      transform-origin: center;
+    // Image (col2 = last child) on top, text (col1 = first child) below
+    > div:first-child {
+      order: 2;
+    }
+    > div:last-child {
+      order: 1;
     }
 
-    // Adjust button sizing
+    // Centred figure, prominent but not edge-to-edge on wide screens
+    figure {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
     .button {
       padding: 0.5em 1em;
       font-size: 0.9em;
     }
 
-    // Mobile: single column with image first
+    // Mobile: let image fill full width
     @media (max-width: 600px) {
-      grid-template-columns: 1fr !important;
-
-      // Reorder: image (col2) first, then text (col1)
-      > div:first-child {
-        order: 2;
-      }
-      > div:last-child {
-        order: 1;
-      }
-
-      // Reset figure scale on mobile
       figure {
-        transform: none;
+        max-width: 100%;
       }
     }
   }
