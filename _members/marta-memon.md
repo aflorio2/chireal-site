@@ -46,7 +46,7 @@ Measurement uncertainties in semiclassical gravity — <i>Master thesis</i>
 </div>
 
 <ul class="cv-details">
-  <li>Advisor: Prof. Dr. Rainer Verch, Leipzig University; Dr. Markus Fröb, Leipzig University</li>
+  <li>Advisor: Rainer Verch, Leipzig University; Markus Fröb, Leipzig University</li>
 </ul>
 
 </div>
