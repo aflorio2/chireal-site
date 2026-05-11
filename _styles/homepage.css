@@ -1,10 +1,14 @@
-body[data-page="index"] .cols:first-of-type { margin: 32px 0; gap: 32px; font-size: 0.95em; }
+body[data-page="index"] .cols:first-of-type { display: flex !important; flex-direction: column; align-items: stretch; max-width: 82%; margin: 32px auto; gap: 32px; font-size: 0.95em; }
 
-body[data-page="index"] .cols:first-of-type figure { transform: scale(0.9); transform-origin: center; }
+body[data-page="index"] .cols:first-of-type > div:first-child { order: 2; }
+
+body[data-page="index"] .cols:first-of-type > div:last-child { order: 1; }
+
+body[data-page="index"] .cols:first-of-type figure { max-width: 75%; margin: 0 auto; }
 
 body[data-page="index"] .cols:first-of-type .button { padding: 0.5em 1em; font-size: 0.9em; }
 
-@media (max-width: 600px) { body[data-page="index"] .cols:first-of-type { grid-template-columns: 1fr !important; } body[data-page="index"] .cols:first-of-type > div:first-child { order: 2; } body[data-page="index"] .cols:first-of-type > div:last-child { order: 1; } body[data-page="index"] .cols:first-of-type figure { transform: none; } }
+@media (max-width: 600px) { body[data-page="index"] .cols:first-of-type figure { max-width: 100%; } }
 
 body[data-page="index"] main > section { padding-top: 20px; padding-bottom: 20px; }
 
