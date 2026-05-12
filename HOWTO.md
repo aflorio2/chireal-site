@@ -52,6 +52,59 @@ cd /Users/aflorio/Documents/GroupWebsite/site
 
 This reads DOIs from `_data/citations.yaml` and generates `_data/citations-output.yaml` with full metadata.
 
+## Updating Citations (e.g. a preprint got published)
+
+`build-profile` fetches `citations.yaml` live from GitHub, so local changes must be committed and pushed before they take effect.
+
+### Full workflow
+
+```bash
+cd /Users/aflorio/Documents/GroupWebsite/site
+
+# 1. Clear the cache so INSPIRE-HEP and Manubot re-fetch fresh metadata
+rm -rf _cite/.cache
+
+# 2. Regenerate citations.yaml locally to verify everything looks right
+#    (must run from site root, not from _cite/)
+python3 _cite/cite.py
+
+# 3. Commit and push sources.yaml if you updated any highlight IDs (see below)
+#    Do NOT commit citations.yaml — GitHub Actions regenerates it on every push
+git add _data/sources.yaml
+git commit -m "Update citations"
+git push
+```
+
+GitHub Actions will then run `cite.py` with fresh data (no cache) and commit the updated `citations.yaml` back to the repo. **Wait for that Actions run to complete** before running `build-profile` — `fetch-data.sh` downloads `citations.yaml` directly from the repo and needs the Actions-committed version.
+
+Monitor the Actions run at: https://github.com/aflorio2/chireal-site/actions
+
+### Why clearing the cache matters
+
+- **INSPIRE-HEP results** are cached for 7 days — won't re-query until expired.
+- **Manubot metadata** (title, publisher, date) is cached for 90 days.
+
+If a preprint was recently published, both caches may still hold the old arXiv record. Deleting `_cite/.cache` forces a full re-fetch.
+
+### If a highlighted preprint got published
+
+Highlights are defined in `_data/sources.yaml` by paper ID. If you added a paper as a highlight while it was still a preprint (e.g. `id: arxiv:2511.01966`), update the ID to the DOI once published (e.g. `id: doi:10.1103/q386-v4ch`) so it merges correctly with the INSPIRE-HEP entry.
+
+The DOI can be found in the INSPIRE-HEP cache after running `cite.py`:
+
+```python
+from diskcache import Cache
+cache = Cache('./_cite/.cache')
+for key in cache.iterkeys():
+    val = cache[key]
+    if isinstance(val, list):
+        for item in val:
+            arxiv_eprints = item.get('metadata', {}).get('arxiv_eprints', [])
+            for ep in arxiv_eprints:
+                if '2511.01966' in ep.get('value', ''):
+                    print(item.get('metadata', {}).get('dois', []))
+```
+
 ## Adding News to the Homepage Banner
 
 The homepage displays a rotating news carousel with the latest announcements. To add a new news item:
