@@ -90,12 +90,26 @@ jobs:
           github.event.action != 'closed' &&
           steps.changed.outputs.files_changed == 'true' &&
           inputs.open-pr == true
+        id: open-pr
         uses: peter-evans/create-pull-request@v6
         with:
           branch: citation-update
           title: Periodic citation update
           body: |
             To see a live preview of this PR, close (don't merge) and reopen it.
+
+      - name: Notify via ntfy.sh
+        if: |
+          github.event.action != 'closed' &&
+          steps.changed.outputs.files_changed == 'true' &&
+          inputs.open-pr == true &&
+          steps.open-pr.outputs.pull-request-operation == 'created'
+        run: |
+          curl -s \
+            -H "Title: Citation update PR opened" \
+            -H "Tags: books" \
+            -d "Updated references PR open, need merging." \
+            https://ntfy.sh/catacomb4-perkiness5-tumbling9-gigantic7-bloating3
 
     outputs:
       changed: ${{ steps.changed.outputs.files_changed || false }}
