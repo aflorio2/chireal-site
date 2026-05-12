@@ -6,17 +6,25 @@
 {% assign jpg = "images/logo.jpg" | file_exists %}
 {% assign logo = svg | default: png | default: jpg | default: nil %}
 
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == 'de' %}
+  {% assign home_url = '/de/' %}
+{% else %}
+  {% assign home_url = '/' %}
+{% endif %}
+
 <header
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
-  {% if page.url == "/" %}
+  {% if page.url == "/" or page.url == "/de/" %}
     data-big
   {% endif %}
 >
-  <a href="{{ "/" | relative_url }}" class="home">
+  <a href="{{ home_url | relative_url }}" class="home">
     {% if logo %}
       <span class="logo">
         {% if svg %}
@@ -32,7 +40,7 @@
           <span class="title">{{ site.title }}</span>
         {% endif %}
         {% if site.subtitle and site.show-subtitle != false %}
-          <span class="subtitle">{{ site.subtitle }}</span>
+          <span class="subtitle">{{ t.site_subtitle | default: site.subtitle }}</span>
         {% endif %}
       </span>
     {% endif %}
@@ -41,19 +49,49 @@
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
+    {% if lang == 'en' %}
+      {% assign pages = site.pages
+        | where_exp: "p", "p.nav"
+        | where_exp: "p", "p.lang == nil or p.lang == 'en'"
+        | sort: "nav.order"
+      %}
+    {% else %}
+      {% assign pages = site.pages
+        | where_exp: "p", "p.nav"
+        | where_exp: "p", "p.lang == lang"
+        | sort: "nav.order"
+      %}
+    {% endif %}
+    {% for p in pages %}
+      {% if p.nav %}
         <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
+          href="{{ p.dir | relative_url | uri_escape }}"
+          data-tooltip="{{ p.nav.tooltip | xml_escape }}"
         >
-          {{ page.title }}
+          {{ p.title }}
         </a>
       {% endif %}
     {% endfor %}
+
+    {% if lang == 'de' %}
+      {% assign other_lang = 'en' %}
+      {% assign switch_fallback = '/' %}
+    {% else %}
+      {% assign other_lang = 'de' %}
+      {% assign switch_fallback = '/de/' %}
+    {% endif %}
+    {% if page.alt_lang_url %}
+      {% assign switch_url = page.alt_lang_url %}
+    {% else %}
+      {% assign switch_url = switch_fallback %}
+    {% endif %}
+    {% assign switch_tooltip_key = 'lang_switch_to_' | append: other_lang %}
+    <span class="lang-switch">
+      {% if lang == 'en' %}
+        <strong>EN</strong><span class="lang-switch-sep">|</span><a href="{{ switch_url | relative_url }}" data-tooltip="{{ t[switch_tooltip_key] | xml_escape }}">DE</a>
+      {% else %}
+        <a href="{{ switch_url | relative_url }}" data-tooltip="{{ t[switch_tooltip_key] | xml_escape }}">EN</a><span class="lang-switch-sep">|</span><strong>DE</strong>
+      {% endif %}
+    </span>
   </nav>
 </header>

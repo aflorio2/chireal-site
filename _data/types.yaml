@@ -4,27 +4,42 @@
 
 principal-investigator:
   description: Principal Investigator
+  description_de_m: Forschungsleiter
+  description_de_f: Forschungsleiterin
 
 group-leader:
   description: Group Leader
+  description_de_m: Gruppenleiter
+  description_de_f: Gruppenleiterin
 
 postdoc:
   description: Postdoctoral Researcher
+  description_de_m: Postdoktorand
+  description_de_f: Postdoktorandin
 
 phd:
   description: PhD Student
+  description_de_m: Doktorand
+  description_de_f: Doktorandin
 
 bachelor:
   description: Bachelor Student
+  description_de_m: Bachelorstudent
+  description_de_f: Bachelorstudentin
 
 undergrad:
   description: Undergraduate Student
+  description_de_m: Student
+  description_de_f: Studentin
 
 programmer:
   description: Programmer
+  description_de_m: Programmierer
+  description_de_f: Programmiererin
 
 mascot:
   description: Mascot
+  description_de: Maskottchen
 
 # general
 

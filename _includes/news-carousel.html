@@ -11,23 +11,30 @@
 
 {% assign news_limit = include.limit | default: 3 %}
 {% assign news_items = site.data.news | slice: 0, news_limit %}
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
 
 {% if news_items.size > 0 %}
 <div class="news-carousel-wrapper">
-  <h3 class="news-carousel-title">Latest News</h3>
+  <h3 class="news-carousel-title">{{ t.latest_news | default: 'Latest News' }}</h3>
 
   <div class="swiper news-carousel">
     <!-- Swiper wrapper -->
     <div class="swiper-wrapper">
       {% for item in news_items %}
+        {% if lang == 'de' %}
+          {% assign item_text = item.text_de | default: item.text %}
+        {% else %}
+          {% assign item_text = item.text %}
+        {% endif %}
         <div class="swiper-slide news-carousel-slide">
           <div class="news-carousel-content">
             {% if item.link %}
               <a href="{{ item.link | relative_url }}" class="news-carousel-link">
-                {{ item.text }}
+                {{ item_text }}
               </a>
             {% else %}
-              <span class="news-carousel-text">{{ item.text }}</span>
+              <span class="news-carousel-text">{{ item_text }}</span>
             {% endif %}
           </div>
         </div>

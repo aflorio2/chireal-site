@@ -35,8 +35,14 @@
     {% endif %}
 
     {% if include.description %}
+      {% assign lang = page.lang | default: 'en' %}
+      {% if lang == 'de' %}
+        {% assign card_description = include.description_de | default: include.description %}
+      {% else %}
+        {% assign card_description = include.description %}
+      {% endif %}
       <p>
-        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
+        {{ card_description | markdownify | remove: "<p>" | remove: "</p>" }}
       </p>
     {% endif %}
 

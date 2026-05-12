@@ -2,6 +2,7 @@
 name: Florian Wehmhöner
 image: images/team/florian-wehmhoener.jpg
 role: bachelor
+gender: m
 affiliation: Bielefeld University
 no_page: "true"
 aliases:

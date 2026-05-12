@@ -16,9 +16,15 @@
       data-style="{{ include.style }}"
     >
   {% else %}
+    {% assign portrait_lang = page.lang | default: 'en' %}
+    {% if portrait_lang == 'de' and member.alt_lang_url %}
+      {% assign portrait_url = member.alt_lang_url %}
+    {% else %}
+      {% assign portrait_url = member.url %}
+    {% endif %}
     <a
       {% if page.slug != member.slug %}
-        href="{{ member.url | relative_url | uri_escape }}"
+        href="{{ portrait_url | relative_url | uri_escape }}"
       {% endif %}
       class="portrait"
       data-style="{{ include.style }}"
@@ -44,8 +50,20 @@
     {% endif %}
 
     {% if member.description or type %}
+      {% assign lang = page.lang | default: 'en' %}
+      {% if lang == 'de' %}
+        {% if member.gender == 'f' %}
+          {% assign type_description = type.description_de_f | default: type.description_de | default: type.description %}
+        {% elsif member.gender == 'm' %}
+          {% assign type_description = type.description_de_m | default: type.description_de | default: type.description %}
+        {% else %}
+          {% assign type_description = type.description_de | default: type.description_de_m | default: type.description %}
+        {% endif %}
+      {% else %}
+        {% assign type_description = type.description %}
+      {% endif %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
+        {{ member.description | default: type_description }}
       </span>
     {% endif %}
 

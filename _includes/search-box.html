@@ -1,14 +1,16 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
 <div class="search-box">
   <input
     type="text"
     class="search-input"
     oninput="onSearchInput(this)"
-    placeholder="Search items on this page"
+    placeholder="{{ t.search_placeholder | default: 'Search items on this page' }}"
   />
   <button
     disabled
-    data-tooltip="Clear search"
-    aria-label="clear search"
+    data-tooltip="{{ t.search_clear | default: 'Clear search' }}"
+    aria-label="{{ t.search_clear | default: 'Clear search' }}"
     onclick="onSearchClear()"
   >
     {% include icon.html icon="fa-solid fa-magnifying-glass" %}

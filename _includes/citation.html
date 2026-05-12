@@ -193,9 +193,15 @@
 
       {% if include.style == "rich" %}
         {% if include.highlighted and citation.description %}
+          {% assign lang = page.lang | default: 'en' %}
+          {% if lang == 'de' %}
+            {% assign citation_description = citation.description_de | default: citation.description %}
+          {% else %}
+            {% assign citation_description = citation.description %}
+          {% endif %}
           <div class="citation-description">
             {{
-              citation.description
+              citation_description
               | markdownify
               | remove: "<p>"
               | remove: "</p>"

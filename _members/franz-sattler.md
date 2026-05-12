@@ -2,6 +2,7 @@
 name: Franz Sattler
 image: images/team/franz-sattler.jpg
 role: postdoc
+gender: m
 affiliation: Bielefeld University
 aliases:
   - F. Sattler

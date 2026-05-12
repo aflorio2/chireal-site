@@ -1,5 +1,7 @@
 ---
 title: Projects
+lang: en
+alt_lang_url: /de/projects/
 nav:
   order: 2
   tooltip: Software, datasets, and more

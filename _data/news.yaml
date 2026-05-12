@@ -14,7 +14,8 @@
 # 2. Use this format:
 #
 #    - date: YYYY-MM-DD
-#      text: "Your announcement text here"
+#      text: "Your English announcement text here"
+#      text_de: "Deutsche Übersetzung hier"
 #      link: "https://example.com" or "pagename#anchor"
 #
 # 3. Important formatting rules:
@@ -22,6 +23,9 @@
 #    - Put text in quotes "like this"
 #    - Keep text under 100 characters for readability
 #    - Date format must be YYYY-MM-DD (e.g., 2025-11-15)
+#    - Always provide BOTH text and text_de. If a translation is missing,
+#      the carousel falls back to the English `text` on /de/ pages, and the
+#      i18n CI lint will fail the PR.
 #
 # 4. Link options:
 #    - External link: "https://example.com"
@@ -68,29 +72,36 @@
 # ============================================================================
 - date: 2026-01-08
   text: "New preprint: Cosmological particle production with tensor networks"
+  text_de: "Neuer Preprint: Kosmologische Teilchenproduktion mit Tensornetzwerken"
   link: "https://arxiv.org/abs/2601.02331"
 
 - date: 2026-01-08
   text: "New preprint: The art of simulating the early Universe. Part II"
+  text_de: "Neuer Preprint: Die Kunst, das frühe Universum zu simulieren. Teil II"
   link: "https://arxiv.org/abs/2512.15627"
 
 - date: 2025-11-01
   text: "🎉 CRC-TR 211 renewed! Adrien as one of the new Project Leaders"
-  link: "https://aktuell.uni-bielefeld.de/2025/11/21/extreme-matter-research-secures-renewal/?lang=en" 
+  text_de: "🎉 CRC-TR 211 verlängert! Adrien ist einer der neuen Projektleiter"
+  link: "https://aktuell.uni-bielefeld.de/2025/11/21/extreme-matter-research-secures-renewal/?lang=en"
 
 - date: 2025-12-15
   text: "Upcoming talk: CPHT @ l'X"
+  text_de: "Bevorstehender Vortrag: CPHT @ l'X"
   link: "https://www.cpht.polytechnique.fr/?q=en/node/949"
 
 - date: 2025-11-10
   text: "New preprint: Entanglement asymmetry in gauge theories"
+  text_de: "Neuer Preprint: Verschränkungs-Asymmetrie in Eichtheorien"
   link: "https://arxiv.org/abs/2511.01966"
 
 - date: 2025-11-01
   text: "Upcoming talk: KHuK 2025 meeting"
+  text_de: "Bevorstehender Vortrag: KHuK 2025"
   link: "https://indico.gsi.de/event/18729/timetable/#20251212"
 
 - date: 2025-11-15
   text: "\"Supercooled Goldstones at the QCD chiral phase transition\" accepted in PRL"
+  text_de: "\"Supercooled Goldstones at the QCD chiral phase transition\" in PRL angenommen"
   link: "https://arxiv.org/abs/2504.03516"
 

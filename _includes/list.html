@@ -25,6 +25,7 @@
     {%
       include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
+      alt_lang_url=d.alt_lang_url
       author=d.author
       authors=d.authors
       buttons=d.buttons
@@ -32,7 +33,9 @@
       content=d.content
       date=d.date
       description=d.description
+      description_de=d.description_de
       excerpt=d.excerpt
+      gender=d.gender
       height=d.height
       icon=d.icon
       id=d.id

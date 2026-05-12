@@ -1,5 +1,7 @@
 ---
 title: Research
+lang: en
+alt_lang_url: /de/research/
 nav:
   order: 1
   tooltip: Published works

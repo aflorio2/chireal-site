@@ -20,6 +20,12 @@
     We compute it analytically in the massless Schwinger model and show it to be
     parametrically more sensitive to symmetry breaking/restoration than the
     corresponding local order parameter for the chiral symmetry.
+  description_de: >
+    Wir untersuchen die Verschränkungs-Asymmetrie als Sonde für Symmetrien in
+    Eichtheorien. Wir berechnen sie analytisch im masselosen Schwinger-Modell und
+    zeigen, dass sie parametrisch empfindlicher auf Symmetriebrechung und
+    -wiederherstellung reagiert als der entsprechende lokale Ordnungsparameter
+    der chiralen Symmetrie.
 
 - id: doi:10.1103/sgrx-jpp9
   highlight: true
@@ -30,6 +36,12 @@
     network simulations of real-time evolution, we show that entanglement
     generation provides a microscopic mechanism for thermalization in this strongly
     interacting gauge theory.
+  description_de: >
+    Diese Arbeit zeigt, wie Quantenverschränkung die Thermalisierung jetartiger
+    Anregungen im massiven Schwinger-Modell antreibt. Mithilfe von
+    Tensornetzwerk-Simulationen der Echtzeitentwicklung weisen wir nach, dass die
+    Erzeugung von Verschränkung einen mikroskopischen Mechanismus für die
+    Thermalisierung in dieser stark wechselwirkenden Eichtheorie liefert.
 
 - id: doi:10.1103/PhysRevD.109.L071501
   highlight: true
@@ -39,6 +51,11 @@
     multipartite entanglement, detects confinement in the massive Schwinger model.
     This reinforces the intuition that quantum correlations are sensitive to the
     confinement/deconfinement transition.
+  description_de: >
+    Wir zeigen, dass die Zwei-Fermion-Negativität – ein spezielles Maß für
+    mehrteilige Verschränkung – Confinement im massiven Schwinger-Modell
+    nachweist. Dies bestärkt die Intuition, dass Quantenkorrelationen empfindlich
+    auf den Confinement-Deconfinement-Übergang reagieren.
 
 - id: doi:10.21468/SciPostPhys.17.3.085
   highlight: true
@@ -49,3 +66,10 @@
     of magnetic lines and chiral transport emerges from the presence of a non-invertible
     symmetry. We demonstrate the practicality of these ideas in classical-statistical
     simulations, where we compute the predicted transports from first principles.
+  description_de: >
+    Höhere Formsymmetrien lassen sich nutzen, um die Langzeitdynamik wechselwirkender
+    Systeme einzuschränken. Magnetohydrodynamik kann aus der Erhaltung magnetischer
+    Feldlinien abgeleitet werden, und chiraler Transport entsteht in Gegenwart einer
+    nichtinvertierbaren Symmetrie. Wir demonstrieren die praktische Anwendbarkeit
+    dieser Ideen in klassisch-statistischen Simulationen, in denen wir die
+    vorhergesagten Transportgrößen aus ersten Prinzipien berechnen.

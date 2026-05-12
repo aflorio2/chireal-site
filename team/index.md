@@ -1,5 +1,7 @@
 ---
 title: Team
+lang: en
+alt_lang_url: /de/team/
 nav:
   order: 3
   tooltip: About our team

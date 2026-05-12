@@ -120,6 +120,21 @@ nav > a:hover {
   color: var(--primary);
 }
 
+.lang-switch {
+  padding: 5px;
+  display: inline-flex;
+  gap: 4px;
+  align-items: baseline;
+}
+
+.lang-switch .lang-switch-sep {
+  opacity: 0.5;
+}
+
+.lang-switch a:hover {
+  color: var(--primary);
+}
+
 header:not([data-big]) {
   @media (max-width: $collapse) {
     justify-content: flex-end;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html lang="{{ page.lang | default: 'en' }}" data-dark="false">
   {% include head.html %}
-  <body{% if page.url == "/" %} data-page="index"{% endif %}>
+  <body{% if page.url == "/" or page.url == "/de/" %} data-page="index"{% endif %}>
     {% include header.html %}
     <main>
       {% include content.html content=content %}

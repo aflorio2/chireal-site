@@ -1,10 +1,15 @@
-# UI label translations for the CV (web + PDF).
-# Selected by site.cv_lang on the PDF (set by profile/build.sh --german) and by
-# include.cv_lang on the web CV body include.
+# UI label translations for site chrome (header, CV web + PDF).
+# Selected by page.lang on regular pages, by site.cv_lang on the PDF (set by
+# profile/build.sh --german), and by include.cv_lang on the web CV body include.
 # Event titles, talk titles and conference names live in cv.yaml / cv_de.yaml,
 # not here — this file only holds layout chrome.
 
 en:
+  site_subtitle: "Adrien Florio's Emmy Noether group"
+  latest_news: "Latest News"
+  search_placeholder: "Search items on this page"
+  search_clear: "Clear search"
+  search_tag_tooltip: 'Show items with the tag "__TAG__"'
   cv_footer_title: "CV"
   intro: 'Adrien Florio is the Group Leader of the $\left\lvert\chi\right\rangle$real **Emmy Noether** research group at **Bielefeld University** and **Project Leader** in the Collaborative Research Center-Transregio **CRC-TR 211** (Project A02).'
   lang_switch_to_de: "Auf Deutsch"
@@ -53,6 +58,11 @@ en:
   accepted_in: "accepted in"
 
 de:
+  site_subtitle: "Adrien Florios Emmy-Noether-Gruppe"
+  latest_news: "Aktuelles"
+  search_placeholder: "Einträge auf dieser Seite durchsuchen"
+  search_clear: "Suche zurücksetzen"
+  search_tag_tooltip: 'Beiträge mit dem Tag "__TAG__" anzeigen'
   cv_footer_title: "Lebenslauf"
   intro: 'Adrien Florio leitet die **Emmy-Noether-Forschungsgruppe** $\left\lvert\chi\right\rangle$real an der **Universität Bielefeld** und ist **Projektleiter** im Sonderforschungsbereich-Transregio **CRC-TR 211** (Projekt A02).'
   lang_switch_to_de: "Auf Deutsch"

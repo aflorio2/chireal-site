@@ -2,14 +2,6 @@
 {%- if cv_lang == "de" -%}{%- assign cv = site.data.cv_de -%}{%- else -%}{%- assign cv = site.data.cv -%}{%- endif -%}
 {%- assign t = site.data.i18n[cv_lang] -%}
 
-<p class="cv-lang-switch">
-{%- if cv_lang == "de" -%}
-<a href="{{ '/members/adrien-florio.html' | relative_url }}">{{ t.lang_switch_to_en }}</a>
-{%- else -%}
-<a href="{{ '/members/adrien-florio-de.html' | relative_url }}">{{ t.lang_switch_to_de }}</a>
-{%- endif -%}
-</p>
-
 {{ t.intro }}
 
 <details class="cv-section" open>

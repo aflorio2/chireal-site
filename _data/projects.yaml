@@ -9,6 +9,11 @@
     transport effects on topology-changing processes in the Standard Model.
     Combines classical statistical methods to the study of the real-time quantum
     dynamics of low-dimensional systems.
+  description_de: >
+    Von der DFG geförderte Nachwuchsgruppe, die anomale Transporteffekte
+    bei topologieändernden Prozessen im Standardmodell untersucht. Verbindet
+    klassisch-statistische Methoden mit der Untersuchung der Echtzeit-Quantendynamik
+    niederdimensionaler Systeme.
   tags:
     - research-program
 
@@ -24,6 +29,12 @@
     and non-Abelian SU(2) gauge theories in an expanding universe, including
     gravitational waves production. De facto community standard, actively
     developed and [open source](https://github.com/cosmolattice/cosmolattice).
+  description_de: >
+    Modernes Softwarepaket für Gittersimulationen von Felddynamik in einem
+    expandierenden Universum. Unterstützt wechselwirkende skalare Feldtheorien
+    sowie abelsche U(1)- und nichtabelsche SU(2)-Eichtheorien in einem expandierenden
+    Universum, einschließlich der Erzeugung von Gravitationswellen. De-facto-Standard
+    in der Community, aktiv weiterentwickelt und [Open Source](https://github.com/cosmolattice/cosmolattice).
   repo: cosmolattice/CosmoLattice
   tags:
     - software
@@ -39,6 +50,12 @@
     Frankfurt universities) studying strong-interaction matter under extreme
     conditions. Project A02 explores the QCD phase diagram using quantum
     information measures, quantum computations and effective field theories.
+  description_de: >
+    Sonderforschungsbereich (Partner: Universitäten Bielefeld, Darmstadt,
+    Gießen und Frankfurt), der stark wechselwirkende Materie unter extremen
+    Bedingungen untersucht. Projekt A02 erforscht das QCD-Phasendiagramm
+    mithilfe quanteninformationstheoretischer Maße, Quantenberechnungen und
+    effektiver Feldtheorien.
   tags:
     - research-program
     - collaboration
@@ -57,6 +74,16 @@
     in QFT, and holography. The next edition will take place on
     [17-22 May 2026](https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf).
     Links to previous editions: [ALPS I](https://indico.global/event/9618/),
+    [ALPS II](https://indico.global/event/9641/).
+  description_de: >
+    Eine jährlich in den Schweizer Alpen stattfindende Sommerschule für
+    Nachwuchsforschende in der theoretischen Physik. Sie soll den Austausch unter
+    jungen Forschenden durch Vorlesungen aufstrebender Wissenschaftler:innen aus
+    verschiedenen Gebieten der modernen theoretischen Physik fördern. Themen
+    umfassen Quanteninformationstheorie, Quantencomputing, Verschränkung in der
+    Quantenfeldtheorie und Holographie. Die nächste Ausgabe findet vom
+    [17.–22. Mai 2026](https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf)
+    statt. Links zu früheren Ausgaben: [ALPS I](https://indico.global/event/9618/),
     [ALPS II](https://indico.global/event/9641/).
   tags:
     - education

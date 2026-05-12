@@ -2,6 +2,7 @@
 name: Vasundhara Krishnan
 image: images/team/vasundhara-krishnan.jpg
 role: phd
+gender: f
 affiliation: Bielefeld University
 aliases:
   - V. Krishnan

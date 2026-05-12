@@ -2,6 +2,7 @@
 name: Marta Memon
 image: images/team/marta-memon.jpg
 role: phd
+gender: f
 affiliation: Bielefeld University
 aliases:
   - M. Memon

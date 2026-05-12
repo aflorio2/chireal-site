@@ -2,6 +2,7 @@
 name: Adrien Florio
 image: images/team/adrien-florio.jpg
 role: group-leader
+gender: m
 affiliation: Bielefeld University
 aliases:
   - A. Florio
@@ -13,6 +14,8 @@ links:
   home-page: https://cosmolattice.net
   inspirehep: https://inspirehep.net/authors/1844184
   google-scholar: AvWN0nIAAAAJ
+lang: en
+alt_lang_url: /members/adrien-florio-de.html
 ---
 
 {% include cv-body.html cv_lang="en" %}

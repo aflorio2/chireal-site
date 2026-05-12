@@ -2,6 +2,7 @@
 name: Adrien Florio
 image: images/team/adrien-florio.jpg
 role: group-leader
+gender: m
 affiliation: Bielefeld University
 aliases:
   - A. Florio
@@ -15,6 +16,8 @@ links:
   google-scholar: AvWN0nIAAAAJ
 permalink: /members/adrien-florio-de.html
 hidden: true
+lang: de
+alt_lang_url: /members/adrien-florio.html
 ---
 
 {% include cv-body.html cv_lang="de" %}

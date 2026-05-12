@@ -1,4 +1,6 @@
 ---
+lang: en
+alt_lang_url: /de/
 ---
 
 {% capture col1 %}
