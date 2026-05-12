@@ -13,6 +13,8 @@ links:
   home-page: https://cosmolattice.net
   inspirehep: https://inspirehep.net/authors/1844184
   google-scholar: AvWN0nIAAAAJ
+permalink: /members/adrien-florio-de.html
+hidden: true
 ---
 
-{% include cv-body.html cv_lang="en" %}
+{% include cv-body.html cv_lang="de" %}

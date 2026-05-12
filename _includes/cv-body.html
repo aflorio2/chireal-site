@@ -1,0 +1,356 @@
+{%- assign cv_lang = include.cv_lang | default: "en" -%}
+{%- if cv_lang == "de" -%}{%- assign cv = site.data.cv_de -%}{%- else -%}{%- assign cv = site.data.cv -%}{%- endif -%}
+{%- assign t = site.data.i18n[cv_lang] -%}
+
+<p class="cv-lang-switch">
+{%- if cv_lang == "de" -%}
+<a href="{{ '/members/adrien-florio.html' | relative_url }}">{{ t.lang_switch_to_en }}</a>
+{%- else -%}
+<a href="{{ '/members/adrien-florio-de.html' | relative_url }}">{{ t.lang_switch_to_de }}</a>
+{%- endif -%}
+</p>
+
+{{ t.intro }}
+
+<details class="cv-section" open>
+<summary><h2>{{ t.positions }}</h2></summary>
+
+{% for pos in cv.positions %}
+<div class="cv-entry">
+<span class="cv-date">{{ pos.date }}</span>
+<strong class="cv-title">{{ pos.title }}</strong>
+<span class="cv-institution">{{ pos.institution }}, {{ pos.location }}{% if pos.details %} · {{ pos.details }}{% endif %}</span>
+</div>
+{% endfor %}
+
+</details>
+
+<details class="cv-section" open>
+<summary><h2>{{ t.funding }}</h2></summary>
+
+{% for f in cv.funding %}
+<div class="cv-entry">
+<span class="cv-date">{{ f.date }}</span>
+<strong class="cv-title">{{ f.title }}</strong>
+<span class="cv-institution">{{ f.funder }}</span>
+{% if f.details %}<p>{{ f.details }}</p>{% endif %}
+</div>
+{% endfor %}
+
+</details>
+
+<details class="cv-section" open>
+<summary><h2>{{ t.awards }}</h2></summary>
+
+{% for a in cv.awards %}
+<div class="cv-award">
+<span class="cv-date">{{ a.date }}</span>
+<strong class="cv-title">{{ a.title }}{% if a.institution %}, {{ a.institution }}{% endif %}</strong>
+{% if a.description %}<p>{{ a.description }}</p>{% endif %}
+</div>
+{% endfor %}
+
+</details>
+
+<details class="cv-section" open>
+<summary><h2>{{ t.selected_talks }}</h2></summary>
+
+<h3 class="cv-subsection">{{ t.plenary_talks }}</h3>
+
+{% for talk in cv.selected_talks %}{% if talk.type == "Plenary talk" %}
+<div class="cv-entry">
+<span class="cv-date">{{ talk.date }}</span>
+<strong class="cv-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+{% if talk.location %}<span class="cv-institution">{{ talk.location }}</span>{% endif %}
+</div>
+{% endif %}{% endfor %}
+
+<h3 class="cv-subsection">{{ t.invited_talks }}</h3>
+
+{% for talk in cv.selected_talks %}{% if talk.type == "Invited talk" %}
+<div class="cv-entry">
+<span class="cv-date">{{ talk.date }}</span>
+<strong class="cv-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}{% if talk.event_detail %} — {{ talk.event_detail }}{% endif %}</strong>
+{% if talk.location %}<span class="cv-institution">{{ talk.location }}</span>{% endif %}
+</div>
+{% endif %}{% endfor %}
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.education }}</h2></summary>
+
+<div class="cv-multicol">
+{% for edu in cv.education %}
+<div class="cv-entry">
+<span class="cv-date">{{ edu.date }}</span>
+<strong class="cv-title">{{ edu.degree }}</strong>
+<span class="cv-institution">{{ edu.institution }}, {{ edu.location }}{% if edu.details %} · {{ edu.details }}{% endif %}</span>
+</div>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.professional_services }}</h2></summary>
+
+<h3 class="cv-subsection">{{ t.advisory_committees }}</h3>
+
+{% for item in cv.professional_services.advisory_committees %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+<span class="cv-institution">{{ item.institution }}, {{ item.location }}</span>
+</div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">{{ t.organizing_committees }}</h3>
+
+{% for item in cv.professional_services.organizing_committees %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+{% if item.description %}<p>{{ item.description }}</p>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">{{ t.referee }}</h3>
+
+{% for item in cv.professional_services.referee %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+{% if item.journals %}
+<strong class="cv-title">{{ item.journals }}</strong>
+{% else %}
+<strong class="cv-title">{{ item.title }}</strong>
+{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">{{ t.seminar_organization }}</h3>
+
+{% for item in cv.professional_services.seminar_organization %}
+<div class="cv-entry">
+<span class="cv-date">{{ item.date }}</span>
+<strong class="cv-title">{{ item.title }}</strong>
+</div>
+{% endfor %}
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.supervision }}</h2></summary>
+
+<p class="cv-summary">{{ cv.supervision.summary }}</p>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">{{ t.phd_students }}</h3>
+
+{% for s in cv.supervision.phd_students %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+</div>
+
+<h3 class="cv-subsection">{{ t.postdocs }}</h3>
+
+{% for s in cv.supervision.postdocs %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">{{ t.master_students }}</h3>
+
+{% for s in cv.supervision.master_students %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+</div>
+
+<h3 class="cv-subsection">{{ t.bachelor_students }}</h3>
+
+{% for s in cv.supervision.bachelor_students %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">{{ t.mentorship }}</h3>
+
+{% for s in cv.supervision.mentorship %}
+<div class="cv-entry">
+<span class="cv-date">{{ s.date }}</span>
+<strong class="cv-title">{{ s.name }}</strong>
+{% if s.description %}<span class="cv-institution">{{ s.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.teaching }}</h2></summary>
+
+<div class="cv-multicol">
+
+<h3 class="cv-subsection">{{ t.courses }}</h3>
+
+{% for c in cv.teaching.courses %}
+<div class="cv-entry">
+<span class="cv-date">{{ c.date }}</span>
+<strong class="cv-title">{{ c.title }}</strong>
+{% if c.description %}<span class="cv-institution">{{ c.description }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">{{ t.phd_schools }}</h3>
+
+{% for c in cv.teaching.phd_schools %}
+<div class="cv-entry">
+<span class="cv-date">{{ c.date }}</span>
+<strong class="cv-title">{% if c.url %}<a href="{{ c.url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</strong>
+{% if c.topic %}<span class="cv-institution">{{ c.topic }}</span>{% endif %}
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">{{ t.teaching_assistant }}</h3>
+
+{% for c in cv.teaching.teaching_assistant %}
+<div class="cv-entry">
+<span class="cv-date">{{ c.date }}</span>
+<strong class="cv-title">{{ c.title }}</strong>
+</div>
+{% endfor %}
+
+<h3 class="cv-subsection">{{ t.workshops }}</h3>
+
+{% for c in cv.teaching.workshops %}
+<div class="cv-entry">
+<span class="cv-date">{{ c.date }}</span>
+<strong class="cv-title">{{ c.title }}</strong>
+</div>
+{% endfor %}
+
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.outreach }}</h2></summary>
+
+<div class="cv-multicol">
+{% for o in cv.outreach %}
+<div class="cv-entry">
+<span class="cv-date">{{ o.date }}</span>
+<strong class="cv-title">{{ o.title }}{% if o.url %} · <a href="{{ o.url }}">↗</a>{% endif %}</strong>
+{% if o.description %}<p>{{ o.description }}</p>{% endif %}
+</div>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.full_talks }}</h2></summary>
+
+<div class="cv-talks-legend">
+<span class="cv-talk-type cv-talk-type-P">P</span>{{ t.legend_plenary }}
+<span class="cv-talk-type cv-talk-type-I">I</span>{{ t.legend_invited }}
+<span class="cv-talk-type cv-talk-type-Co">Co</span>{{ t.legend_colloquium }}
+<span class="cv-talk-type cv-talk-type-S">S</span>{{ t.legend_seminar }}
+<span class="cv-talk-type cv-talk-type-Cf">Cf</span>{{ t.legend_conference }}
+<span class="cv-talk-type cv-talk-type-J">J</span>{{ t.legend_journal_club }}
+</div>
+
+<div class="cv-talks-list">
+{% for year_group in cv.talks %}
+<details class="cv-talks-year-group"{% if forloop.first %} open{% endif %}>
+<summary class="cv-talks-year">{{ year_group.year }}</summary>
+{% for talk in year_group.entries %}
+<div class="cv-talk-entry">
+{% case talk.type %}
+{% when 'Plenary' %}<span class="cv-talk-type cv-talk-type-P">P</span>
+{% when 'Invited' %}<span class="cv-talk-type cv-talk-type-I">I</span>
+{% when 'Colloquium' %}<span class="cv-talk-type cv-talk-type-Co">Co</span>
+{% when 'Seminar' or 'HET Seminar' or 'Lattice Seminar' %}<span class="cv-talk-type cv-talk-type-S">S</span>
+{% when 'Conference' %}<span class="cv-talk-type cv-talk-type-Cf">Cf</span>
+{% when 'Journal club' %}<span class="cv-talk-type cv-talk-type-J">J</span>
+{% else %}<span class="cv-talk-type cv-talk-type-S">S</span>
+{% endcase %}
+"{{ talk.title }}"{% if talk.event %}, {{ talk.event }}{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %}{% if talk.url %} · <a href="{{ talk.url }}">↗</a>{% endif %}
+</div>
+{% endfor %}
+</details>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.computing_skills }}</h2></summary>
+
+<div class="cv-multicol">
+{% for skill in cv.computing_skills %}
+<div class="cv-entry">
+<span class="cv-date">
+<span class="cv-grade">
+{% assign full = skill.grade | floor %}
+{% assign has_half = skill.grade | modulo: 1 %}
+{% assign half_pos = full | plus: 1 %}
+{% for i in (1..5) %}
+{% if i <= full %}
+<span class="cv-grade-circle filled"></span>
+{% elsif has_half != 0 and i == half_pos %}
+<span class="cv-grade-circle half"></span>
+{% else %}
+<span class="cv-grade-circle"></span>
+{% endif %}
+{% endfor %}
+</span>
+</span>
+<strong class="cv-title">{{ skill.name }}</strong>
+{% if skill.description %}<p>{{ skill.description }}</p>{% endif %}
+</div>
+{% endfor %}
+</div>
+
+</details>
+
+<details class="cv-section">
+<summary><h2>{{ t.languages }}</h2></summary>
+
+<div class="cv-multicol">
+{% for lang in cv.languages %}
+<div class="cv-entry">
+<span class="cv-date"></span>
+<strong class="cv-title">{{ lang.name }}</strong>
+<span class="cv-institution">{{ lang.level }}{% if lang.note %} ({{ lang.note }}){% endif %}</span>
+</div>
+{% endfor %}
+</div>
+
+</details>
