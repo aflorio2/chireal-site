@@ -4,6 +4,7 @@ image: images/team/marta-memon.jpg
 role: phd
 gender: f
 affiliation: Bielefeld University
+translate: false
 aliases:
   - M. Memon
   - M Memon

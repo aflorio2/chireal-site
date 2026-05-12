@@ -4,6 +4,7 @@ image: images/team/florian-wehmhoener.jpg
 role: bachelor
 gender: m
 affiliation: Bielefeld University
+translate: false
 no_page: "true"
 aliases:
   - F. Wehmhöner

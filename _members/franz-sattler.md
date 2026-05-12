@@ -4,6 +4,7 @@ image: images/team/franz-sattler.jpg
 role: postdoc
 gender: m
 affiliation: Bielefeld University
+translate: false
 aliases:
   - F. Sattler
   - F Sattler

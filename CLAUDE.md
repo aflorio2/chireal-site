@@ -46,3 +46,14 @@ The site supports a German version alongside English, using a **mirror-tree** co
 ### Header nav
 
 The nav loop in `_includes/header.html` shows only pages whose `lang` matches the current page (EN pages with no `lang:` count as English). The EN|DE switcher is appended after the nav links.
+
+### Structural lint
+
+`scripts/lint-i18n.py` is a **local-only** tool — not wired into CI. Claude should run it whenever it edits translated content to confirm EN/DE parity. It checks paired YAML files (`_data/cv.yaml` ↔ `_data/cv_de.yaml`), `en:`/`de:` blocks in `_data/i18n.yaml`, `text`/`text_de` on `_data/news.yaml` entries, paired Markdown nav pages, and member CVs (only `adrien-florio.md` needs a `.de.md` mirror; other members carry `translate: false`). A 14-day staleness check warns when an EN file has drifted from its DE counterpart in git history.
+
+```bash
+python scripts/lint-i18n.py             # all checks; exit 1 on any failure
+python scripts/lint-i18n.py --strict    # also fail on staleness warnings
+```
+
+Requires `pyyaml` (`pip install pyyaml`).

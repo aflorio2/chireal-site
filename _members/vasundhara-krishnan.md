@@ -4,6 +4,7 @@ image: images/team/vasundhara-krishnan.jpg
 role: phd
 gender: f
 affiliation: Bielefeld University
+translate: false
 aliases:
   - V. Krishnan
   - V Krishnan
