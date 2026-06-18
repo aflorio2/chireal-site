@@ -1,15 +1,15 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: arxiv:2601.09784
-  title: Classical equipartition dynamics between axions and non-Abelian gauge fields
+- id: doi:10.1088/1475-7516/2026/06/020
+  title: Classical equipartition dynamics between  axions and non-Abelian gauge fields
   authors:
   - Kim V. Berghaus
   - Adrien Florio
   - M. Laine
   - Franz R. Sattler
-  publisher: arXiv
-  date: '2026-01-16'
-  link: https://arxiv.org/abs/2601.09784
+  publisher: Journal of Cosmology and Astroparticle Physics
+  date: '2026-06-01'
+  link: https://doi.org/hb7ptk
   buttons:
   - type: preprint
     text: arXiv
@@ -25,7 +25,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
-  image: images/publications/2601.09784.png
+  image: images/journals/JCAP.jpeg
 - id: doi:10.1007/JHEP04(2026)183
   title: 'Quantum dynamics of cosmological particle production: interacting quantum
     field theories with matrix product states'
