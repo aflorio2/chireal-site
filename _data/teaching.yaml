@@ -1,0 +1,20 @@
+# Teaching & lecture entries, rendered by _includes/teaching.html as
+# wide publication-style boxes. Fields with a _de twin are language-aware.
+
+- title: Quantum Computing
+  title_de: Quantencomputing
+  venue: MINT-Sommer, Bielefeld University
+  venue_de: MINT-Sommer, Universität Bielefeld
+  date: 2026
+  link: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html
+  description: >
+    Introductory lectures on quantum computing given at the MINT-Sommer
+    program of Bielefeld University.
+  description_de: >
+    Einführungsvorlesungen über Quantencomputing im Rahmen des
+    MINT-Sommer-Programms der Universität Bielefeld.
+  buttons:
+    - icon: fa-solid fa-person-chalkboard
+      text: Lecture slides
+      text_de: Vorlesungsfolien
+      link: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html

@@ -1,0 +1,103 @@
+{% comment %}
+  Renders all entries of _data/teaching.yaml as wide boxes, reusing the
+  citation (publication) styles from _styles/citation.scss. Language-aware
+  via page.lang: *_de fields are used on German pages when present.
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'en' %}
+
+{% for entry in site.data.teaching %}
+  {% if lang == 'de' %}
+    {% assign entry_title = entry.title_de | default: entry.title %}
+    {% assign entry_venue = entry.venue_de | default: entry.venue %}
+    {% assign entry_description = entry.description_de | default: entry.description %}
+  {% else %}
+    {% assign entry_title = entry.title %}
+    {% assign entry_venue = entry.venue %}
+    {% assign entry_description = entry.description %}
+  {% endif %}
+
+  <div class="citation-container">
+    <div class="citation">
+      {% if entry.image %}
+        <a
+          {% if entry.link %}
+            href="{{ entry.link | uri_escape }}"
+          {% endif %}
+          class="citation-image"
+          aria-label="{{ entry_title | default: "teaching link" | regex_strip }}"
+        >
+          <img
+            src="{{ entry.image | relative_url | uri_escape }}"
+            alt="{{ entry_title | default: "teaching image" | regex_strip }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        </a>
+      {% endif %}
+
+      <div class="citation-text">
+        <a
+          {% if entry.link %}
+            href="{{ entry.link | xml_escape }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          {% endif %}
+          class="citation-title"
+        >
+          {{ entry_title | default: "[no title info]" }}
+        </a>
+
+        <div class="citation-details">
+          <span class="citation-publisher">
+            {{- entry_venue | default: "[no venue info]" -}}
+          </span>
+          {% if entry.date %}
+            &nbsp;·&nbsp;
+            <span class="citation-date">{{ entry.date }}</span>
+          {% endif %}
+        </div>
+
+        {% if entry_description %}
+          <div class="citation-description">
+            {{
+              entry_description
+              | markdownify
+              | remove: "<p>"
+              | remove: "</p>"
+            }}
+          </div>
+        {% endif %}
+
+        {% if entry.buttons.size > 0 %}
+          <div class="citation-buttons">
+            {% comment %}
+              Loop variable deliberately NOT named "button": button.html does
+              {% assign button = include %}, and a parent for-loop variable of
+              the same name would shadow that assign (Liquid scoping).
+            {% endcomment %}
+            {% for entry_button in entry.buttons %}
+              {% if lang == 'de' %}
+                {% assign button_text = entry_button.text_de | default: entry_button.text %}
+              {% else %}
+                {% assign button_text = entry_button.text %}
+              {% endif %}
+              {%
+                include button.html
+                type=entry_button.type
+                icon=entry_button.icon
+                text=button_text
+                link=entry_button.link
+                style="bare"
+              %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if entry.tags.size > 0 %}
+          {% include tags.html tags=entry.tags %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}

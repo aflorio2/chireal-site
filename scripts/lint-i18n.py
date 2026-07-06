@@ -34,6 +34,7 @@ PAIRED_PAGES = [
     "research/index.md",
     "projects/index.md",
     "team/index.md",
+    "teaching/index.md",
 ]
 
 LEADER_MEMBER_EN = "_members/adrien-florio.md"
