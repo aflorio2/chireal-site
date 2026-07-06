@@ -15,6 +15,7 @@ nav:
 {% include list.html data="members" component="portrait" filter="role == 'group-leader' && !hidden" %}
 {% include list.html data="members" component="portrait" filter="role == 'postdoc' && !hidden" %}
 {% include list.html data="members" component="portrait" filter="role == 'phd' && !hidden" %}
+{% include list.html data="members" component="portrait" filter="role == 'master' && !hidden" %}
 {% include list.html data="members" component="portrait" filter="role == 'bachelor' && !hidden" %}
 
 {% include section.html %}

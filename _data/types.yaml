@@ -22,6 +22,11 @@ phd:
   description_de_m: Doktorand
   description_de_f: Doktorandin
 
+master:
+  description: Master Student
+  description_de_m: Masterstudent
+  description_de_f: Masterstudentin
+
 bachelor:
   description: Bachelor Student
   description_de_m: Bachelorstudent
