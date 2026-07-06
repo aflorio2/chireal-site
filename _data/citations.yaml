@@ -54,8 +54,8 @@
   plugin: inspire-hep.py
   file: inspire-hep.yaml
   image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
-- id: arxiv:2512.15627
-  title: The art of simulating the early Universe. Part II. Non-canonical cases &
+- id: doi:10.1088/1475-7516/2026/06/087
+  title: The art of simulating the early Universe. Part II. Non-canonical cases &amp;
     gravitational waves
   authors:
   - Jorge Baeza-Ballesteros
@@ -68,9 +68,9 @@
   - Ben A. Stefanek
   - Francisco Torrentí
   - Ander Urio
-  publisher: arXiv
-  date: '2026-01-21'
-  link: https://arxiv.org/abs/2512.15627
+  publisher: Journal of Cosmology and Astroparticle Physics
+  date: '2026-06-01'
+  link: https://doi.org/hb9j9j
   buttons:
   - type: preprint
     text: arXiv
@@ -86,7 +86,7 @@
   bai: Adrien.Florio.1
   plugin: inspire-hep.py
   file: inspire-hep.yaml
-  image: images/publications/2512.15627.png
+  image: images/journals/JCAP.jpeg
 - id: doi:10.1103/q386-v4ch
   title: 'Entanglement asymmetry in gauge theories: Chiral anomaly in the finite temperature
     massless Schwinger model'
@@ -123,9 +123,8 @@
     '
   description_de: 'Wir untersuchen die Verschränkungs-Asymmetrie als Sonde für Symmetrien
     in Eichtheorien. Wir berechnen sie analytisch im masselosen Schwinger-Modell und
-    zeigen, dass sie parametrisch empfindlicher auf Symmetriebrechung und
-    -wiederherstellung reagiert als der entsprechende lokale Ordnungsparameter
-    der chiralen Symmetrie.
+    zeigen, dass sie parametrisch empfindlicher auf Symmetriebrechung und -wiederherstellung
+    reagiert als der entsprechende lokale Ordnungsparameter der chiralen Symmetrie.
 
     '
 - id: doi:10.22323/1.483.0056
@@ -222,10 +221,10 @@
 
     '
   description_de: 'Diese Arbeit zeigt, wie Quantenverschränkung die Thermalisierung
-    jetartiger Anregungen im massiven Schwinger-Modell antreibt. Mithilfe von
-    Tensornetzwerk-Simulationen der Echtzeitentwicklung weisen wir nach, dass die
-    Erzeugung von Verschränkung einen mikroskopischen Mechanismus für die
-    Thermalisierung in dieser stark wechselwirkenden Eichtheorie liefert.
+    jetartiger Anregungen im massiven Schwinger-Modell antreibt. Mithilfe von Tensornetzwerk-Simulationen
+    der Echtzeitentwicklung weisen wir nach, dass die Erzeugung von Verschränkung
+    einen mikroskopischen Mechanismus für die Thermalisierung in dieser stark wechselwirkenden
+    Eichtheorie liefert.
 
     '
 - id: doi:10.1103/plfm-z5xx
@@ -419,9 +418,9 @@
 
     '
   description_de: 'Wir zeigen, dass die Zwei-Fermion-Negativität – ein spezielles
-    Maß für mehrteilige Verschränkung – Confinement im massiven Schwinger-Modell
-    nachweist. Dies bestärkt die Intuition, dass Quantenkorrelationen empfindlich
-    auf den Confinement-Deconfinement-Übergang reagieren.
+    Maß für mehrteilige Verschränkung – Confinement im massiven Schwinger-Modell nachweist.
+    Dies bestärkt die Intuition, dass Quantenkorrelationen empfindlich auf den Confinement-Deconfinement-Übergang
+    reagieren.
 
     '
 - id: doi:10.1103/PhysRevD.110.045013
@@ -492,12 +491,11 @@
 
     '
   description_de: 'Höhere Formsymmetrien lassen sich nutzen, um die Langzeitdynamik
-    wechselwirkender Systeme einzuschränken. Magnetohydrodynamik kann aus der
-    Erhaltung magnetischer Feldlinien abgeleitet werden, und chiraler Transport
-    entsteht in Gegenwart einer nichtinvertierbaren Symmetrie. Wir demonstrieren
-    die praktische Anwendbarkeit dieser Ideen in klassisch-statistischen
-    Simulationen, in denen wir die vorhergesagten Transportgrößen aus ersten
-    Prinzipien berechnen.
+    wechselwirkender Systeme einzuschränken. Magnetohydrodynamik kann aus der Erhaltung
+    magnetischer Feldlinien abgeleitet werden, und chiraler Transport entsteht in
+    Gegenwart einer nichtinvertierbaren Symmetrie. Wir demonstrieren die praktische
+    Anwendbarkeit dieser Ideen in klassisch-statistischen Simulationen, in denen wir
+    die vorhergesagten Transportgrößen aus ersten Prinzipien berechnen.
 
     '
 - id: doi:10.1103/PhysRevD.109.054037
