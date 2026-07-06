@@ -28,6 +28,12 @@ nav > a { padding: 5px; }
 
 nav > a:hover { color: var(--primary); }
 
+.lang-switch { padding: 5px; display: inline-flex; gap: 4px; align-items: baseline; }
+
+.lang-switch .lang-switch-sep { opacity: 0.5; }
+
+.lang-switch a:hover { color: var(--primary); }
+
 @media (max-width: 700px) { header:not([data-big]) { justify-content: flex-end; } header:not([data-big]) .nav-toggle { display: flex; } header:not([data-big]) .nav-toggle:not(:checked) + nav { display: none; } header:not([data-big]) nav { align-items: flex-end; flex-direction: column; width: 100%; } }
 
 header[data-big] { justify-content: center; align-items: center; flex-direction: column; padding: 58.32px 20px; top: unset; }
