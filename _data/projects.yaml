@@ -65,26 +65,26 @@
   subtitle: PhD summer school by juniors for juniors
   group: featured
   image: images/projects/alps-summer-school.jpg
-  link: https://indico.global/event/9618/
+  link: https://indico.global/event/9670/
   description: >
     A junior school in theoretical physics held annually in the Swiss Alps,
     designed to foster collaboration among young researchers through lectures
     given by rising stars in different areas of modern theoretical physics.
     Topics include quantum information theory, quantum computing, entanglement
-    in QFT, and holography. The next edition will take place on
-    [17-22 May 2026](https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf).
-    Links to previous editions: [ALPS I](https://indico.global/event/9618/),
-    [ALPS II](https://indico.global/event/9641/).
+    in QFT, and holography. The third edition took place in May 2026.
+    Links to past editions: [ALPS I](https://indico.global/event/9618/),
+    [ALPS II](https://indico.global/event/9641/),
+    [ALPS III](https://indico.global/event/9670/).
   description_de: >
     Eine jährlich in den Schweizer Alpen stattfindende Sommerschule für
     Nachwuchsforschende in der theoretischen Physik. Sie soll den Austausch unter
     jungen Forschenden durch Vorlesungen aufstrebender Wissenschaftler:innen aus
     verschiedenen Gebieten der modernen theoretischen Physik fördern. Themen
     umfassen Quanteninformationstheorie, Quantencomputing, Verschränkung in der
-    Quantenfeldtheorie und Holographie. Die nächste Ausgabe findet vom
-    [17.–22. Mai 2026](https://swissmaprs.ch/wp-content/uploads/2025/03/2026-SRS-Programme.pdf)
-    statt. Links zu früheren Ausgaben: [ALPS I](https://indico.global/event/9618/),
-    [ALPS II](https://indico.global/event/9641/).
+    Quantenfeldtheorie und Holographie. Die dritte Ausgabe fand im Mai 2026 statt.
+    Links zu früheren Ausgaben: [ALPS I](https://indico.global/event/9618/),
+    [ALPS II](https://indico.global/event/9641/),
+    [ALPS III](https://indico.global/event/9670/).
   tags:
     - education
     - collaboration
