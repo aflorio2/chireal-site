@@ -7,6 +7,7 @@
   venue_de: MINT-Sommer, Universität Bielefeld
   date: 2026
   link: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html
+  link_de: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html#de
   description: >
     Introductory lectures on quantum computing given at the MINT-Sommer
     program of Bielefeld University.
@@ -18,3 +19,4 @@
       text: Lecture slides
       text_de: Vorlesungsfolien
       link: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html
+      link_de: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html#de

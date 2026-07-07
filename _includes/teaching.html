@@ -11,18 +11,20 @@
     {% assign entry_title = entry.title_de | default: entry.title %}
     {% assign entry_venue = entry.venue_de | default: entry.venue %}
     {% assign entry_description = entry.description_de | default: entry.description %}
+    {% assign entry_link = entry.link_de | default: entry.link %}
   {% else %}
     {% assign entry_title = entry.title %}
     {% assign entry_venue = entry.venue %}
     {% assign entry_description = entry.description %}
+    {% assign entry_link = entry.link %}
   {% endif %}
 
   <div class="citation-container">
     <div class="citation">
       {% if entry.image %}
         <a
-          {% if entry.link %}
-            href="{{ entry.link | uri_escape }}"
+          {% if entry_link %}
+            href="{{ entry_link | uri_escape }}"
           {% endif %}
           class="citation-image"
           aria-label="{{ entry_title | default: "teaching link" | regex_strip }}"
@@ -38,8 +40,8 @@
 
       <div class="citation-text">
         <a
-          {% if entry.link %}
-            href="{{ entry.link | xml_escape }}"
+          {% if entry_link %}
+            href="{{ entry_link | xml_escape }}"
             target="_blank"
             rel="noopener noreferrer"
           {% endif %}
@@ -79,15 +81,17 @@
             {% for entry_button in entry.buttons %}
               {% if lang == 'de' %}
                 {% assign button_text = entry_button.text_de | default: entry_button.text %}
+                {% assign button_link = entry_button.link_de | default: entry_button.link %}
               {% else %}
                 {% assign button_text = entry_button.text %}
+                {% assign button_link = entry_button.link %}
               {% endif %}
               {%
                 include button.html
                 type=entry_button.type
                 icon=entry_button.icon
                 text=button_text
-                link=entry_button.link
+                link=button_link
                 style="bare"
               %}
             {% endfor %}
