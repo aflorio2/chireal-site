@@ -163,8 +163,10 @@ professional_services:
       title: CFNS/CNT-Seminare
 
 supervision:
-  summary: "Aktuelle Gruppe: 2 Doktorand:innen, 1 Postdoktorand:in, 2 Masterstudent:innen, 1 Bachelorstudent:in."
+  summary: "Aktuelle Gruppe: 3 Doktorand:innen, 1 Postdoktorand:in, 2 Masterstudent:innen, 1 Bachelorstudent:in."
   phd_students:
+    - date: "2026-"
+      name: Florian Brökemeier
     - date: "2026-"
       name: Marta Memon
     - date: "2025-"
@@ -188,7 +190,7 @@ supervision:
       description: "EPFL, Masterarbeit, Mitbetreuer"
   bachelor_students:
     - date: "2025-"
-      name: Florian Weimhoener
+      name: Florian Wehmhöner
   mentorship:
     - date: "2020-2022"
       name: Nicolas Loayza
@@ -244,6 +246,31 @@ outreach:
 talks:
   - year: "2026"
     entries:
+      - type: Seminar
+        title: "From early universe to quantum dynamics"
+        event: "ANBauEn"
+        location: Bielefeld
+        url: https://indico.physik.uni-bielefeld.de/event/365/
+      - type: Invited
+        title: "Out of equilibrium quantum dynamics of relativistic 1+1D systems"
+        event: "XVII Quark Confinement and the Hadron Spectrum"
+        location: Wrocław
+        url: https://indico.cern.ch/event/1531304/contributions/7087770/
+      - type: Invited
+        title: "Thermalization and entanglement structures of relativistic fields: explorations in low-dimensions"
+        event: "Workshop \"Quantum physics in curved spacetimes\""
+        location: Tours
+        url: https://www.lestudium-ias.com/events/quantum-physics-curved-spacetimes
+      - type: Seminar
+        title: "ditto"
+        event: "HISKP Theory seminar"
+        location: Bonn
+        url: https://indico.hiskp.uni-bonn.de/event/1488/
+      - type: Colloquium
+        title: "Strongly coupled dynamics and their quantum origin"
+        event: "Theory colloquium"
+        location: DESY
+        url: https://indico.desy.de/event/53571/
       - type: Invited
         title: "Quantum revolution for hadrons"
         event: "APS March meeting"
