@@ -39,6 +39,28 @@
   tags:
     - software
 
+# TempLat Library
+- title: TempLat
+  subtitle: A versatile C++ engine for lattice field theories
+  group: featured
+  image: images/projects/templat-logo.svg
+  link: https://cosmolattice.github.io/templat/
+  description: >
+    Header-only C++20 template library powering CosmoLattice: the physics is
+    written as plain expressions, which the engine compiles into code running on
+    CPUs, NVIDIA and AMD GPUs, and across MPI ranks. Described in
+    [arXiv:2607.24908](https://arxiv.org/abs/2607.24908) and
+    [open source](https://github.com/cosmolattice/templat).
+  description_de: >
+    Header-only C++20-Template-Bibliothek, die CosmoLattice antreibt: Die Physik
+    wird als einfache Ausdrücke geschrieben, die die Engine in Code für CPUs,
+    NVIDIA- und AMD-GPUs sowie für MPI-Ränge übersetzt. Beschrieben in
+    [arXiv:2607.24908](https://arxiv.org/abs/2607.24908) und
+    [Open Source](https://github.com/cosmolattice/templat).
+  repo: cosmolattice/templat
+  tags:
+    - software
+
 # CRC-TR 211 Project A02
 - title: "CRC-TR 211: Strong-Interaction Matter"
   subtitle: "Project A02: Lattice QCD at non-vanishing density"

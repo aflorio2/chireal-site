@@ -70,6 +70,16 @@
 # ============================================================================
 # CURRENT NEWS ITEMS (newest first)
 # ============================================================================
+- date: 2026-07-29
+  text: "CosmoLattice v2.0 is out — new website"
+  text_de: "CosmoLattice v2.0 ist da — neue Website"
+  link: "https://cosmolattice.net"
+
+- date: 2026-07-27
+  text: "New preprint: TempLat, a versatile C++ engine for lattice field theories"
+  text_de: "Neuer Preprint: TempLat, eine vielseitige C++-Engine für Gitterfeldtheorien"
+  link: "https://arxiv.org/abs/2607.24908"
+
 - date: 2026-01-08
   text: "New preprint: Cosmological particle production with tensor networks"
   text_de: "Neuer Preprint: Kosmologische Teilchenproduktion mit Tensornetzwerken"

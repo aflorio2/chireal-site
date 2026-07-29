@@ -8,7 +8,10 @@
 #     - tag2
 
 # PhD Thesis - manual image URL since EPFL no longer provides OpenGraph tags
+# Authors set manually: the EPFL DOI record no longer returns an author list to Manubot
 - id: doi:10.5075/epfl-thesis-8139
+  authors:
+    - Adrien Florio
   image: https://infoscience.epfl.ch/bitstreams/ba65466f-2aeb-415d-86ef-285f53482e9b/download
 
 # Featured publications with custom highlight images

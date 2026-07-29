@@ -1,5 +1,58 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: arxiv:2607.24908
+  title: 'TempLat: a versatile C++ engine for lattice field theories'
+  authors:
+  - Adrien Florio
+  - Franz R. Sattler
+  publisher: arXiv
+  date: '2026-07-29'
+  link: https://arxiv.org/abs/2607.24908
+  buttons:
+  - type: preprint
+    text: arXiv
+    link: https://arxiv.org/abs/2607.24908
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/3183879
+  type: article
+  tags:
+  - Lattice
+  - Astrophysics
+  - Condensed Matter
+  - Phenomenology-HEP
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/2607.24908.png
+- id: arxiv:2607.24978
+  title: CosmoLattice 2.0
+  authors:
+  - Jorge Baeza-Ballesteros
+  - Daniel G. Figueroa
+  - Adrien Florio
+  - Nicolás Loayza
+  - Franz R. Sattler
+  - Francisco Torrentí
+  - Ander Urio
+  publisher: arXiv
+  date: '2026-07-29'
+  link: https://arxiv.org/abs/2607.24978
+  buttons:
+  - type: preprint
+    text: arXiv
+    link: https://arxiv.org/abs/2607.24978
+  - type: inspirehep
+    text: INSPIRE-HEP
+    link: https://inspirehep.net/literature/3183940
+  type: article
+  tags:
+  - Astrophysics
+  - Phenomenology-HEP
+  bai: Adrien.Florio.1
+  plugin: inspire-hep.py
+  file: inspire-hep.yaml
+  image: images/publications/2607.24978.png
 - id: doi:10.1088/1475-7516/2026/06/020
   title: Classical equipartition dynamics between  axions and non-Abelian gauge fields
   authors:
