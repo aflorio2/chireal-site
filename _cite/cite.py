@@ -105,7 +105,11 @@ for a in range(0, len(sources)):
         b_id = get_safe(sources, f"{b}.id", "")
         if b_id == a_id:
             log(f"Found duplicate {b_id}", indent=2)
+            # union tags instead of letting the later source's update() wipe the earlier one's
+            merged_tags = list(dict.fromkeys(sources[a].get("tags", []) + sources[b].get("tags", [])))
             sources[a].update(sources[b])
+            if merged_tags:
+                sources[a]["tags"] = merged_tags
             sources[b] = {}
 sources = [entry for entry in sources if entry]
 

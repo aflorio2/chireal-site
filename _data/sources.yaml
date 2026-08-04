@@ -13,6 +13,8 @@
   authors:
     - Adrien Florio
   image: https://infoscience.epfl.ch/bitstreams/ba65466f-2aeb-415d-86ef-285f53482e9b/download
+  tags:
+    - HPC
 
 # Featured publications with custom highlight images
 - id: doi:10.1103/q386-v4ch
@@ -33,6 +35,8 @@
 - id: doi:10.1103/sgrx-jpp9
   highlight: true
   image: images/publications_highlights/thermalization_quantum_entanglement.png
+  tags:
+    - HPC
   description: >
     This work demonstrates how quantum entanglement drives thermalization in
     jet-like excitations within the massive Schwinger model. Using tensor
@@ -49,6 +53,8 @@
 - id: doi:10.1103/PhysRevD.109.L071501
   highlight: true
   image: images/publications_highlights/negativitynew3.png
+  tags:
+    - HPC
   description: >
     We establish that the two-fermion negativity, a particular measure of
     multipartite entanglement, detects confinement in the massive Schwinger model.
@@ -63,6 +69,8 @@
 - id: doi:10.21468/SciPostPhys.17.3.085
   highlight: true
   image: images/publications_highlights/higher_forms.png
+  tags:
+    - HPC
   description: >
     Higher-form symmetries can be used to constrain the long-range dynamics of
     interacting systems. Magneto-hydrodynamics can be derived from the conservation
@@ -76,3 +84,92 @@
     nichtinvertierbaren Symmetrie. Wir demonstrieren die praktische Anwendbarkeit
     dieser Ideen in klassisch-statistischen Simulationen, in denen wir die
     vorhergesagten Transportgrößen aus ersten Prinzipien berechnen.
+
+# HPC tag - papers involving simulations that plausibly ran on HPC resources
+- id: arxiv:2607.24908
+  tags:
+    - HPC
+
+- id: arxiv:2607.24978
+  tags:
+    - HPC
+
+- id: doi:10.1088/1475-7516/2026/06/020
+  tags:
+    - HPC
+
+- id: doi:10.1007/JHEP04(2026)183
+  tags:
+    - HPC
+
+- id: doi:10.22323/1.483.0056
+  tags:
+    - HPC
+
+- id: doi:10.1103/plfm-z5xx
+  tags:
+    - HPC
+
+- id: doi:10.1103/wyn4-ncdc
+  tags:
+    - HPC
+
+- id: doi:10.1103/PhysRevD.110.094029
+  tags:
+    - HPC
+
+- id: doi:10.1103/PhysRevD.110.045013
+  tags:
+    - HPC
+
+- id: doi:10.1103/PhysRevD.109.054037
+  tags:
+    - HPC
+
+- id: doi:10.1088/1475-7516/2022/09/015
+  tags:
+    - HPC
+
+- id: doi:10.1103/PhysRevD.106.063522
+  tags:
+    - HPC
+
+- id: doi:10.21468/SciPostPhys.15.3.077
+  tags:
+    - HPC
+
+- id: doi:10.1103/PhysRevD.105.054512
+  tags:
+    - HPC
+
+- id: doi:10.1007/JHEP12(2021)076
+  tags:
+    - HPC
+
+- id: doi:10.1016/j.cpc.2022.108586
+  tags:
+    - HPC
+
+- id: doi:10.1088/1475-7516/2021/04/035
+  tags:
+    - HPC
+
+- id: doi:10.1007/JHEP10(2019)142
+  tags:
+    - HPC
+
+- id: doi:10.1140/epjc/s10052-019-7564-z
+  tags:
+    - HPC
+
+- id: doi:10.22323/1.334.0044
+  tags:
+    - HPC
+
+- id: doi:10.1051/epjconf/201817507004
+  tags:
+    - HPC
+
+- id: doi:10.18429/JACoW-IPAC2016-TUPMW009
+  tags:
+    - HPC

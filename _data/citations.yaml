@@ -21,9 +21,10 @@
   - Astrophysics
   - Condensed Matter
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/publications/2607.24908.png
 - id: arxiv:2607.24978
   title: CosmoLattice 2.0
@@ -36,7 +37,7 @@
   - Francisco Torrentí
   - Ander Urio
   publisher: arXiv
-  date: '2026-07-29'
+  date: '2026-08-04'
   link: https://arxiv.org/abs/2607.24978
   buttons:
   - type: preprint
@@ -49,9 +50,10 @@
   tags:
   - Astrophysics
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/publications/2607.24978.png
 - id: doi:10.1088/1475-7516/2026/06/020
   title: Classical equipartition dynamics between  axions and non-Abelian gauge fields
@@ -75,9 +77,10 @@
   - Phenomenology-HEP
   - Astrophysics
   - Lattice
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/JCAP.jpeg
 - id: doi:10.1007/JHEP04(2026)183
   title: 'Quantum dynamics of cosmological particle production: interacting quantum
@@ -103,9 +106,10 @@
   - Astrophysics
   - Lattice
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: doi:10.1088/1475-7516/2026/06/087
   title: The art of simulating the early Universe. Part II. Non-canonical cases &amp;
@@ -203,9 +207,10 @@
   tags:
   - Phenomenology-HEP
   - Quantum Physics
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
 - id: arxiv:2510.03083
   title: 'To break, or not to break: Symmetries in adaptive quantum simulations, a
     case study on the Schwinger model'
@@ -261,6 +266,7 @@
   - Theory-HEP
   - Theory-Nucl
   - Quantum Physics
+  - HPC
   bai: Adrien.Florio.1
   plugin: sources.py
   file: sources.yaml
@@ -303,9 +309,10 @@
   - Lattice
   - Phenomenology-HEP
   - Theory-Nucl
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: doi:10.1103/wyn4-ncdc
   title: Supercooled Goldstone Bosons at the QCD Chiral Phase Transition
@@ -331,9 +338,10 @@
   - Lattice
   - Experiment-Nucl
   - Theory-Nucl
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRL.jpg
 - id: doi:10.1103/PhysRevApplied.23.064002
   title: Surrogate-constructed scalable-circuits adaptive variational quantum eigensolver
@@ -396,9 +404,10 @@
   - Theory-HEP
   - Theory-Nucl
   - Quantum Physics
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: doi:10.1088/1361-6633/ad616a
   title: "Present and future of \n\t    \n\t    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
@@ -459,6 +468,7 @@
   - Lattice
   - Phenomenology-HEP
   - Quantum Physics
+  - HPC
   bai: Adrien.Florio.1
   plugin: sources.py
   file: sources.yaml
@@ -504,9 +514,10 @@
   - Lattice
   - Phenomenology-HEP
   - Theory-Nucl
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: doi:10.21468/SciPostPhys.17.3.085
   title: Higher-form symmetry and chiral transport in real-time Abelian lattice gauge
@@ -531,6 +542,7 @@
   - Theory-HEP
   - Lattice
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
   plugin: sources.py
   file: sources.yaml
@@ -575,9 +587,10 @@
   - Lattice
   - Phenomenology-HEP
   - Theory-Nucl
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: arxiv:2303.00113
   title: Quantum Information Science and Technology for Nuclear Physics. Input into
@@ -810,9 +823,10 @@
   - Phenomenology-HEP
   - Gravitation and Cosmology
   - Theory-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/JCAP.jpeg
 - id: doi:10.1103/PhysRevD.106.063522
   title: Spectroscopy of particle couplings with gravitational waves
@@ -835,9 +849,10 @@
   tags:
   - Astrophysics
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: doi:10.21468/SciPostPhys.15.3.077
   title: Lattice simulations of non-minimally coupled scalar fields in the Jordan
@@ -862,9 +877,10 @@
   - Astrophysics
   - Gravitation and Cosmology
   - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/logo_scipost_RGB_HTML_groot.png
 - id: doi:10.1103/PhysRevD.105.054512
   title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
@@ -891,9 +907,10 @@
   - Phenomenology-HEP
   - Theory-HEP
   - Theory-Nucl
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/PRD.jpg
 - id: doi:10.1103/PhysRevD.104.056021
   title: Gibbs entropy from entanglement in electric quenches
@@ -946,11 +963,10 @@
   tags:
   - Lattice
   - Theory-HEP
-  - Lattice
-  - Theory-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: doi:10.1016/j.cpc.2022.108586
   title: '<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si1.svg"><mml:mi
@@ -979,13 +995,10 @@
   - Gravitation and Cosmology
   - Lattice
   - Phenomenology-HEP
-  - Astrophysics
-  - Gravitation and Cosmology
-  - Lattice
-  - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/publications/2102.01031.png
 - id: doi:10.1088/1475-7516/2021/04/035
   title: 'The art of simulating the early universe.
@@ -1013,14 +1026,10 @@
   - Lattice
   - Phenomenology-HEP
   - Theory-HEP
-  - Astrophysics
-  - Gravitation and Cosmology
-  - Lattice
-  - Phenomenology-HEP
-  - Theory-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/JCAP.jpeg
 - id: doi:10.5075/epfl-thesis-8139
   title: Aspects of Gauge Theories Vacua
@@ -1036,6 +1045,7 @@
   type: thesis
   tags:
   - Theory-HEP
+  - HPC
   bai: Adrien.Florio.1
   plugin: sources.py
   file: sources.yaml
@@ -1083,12 +1093,10 @@
   - Theory-HEP
   - Lattice
   - Phenomenology-HEP
-  - Theory-HEP
-  - Lattice
-  - Phenomenology-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: https://media.springernature.com/full/springer-static/cover-hires/journal/13130
 - id: doi:10.1140/epjc/s10052-019-7564-z
   title: Open-boundary conditions in the deconfined phase
@@ -1111,12 +1119,10 @@
   - Lattice
   - Phenomenology-HEP
   - Theory-HEP
-  - Lattice
-  - Phenomenology-HEP
-  - Theory-HEP
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/journals/EPJC.png
 - id: doi:10.22323/1.334.0044
   title: U(1) vacuum, Chern-Simons diffusion and real-time simulations
@@ -1137,11 +1143,10 @@
   tags:
   - Theory-HEP
   - Lattice
-  - Theory-HEP
-  - Lattice
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/publications/1810.13410.png
 - id: doi:10.1051/epjconf/201817507004
   title: Thermal Simulations, Open Boundary Conditions and Switches
@@ -1163,9 +1168,10 @@
   type: proceedings
   tags:
   - Lattice
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
   image: images/publications/1710.06472.png
 - id: doi:10.18429/JACoW-IPAC2016-TUPMW009
   title: Simulation of Head-on Beam-Beam Limitations in Future High Energy Colliders
@@ -1185,6 +1191,7 @@
   type: proceedings
   tags:
   - Accelerators
+  - HPC
   bai: Adrien.Florio.1
-  plugin: inspire-hep.py
-  file: inspire-hep.yaml
+  plugin: sources.py
+  file: sources.yaml
