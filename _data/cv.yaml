@@ -197,8 +197,8 @@ teaching:
       description: "Master course, Bielefeld"
   phd_schools:
     - date: "2026"
-      title: "Heidelberg Graduate Summer School (projected)"
-      topic: "Anomalous real-time dynamics"
+      title: "Heidelberg Graduate Summer School"
+      topic: "(Magneto)hydrodynamics from symmetries"
     - date: "2026"
       title: "CRC retreat, Bonn"
       topic: "Tensor networks and quantum simulations"
@@ -247,6 +247,11 @@ talks:
         event: "XVII Quark Confinement and the Hadron Spectrum"
         location: Wrocław
         url: https://indico.cern.ch/event/1531304/contributions/7087770/
+      - type: Invited
+        title: "Strongly coupled dynamics and their quantum origin"
+        event: "Color meets Flavor special symposium"
+        location: Siegen
+        url: https://indico.hiskp.uni-bonn.de/event/1351/timetable/?view=standard
       - type: Invited
         title: "Thermalization and entanglement structures of relativistic fields: explorations in low-dimensions"
         event: "Workshop \"Quantum physics in curved spacetimes\""
