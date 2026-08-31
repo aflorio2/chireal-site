@@ -487,11 +487,15 @@
 
     '
 - id: doi:10.1103/PhysRevD.110.045013
-  title: "Mass gaps of a \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-    \ display=\"inline\"><mml:msub><mml:mi mathvariant=\"double-struck\">Z</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:math>\n\
-    \ gauge theory with three fermion flavors in \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-    \ display=\"inline\"><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:math>\n\
-    \ dimensions"
+  title: "Mass gaps of a\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+    \ display=\"inline\">\n                      <mml:msub>\n                    \
+    \    <mml:mi mathvariant=\"double-struck\">Z</mml:mi>\n                      \
+    \  <mml:mn>3</mml:mn>\n                      </mml:msub>\n                   \
+    \ </mml:math>\n                    gauge theory with three fermion flavors in\n\
+    \                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+    \ display=\"inline\">\n                      <mml:mn>1</mml:mn>\n            \
+    \          <mml:mo>+</mml:mo>\n                      <mml:mn>1</mml:mn>\n    \
+    \                </mml:math>\n                    dimensions"
   authors:
   - Adrien Florio
   - Andreas Weichselbaum
@@ -564,10 +568,12 @@
 
     '
 - id: doi:10.1103/PhysRevD.109.054037
-  title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-    \ display=\"inline\"><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>4</mml:mn><mml:mo\
-    \ stretchy=\"false\">)</mml:mo></mml:math>\n critical point in QCD: Critical pions\
-    \ and diffusion in model G"
+  title: "Dynamics of the\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+    \ display=\"inline\">\n                      <mml:mi>O</mml:mi>\n            \
+    \          <mml:mo stretchy=\"false\">(</mml:mo>\n                      <mml:mn>4</mml:mn>\n\
+    \                      <mml:mo stretchy=\"false\">)</mml:mo>\n               \
+    \     </mml:math>\n                    critical point in QCD: Critical pions and\
+    \ diffusion in model G"
   authors:
   - Adrien Florio
   - Eduardo Grossi
@@ -883,9 +889,12 @@
   file: sources.yaml
   image: images/journals/logo_scipost_RGB_HTML_groot.png
 - id: doi:10.1103/PhysRevD.105.054512
-  title: "Dynamics of the \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-    \ display=\"inline\"><mml:mrow><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>4</mml:mn><mml:mo\
-    \ stretchy=\"false\">)</mml:mo></mml:mrow></mml:math>\n critical point in QCD"
+  title: "Dynamics of the\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+    \ display=\"inline\">\n                      <mml:mrow>\n                    \
+    \    <mml:mi>O</mml:mi>\n                        <mml:mo stretchy=\"false\">(</mml:mo>\n\
+    \                        <mml:mn>4</mml:mn>\n                        <mml:mo stretchy=\"\
+    false\">)</mml:mo>\n                      </mml:mrow>\n                    </mml:math>\n\
+    \                    critical point in QCD"
   authors:
   - Adrien Florio
   - Eduardo Grossi
