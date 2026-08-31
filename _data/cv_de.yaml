@@ -80,6 +80,11 @@ education:
     location: Lausanne, Schweiz
 
 selected_talks:
+  - date: "07/2026"
+    type: Invited talk
+    event: "Color meets Flavor special symposium"
+    location: Siegen
+    url: https://indico.hiskp.uni-bonn.de/event/1351/timetable/?view=standard
   - date: "03/2026"
     type: Invited talk
     event: "APS March meeting"
