@@ -53,8 +53,8 @@ en:
   legend_conference: "Conference"
   legend_journal_club: "Journal club"
   full_pub_list_at: "Full publication list at:"
-  inspire_hep_page: "Inspire-HEP page"
-  google_scholar_profile: "Google Scholar profile"
+  inspire_hep_page: "Inspire-HEP"
+  google_scholar_profile: "Google Scholar"
   accepted_in: "accepted in"
 
 de:
@@ -106,6 +106,6 @@ de:
   legend_conference: "Konferenz"
   legend_journal_club: "Journal Club"
   full_pub_list_at: "Vollständige Publikationsliste auf:"
-  inspire_hep_page: "Inspire-HEP-Seite"
-  google_scholar_profile: "Google-Scholar-Profil"
+  inspire_hep_page: "Inspire-HEP"
+  google_scholar_profile: "Google Scholar"
   accepted_in: "angenommen in"
