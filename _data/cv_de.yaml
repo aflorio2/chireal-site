@@ -168,7 +168,7 @@ professional_services:
       title: CFNS/CNT-Seminare
 
 supervision:
-  summary: "Aktuelle Gruppe: 3 Doktorand:innen, 1 Postdoktorand:in, 2 Masterstudent:innen, 1 Bachelorstudent:in."
+  summary: "Aktuelle Gruppe: 3 Doktorand:innen, 2 Postdoktorand:innen, 4 Masterstudent:innen."
   phd_students:
     - date: "2026-"
       name: Florian Brökemeier
@@ -177,6 +177,8 @@ supervision:
     - date: "2025-"
       name: Vasundhara Krishnan
   postdocs:
+    - date: "2026-"
+      name: José Matos
     - date: "2025-"
       name: Franz Sattler
   master_students:
@@ -184,6 +186,10 @@ supervision:
       name: Jonathan Knospe
     - date: "2026-"
       name: Niranjan Jayakrishnan
+    - date: "2026-"
+      name: Marcel Romberg
+    - date: "2026-"
+      name: Erik Müller
     - date: "2019-2020"
       name: Alexandra Tchalakian
       description: "EPFL, Masterarbeit, Betreuer"
@@ -194,7 +200,7 @@ supervision:
       name: Frédéric Dux
       description: "EPFL, Masterarbeit, Mitbetreuer"
   bachelor_students:
-    - date: "2025-"
+    - date: "2025-2026"
       name: Florian Wehmhöner
   mentorship:
     - date: "2020-2022"
