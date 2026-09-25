@@ -30,14 +30,22 @@ positions:
     location: Stony Brook, US
 
 funding:
-  - date: "01/2026-"
-    title: "Project Leader in Collaborative Research Center CRC-TR-211"
-    funder: DFG
-    details: "Project A02 on the phase diagram at finite chemical potential. Funds a full PhD student position (~150'000€)."
   - date: "04/2025-"
     title: "Emmy Noether Grant, German Research Foundation (DFG)"
     funder: DFG
-    details: "Personal research grant of ~ 1'500'000€ to establish a junior research group."
+    details: "Personal research grant of ~€1,500,000 to establish a junior research group."
+  - date: "01/2026-"
+    title: "Independent Project Leader (PI), Project A02, Collaborative Research Center CRC-TR 211"
+    funder: DFG
+    details: "Project A02 on the phase diagram at finite chemical potential. Funds a full PhD student position (~€150,000)."
+  - date: "2024-2026"
+    title: "Funding of the ALPS PhD summer schools (three editions), as co-organizer"
+    funder: "SwissMAP, Quantinuum, University of Geneva, Bielefeld University, CRC-TR 211"
+    details: "CHF 102,000 and €7,000 in total."
+  - date: "2022-2025"
+    title: "Goldhaber Distinguished Fellowship research fund"
+    funder: "Brookhaven National Lab."
+    details: "$12,000 per year for travel and material."
 
 awards:
   - date: "2022-2025"
@@ -128,13 +136,13 @@ professional_services:
   organizing_committees:
     - date: "06/2026"
       title: "Advanced Lectures in Physics in Switzerland (ALPS III) <a href='https://indico.global/event/9670/'>↗</a>"
-      description: "PhD summer school on generalized symmetries and quantum simulation methods. Funding: SwissMAP (CHF30K), Bielefeld University (€5K), CRC-TR-211 (€2K)."
+      description: "PhD summer school on generalized symmetries and quantum simulation methods."
     - date: "06/2025"
       title: "Advanced Lectures in Physics in Switzerland (ALPS II) <a href='https://indico.global/event/9641/'>↗</a>"
-      description: "PhD summer school on integrability breaking and hydrodynamics. Funding: SwissMAP (CHF30K), University of Geneva (CHF7K)."
+      description: "PhD summer school on integrability breaking and hydrodynamics."
     - date: "05/2024"
       title: "Advanced Lectures in Physics in Switzerland (ALPS I) <a href='https://indico.global/event/9618/'>↗</a>"
-      description: "PhD summer school on quantum computing. Funding: SwissMAP (CHF30K), Quantinuum (CHF5K)."
+      description: "PhD summer school on quantum computing."
     - date: "2022"
       title: "CosmoLattice School 2022"
       description: "PhD summer school 09/2022 about the CosmoLattice software."

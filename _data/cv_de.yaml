@@ -39,14 +39,22 @@ positions:
     location: Stony Brook, USA
 
 funding:
-  - date: "01/2026-"
-    title: "Projektleiter im Sonderforschungsbereich CRC-TR-211"
-    funder: DFG
-    details: "Projekt A02 zum Phasendiagramm bei endlichem chemischem Potential. Finanziert eine vollständige Promotionsstelle (~150.000 €)."
   - date: "04/2025-"
     title: "Emmy-Noether-Förderung, Deutsche Forschungsgemeinschaft (DFG)"
     funder: DFG
-    details: "Persönlicher Forschungspreis von ~ 1.500.000 € zum Aufbau einer Nachwuchsgruppe."
+    details: "Persönlicher Forschungspreis von ~1.500.000 € zum Aufbau einer Nachwuchsgruppe."
+  - date: "01/2026-"
+    title: "Unabhängiger Projektleiter (PI), Projekt A02, Sonderforschungsbereich CRC-TR 211"
+    funder: DFG
+    details: "Projekt A02 zum Phasendiagramm bei endlichem chemischem Potential. Finanziert eine vollständige Promotionsstelle (~150.000 €)."
+  - date: "2024-2026"
+    title: "Finanzierung der ALPS-Promotions-Sommerschulen (drei Ausgaben), als Mitorganisator"
+    funder: "SwissMAP, Quantinuum, Universität Genf, Universität Bielefeld, CRC-TR 211"
+    details: "Insgesamt 102.000 CHF und 7.000 €."
+  - date: "2022-2025"
+    title: "Forschungsmittel des Goldhaber Distinguished Fellowship"
+    funder: "Brookhaven National Lab."
+    details: "12.000 $ pro Jahr für Reisen und Material."
 
 awards:
   - date: "2022-2025"
@@ -137,13 +145,13 @@ professional_services:
   organizing_committees:
     - date: "06/2026"
       title: "Advanced Lectures in Physics in Switzerland (ALPS III) <a href='https://indico.global/event/9670/'>↗</a>"
-      description: "Promotions-Sommerschule zu verallgemeinerten Symmetrien und Methoden der Quantensimulation. Finanzierung: SwissMAP (30.000 CHF), Universität Bielefeld (5.000 €), CRC-TR-211 (2.000 €)."
+      description: "Promotions-Sommerschule zu verallgemeinerten Symmetrien und Methoden der Quantensimulation."
     - date: "06/2025"
       title: "Advanced Lectures in Physics in Switzerland (ALPS II) <a href='https://indico.global/event/9641/'>↗</a>"
-      description: "Promotions-Sommerschule zu Integrabilitätsbrechung und Hydrodynamik. Finanzierung: SwissMAP (30.000 CHF), Universität Genf (7.000 CHF)."
+      description: "Promotions-Sommerschule zu Integrabilitätsbrechung und Hydrodynamik."
     - date: "05/2024"
       title: "Advanced Lectures in Physics in Switzerland (ALPS I) <a href='https://indico.global/event/9618/'>↗</a>"
-      description: "Promotions-Sommerschule zu Quantencomputing. Finanzierung: SwissMAP (30.000 CHF), Quantinuum (5.000 CHF)."
+      description: "Promotions-Sommerschule zu Quantencomputing."
     - date: "2022"
       title: "CosmoLattice School 2022"
       description: "Promotions-Sommerschule 09/2022 zur CosmoLattice-Software."
