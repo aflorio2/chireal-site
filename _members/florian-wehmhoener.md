@@ -6,6 +6,7 @@ gender: m
 affiliation: Bielefeld University
 translate: false
 no_page: "true"
+past: true
 aliases:
   - F. Wehmhöner
   - F Wehmhöner

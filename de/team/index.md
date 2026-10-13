@@ -13,11 +13,20 @@ nav:
 
 ## Aktuell
 
-{% include list.html data="members" component="portrait" filter="role == 'group-leader' && !hidden" %}
-{% include list.html data="members" component="portrait" filter="role == 'postdoc' && !hidden" %}
-{% include list.html data="members" component="portrait" filter="role == 'phd' && !hidden" %}
-{% include list.html data="members" component="portrait" filter="role == 'master' && !hidden" %}
-{% include list.html data="members" component="portrait" filter="role == 'bachelor' && !hidden" %}
+{% include list.html data="members" component="portrait" filter="role == 'group-leader' && !hidden && !past" %}
+{% include list.html data="members" component="portrait" filter="role == 'postdoc' && !hidden && !past" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd' && !hidden && !past" %}
+{% include list.html data="members" component="portrait" filter="role == 'master' && !hidden && !past" %}
+{% include list.html data="members" component="portrait" filter="role == 'bachelor' && !hidden && !past" %}
+
+{% include section.html %}
+
+## Ehemalige Mitglieder
+
+{% include list.html data="members" component="portrait" filter="role == 'postdoc' && !hidden && past" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd' && !hidden && past" %}
+{% include list.html data="members" component="portrait" filter="role == 'master' && !hidden && past" %}
+{% include list.html data="members" component="portrait" filter="role == 'bachelor' && !hidden && past" %}
 
 {% include section.html %}
 
