@@ -242,6 +242,10 @@ teaching:
       title: "Teaching Toolkits, Participant, EPFL's Teaching Support Center"
 
 outreach:
+  - date: "2026"
+    title: "MINT-Sommer, lecturer, Bielefeld University"
+    description: "Introductory lecture on quantum computing for high-school students."
+    url: https://aflorio2.github.io/OutreachMINT/html-slides/combined-lecture-deck.html
   - date: "08/2024"
     title: "REYES, tutor, LBNL (online)"
     description: "Remote Experience for Young Engineers and Scientists. Online program to develop STEM literacy in high-school students."
